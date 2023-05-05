@@ -253,30 +253,35 @@ Remember, auditory feedback should stand out from the music and other sound effe
 ### **Sounds Needed**
 
 1. Effects
-   1. Soft Footsteps (dirt floor)
-   2. Sharper Footsteps (stone floor)
-   3. Soft Landing (low vertical velocity)
-   4. Hard Landing (high vertical velocity)
-   5. Glass Breaking
-   6. Chest Opening
-   7. Door Opening
+   1. Soft Footsteps (walk)
+   2. Sharper Footsteps (run)
+   3. Enemy hit
+   4. Player hit
+   5. Strong hit
+   6. Ax blow to tree(cut down trees)
+   7. Beak sound(chopped rock)
+   8. Bow shot sound
+   9. "Glup" sound of healing
+   10. Unlock sound
+   11. Upgrade sound
 2. Feedback
-   1. Relieved &quot;Ahhhh!&quot; (health)
-   2. Shocked &quot;Ooomph!&quot; (attacked)
-   3. Happy chime (extra life)
-   4. Sad chime (died)
-
-_(example)_
+   1. Error (The player cannot build due to lack of materials)
+   2. Construction sound (The player builds the weapon)
+   3. Game over sound (died)
+reference sounds:
 
 ### **Music Needed**
 
-1. Slow-paced, nerve-racking &quot;forest&quot; track
-2. Exciting &quot;castle&quot; track
-3. Creepy, slow &quot;dungeon&quot; track
-4. Happy ending credits track
-5. Rick Astley&#39;s hit #1 single &quot;Never Gonna Give You Up&quot;
+1. Slow-paced, serene-racking &quot;forest&quot; track
+2. Nerve-racking &quot;cave&quot; track 
+3. Exciting &quot;Battle&quot; track
+4. Quick, exciting &quot;Low health Battle&quot; track
+5. Tribal Theme &quot;Menu&quot; track
+6. Sad &quot;Game over screen&quot; track
+7. &quot;Boss&quot; track
+8. Happy &quot;ending credits&quot; track
 
-_(example)_
+reference music: https://drive.google.com/drive/u/1/folders/1fUL38Bz-ihXMLKg2w7TnoDE3HXy9D8o_
 
 ## _Schedule_
 
