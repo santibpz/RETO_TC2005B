@@ -298,9 +298,16 @@ _(example)_
 
 What kinds of colors will you be using? Do you have a limited palette to work with? A post-processed HSV map/image? Consistency is key for immersion.
 
+**The color palette that will be used for the game in general will have colors found in nature such as green, brown or blue, as our locations include forests and lakes that at the same time will have elements the player can interact with such as rocks or trees as mentioned before.**
+
 What kind of graphic style are you going for? Cartoony? Pixel-y? Cute? How, specifically? Solid, thick outlines with flat hues? Non-black outlines with limited tints/shades? Emphasize smooth curvatures over sharp angles? Describe a set of general rules depicting your style here.
 
+**The graphic style of our game will be a Pixel-y type with thick outlines and bright hues, together with, as the name suggests, pixel-like forms** 
+
 Well-designed feedback, both good (e.g. leveling up) and bad (e.g. being hit), are great for teaching the player how to play through trial and error, instead of scripting a lengthy tutorial. What kind of visual feedback are you going to use to let the player know they&#39;re interacting with something? That they \*can\* interact with something?
+
+**As we've mentioned before, one of the main characteristics/features of our game is the possibility that the player has to interact with the environment so weapons can be created and improved, and in order to make the player notice that an object can be destroyed to obtain raw material, the object will shine a little for a moment after a relatively long period of time, this to let the player infer where the interacteble objects are within the map and which object could be one of them**
+
 
 ### **Graphics Needed**
 
