@@ -4,7 +4,7 @@
 
 ---
 
-##### **Copyright notice / author information / boring legal stuff nobody likes**
+##### **© 2023 Kali, All rights reserved/ Santiago Benitez, Carlos Soto, Ian Vázquez /**
 
 ##
 
@@ -49,7 +49,7 @@
 
 The game follows the story of a hunter-gatherer named Kael, who lives in a small tribe of nomads in the pre-civilization world. In this world, tribes are identified with an animal and kael´s tribe is recognized as the wolf tribe. Kael's tribe is in dispute with other tribes over the grasslands in prehistoric Europe and his life takes a dramatic turn when his young son is kidnapped by the leader of the Bear tribe in revenge for the disagreement of a treaty among tribes.
 
-Determined to rescue his son, Kael sets out on a perilous journey through the forbidden forest, the Sarcos Lake and the settlement of the Bear tribe, where he must fight against the Bear tribesmen along with his tribe´s emblematic animal, the wolf, who will help him determine the path to follow in order to find his son. As Kael goes through this journey, he ensures the protection of the wolf long enough for it to determine which way to go. To fight off enemies, Kael gathers resources from the environment to craft his own weapons.
+Determined to rescue his son, Kael sets out on a perilous journey through the forbidden forest, the Sarcos Lake and the settlement of the Bear tribe, where he must fight against the Bear tribesmen along with his tribe´s emblematic animal, the wolf, who will help him determine the path to follow in order to find his son. As Kael goes through this journey, he must ensure the protection of the wolf. To fight off enemies and protect the wolf, Kael gathers resources from the environment to craft his own weapons.
 
 Kael finally reaches the settlement of the Bear tribe, where he engages in a fierce battle with the most menacing tribesmen and the leader of the tribe. Using all of his skills and weapons to overcome the powerful tribe, Kael will try to rescue his son.
 
@@ -57,20 +57,20 @@ Wild Frontier: The Rescue will be a 2D action Role Playing Game with real-time c
 
 ### **Gameplay**
 
-The game is set in a pre-civilization world and the player takes on the role of the main character Kael as he goes through different levels where he has to scavenge for resources such as materials for crafting weapons to kill the enemies and depend on his tribe´s animal, the wolf, to track his son down.
+The game is set in a pre-civilization world and the player takes on the role of the main character Kael as he goes through different levels where he has to scavenge for resources such as materials for crafting weapons to kill the enemies and protect his tribe´s animal, the wolf, to track his son down.
 
-The player starts the game in the forbidden forest where he can explore the world and learn to craft his first weapons by interacting with the environment. The main character has an initial tool, the hand axe, which can be used to chop down trees or work the stone rocks to craft different weapons. The weapons that can be crafted are bows and arrows, slings, atlatls, spears, clubs, stone knives and blades and each of them require different resources/materials that the player needs to collect from the environment.
+The player starts the game in the forbidden forest where he can explore the world and learn to craft his first weapons by interacting with the environment. The main character has two initial tool, the hand axe, which can be used to chop down trees and a pick axe, to work the stone rocks to craft different weapons. The weapons that can be crafted are bows and arrows, wooden sword, slingshots, spears, boomerangs and stone knives and each of them require different resources/materials that the player needs to collect from the environment.
 
-The weapons have different stats that describe a characteristic about the weapon, such as the amount of damage the weapon inflicts when it hits an enemy (damage), the speed with which the weapon can execute an attack (speed) and the resistance of the weapon against wear and tear (durability).
+The weapons have different stats that describe a characteristic about the weapon, such as the amount of damage the weapon inflicts when it hits an enemy (damage), the speed with which the weapon can execute an attack (speed) and the resistance of the weapon efficiency of the weapon during combat (efficiency).
 
-The goal of the game is to rescue the son from the leader of the Bear Tribe. In order to do this, the player must decide to craft the best weapons to fight off enemies and protect the wolf long enough for it to determine which way his son was taken. The player is able to run, jump, attack in different ways depending on the weapon being used and use a special ability which will allow the player to select between 2 choices; either choose to use the wolf to cause significant damage to the enemies or choose to restore a percentage of his health bar. This special ability will be represented as a bar in the game that will be filling up as the player kills enemies. Once the bar is full, he can make the appropriate choice.
+The goal of the game is to rescue the son from the leader of the Bear Tribe. In order to do this, the player must decide to craft the best weapons to fight off enemies and protect the wolf throughout the level. The wolf will travel from point A to point B and during each level and the player must make its way through the world fighting off enemies and ensuring the protection of its companion.
+
+The player is able to walk, run, and attack in different ways depending on the weapon being used. In the beginning of the game, the player starts off with a fairly weak and poorly equipped character. As the player goes through the levels, he can accumulate coins by killing enemies. The player can then use these coins to increase the stats of the weapons that he crafts or to restore a percentage of his health bar.
 
 The player will start with a full health bar and whenever the player takes damage from an enemy attack, an amount of the health will be deducted depending on the strength of the enemy attack.
-Throughout the game, the player can customize the main character by deciding the weapons which will be used at a certain moment to attack enemies. The player is able to craft the weapons mentioned above but it is only allowed to carry 2 weapons at once. Therefore, the player can select only 2 weapons from the inventory, and can change his current weapons when Kael gets to one of several checkpoints present throughout the map. Everytime the player gets out of the checkpoint, all defeated enemies in previous levels will revive, this in case the player wants to get back to those levels.
+Throughout the game, the player can customize the main character by deciding the weapons which will be used at a certain moment to attack enemies. The player is able to craft the weapons mentioned above but it is only allowed to carry 2 weapons at once. Therefore, the player can select only 3 weapons from the inventory, and can change his current weapons every 5 minutes.
 
-In the beginning of the game, the player starts off with a fairly weak and poorly equipped character. As the player goes through the different levels, he can accumulate experience points (XP), by killing enemies, that he can use to increase the stats of the weapons that he crafts. The experience points enable the player to level up and be stronger during battle in each level.
-
-As the player progresses through the game, he will encounter more challenging enemies, requiring him to use different strategies and weapons to defeat them. Enemies are of three types and have different resistance and vulnerability levels to the main character´s weapons. Grims are short range attacking enemies that move fast and are resistant to clubs and stone blades but vulnerable to thrown arrows. On the other hand, Shielders are armored enemies that move slow but are resistant to short range attacking weapons such as stone knives and blades, but vulnerable to spears, clubs and arrows. Finally, Marauders are long range attacking enemies that throw arrows at the enemy. This enemy is resistant to arrows and slings and vulnerable to the wolf attack combo.
+As the player progresses through the game, he will encounter more challenging enemies, requiring him to use different strategies and weapons to defeat them. Enemies are of three types: Grims are short range attacking enemies that use a stone knife to attack the player. Impalers are also short range attacking enemies that use a spear to attack the player. Finally, Marauders are long range attacking enemies that throw arrows at the player.
 
 ### **Mindset**
 
@@ -78,8 +78,7 @@ As the game designers of this game we would want to provoke a sense of adventure
 
 At the same time, the limited carry capacity of weapons and cooldown effect on weapon selection (inventory) is made to provoke a sense of urgency and tension in the player, requiring them to carefully plan their weapon choices and use them strategically against different enemies. This can also make the player feel vulnerable at times, as they may encounter enemies for which they are not well-prepared.
 
-However, the presence of the wolf companion and the ability to choose between the powerful "wolf attack" or healing can also make the player feel empowered and in control, especially as they progress through the game and become more skilled at using the different weapons that the craft.
-
+However, the ability to choose between upgrading the weapons or healing can also make the player feel empowered and in control, especially as they progress through the game.
 Overall, we would want to create a balance between adventure and tension in the player, while also allowing the player to feel a sense of progression as they go through the levels and advance towards the goal of rescuing the son.
 
 ## _Technical_
@@ -104,7 +103,105 @@ How will the player interact with the game? Will they be able to choose the cont
 
 ### **Mechanics**
 
-Are there any interesting mechanics? If so, how are you going to accomplish them? Physics, algorithms, etc.
+**_Are there any interesting mechanics? If so, how are you going to accomplish them? Physics, algorithms, etc._**
+
+1. Game core loop Mechanic
+
+   The player must ensure the protection of the wolf while it leads him from point A to point B in each level.
+
+   During this journey from point A to point B, the player follows the wolf through 4 different checkpoints that are randomly generated in a level. These checkpoints represent the wolf trying to figure out the path taken by the enemy tribe.
+
+   The player will not be able to wander around the world while he is following the wolf in between checkpoints. In order to explore the world and recollect resources to craft weapons, the player can press the "H" key. This will cause the wolf to pause its movement. The player can press "H" again to resume the wolf's movement.
+
+   When a checkpoint is reached, the player will engage in battle and the wolf will try to avoid enemies.
+
+   The wolf will not continue to the next checkpoint if the player has not killed all enemies.
+
+   The player will not be able to move outside the camera view when a checkpoint is reached.
+
+   The player wins if he reaches the final destination with the wolf and if he has killed all enemies.
+
+   The player loses if the wolf´s health bar is depleted or if the player´s health bar is depleted.
+
+2. World Interaction Mechanic
+
+   1. The player can use a hand axe to chop down trees.
+   2. The player can use a pick axe to mine rocks.
+   3. The player can collect wood and rocks that are emitted as a result of performing the actions mentioned above. The items can be used to create weapons.
+   4. The player can collect "healing remedies" that will be emitted when he kills enemies. These items can then be used to crate healing potions.
+
+3. Player's Actions Mechanic
+
+   1. The player can use the items that he collects (wood and rocks) to build his weapons.
+   2. The player can upgrade the statistics of his weapons by using the items (wood and rocks) that he collects.
+   3. The player can restore his health or the wolf's health by using the healing potions that he can create with the healing remedies.
+   4. The player can carry a maximum of 3 weapons at a time.
+   5. The player can change his weapons every 3 minutes by selecting the desired weapons from the inventory.
+   6. The player can use the keys "J", "K" and "L" to execute the desired attack. Each key will be linked to the 3 current weapons that the player has.
+   7. The player can pause the game clicking on the pause button displayed at the top of the playing screen.
+   8. The player can open the build weapons screen by clicking on the "build" button located at the top right of the screen.
+   9. The player can open the upgrade weapons screen by clicking on the "upgrade" button located at the top right of the screen, next to the build button.
+   10. The player can open the weapon inventory screen by clicking on the "inventory" button located on the left side of the screen.
+
+// building weapon mechanic
+
+The player can build 6 weapons in total: bow and arrows, wooden sword, slingshots, spears, boomerangs and stone knives.
+
+Each weapon requires a different amount of resources (wood and rock) to be made.
+
+The stone knife can be made with 20 wooden logs and 25 rocks.
+
+The boomerang can be made with 30 wooden logs and 5 rocks.
+
+The slingshot can be made with 20 wooden logs and 50 rocks.
+
+The spear can be made with 45 wooden logs and 25 rocks.
+
+The wooden sword can be made with 35 wooden logs.
+
+The bow and arrows can be made with 50 wooden logs and 40 rocks.
+
+If the player has enough resources to build a weapon of choice, the weapon will be added to the inventory.
+
+If the player does not have enough resources to build a weapon, the weapon will not be added to the inventory.
+
+// upgrading weapon mechanic
+
+The player can upgrade the stats of the weapons using the collectable items (wood and rock).
+
+The weapons will have 3 statistics: damage, weapon speed and weapon efficiency. All weapons start with the same statistics.
+
+1.  Damage refers to the percentage of health that is decreased when a weapon attack is performed.
+2.  weapon speed refers to how fast the attack is executed.
+3.  weapon efficiency refers to the time gap between each attack.
+
+Each statistic upgrade made by the player will require more resources (more wood and rock).
+
+In order to upgrade a weapon, the player must first create/build the weapon.
+
+4. Fighting Mechanics
+
+   The player can use 6 different weapons (bows and arrows, wooden sword, slingshots, spears, boomerangs and stone knives) to execute an attack.
+   The player can throw arrows at enemies with the bow.
+   The player can throw rock projectiles at enemies using the slingshot.
+   The player can throw the boomerang at enemies. The boomerang will return to the player.
+   The player can hit enemies with a wooden sword.
+   The player can hit enemies with a stone knife.
+   The player can hit enemies with a spear.
+
+   If the player attacks with a weapon that has just been created, the enemy's health will be decreased by 10% (damage), the speed of the attack will be low (weapon speed) and the time that the player needs to wait before attacking again will be 1 second. (weapon efficieny).
+
+   With each upgrade of the weapon, the weapon's damage increases 3%, the speed of the attack increases and the player waits 5% less before executing an attack with the weapon.
+
+   There are 3 types of enemies: grims, impalers and marauders.
+
+   Grims attack the player with stone knives and decrease the player's health by 2%.
+
+   Impalers attack the player with a spear and decrease the player's health by 2%.
+
+   Marauders throw arrows at the player and decrease the player's health by 3%.
+
+   With each level, the enemies will cause 2% more damage.
 
 ## _Level Design_
 
@@ -250,33 +347,37 @@ Stylistically, what kind of sound effects are you looking for? Do you want to ex
 
 Remember, auditory feedback should stand out from the music and other sound effects so the player hears it well. Volume, panning, and frequency/pitch are all important aspects to consider in both music _and_ sounds - so plan accordingly!
 
-### **Sounds Needed**
+### *Sounds Needed*
 
 1. Effects
-   1. Soft Footsteps (dirt floor)
-   2. Sharper Footsteps (stone floor)
-   3. Soft Landing (low vertical velocity)
-   4. Hard Landing (high vertical velocity)
-   5. Glass Breaking
-   6. Chest Opening
-   7. Door Opening
+   1. Soft Footsteps (walk)
+   2. Sharper Footsteps (run)
+   3. Enemy hit
+   4. Player hit
+   5. Strong hit
+   6. Ax blow to tree(cut down trees)
+   7. Beak sound(chopped rock)
+   8. Bow shot sound
+   9. "Glup" sound of healing
+   10. Unlock sound
+   11. Upgrade sound
 2. Feedback
-   1. Relieved &quot;Ahhhh!&quot; (health)
-   2. Shocked &quot;Ooomph!&quot; (attacked)
-   3. Happy chime (extra life)
-   4. Sad chime (died)
+   1. Error (The player cannot build due to lack of materials)
+   2. Construction sound (The player builds the weapon)
+   3. Game over sound (died)
 
-_(example)_
+### *Music Needed*
 
-### **Music Needed**
+1. Slow-paced, serene-racking &quot;forest&quot; track
+2. Nerve-racking &quot;cave&quot; track 
+3. Exciting &quot;Battle&quot; track
+4. Quick, exciting &quot;Low health Battle&quot; track
+5. Tribal Theme &quot;Menu&quot; track
+6. Sad &quot;Game over screen&quot; track
+7. &quot;Boss&quot; track
+8. Happy &quot;ending credits&quot; track
 
-1. Slow-paced, nerve-racking &quot;forest&quot; track
-2. Exciting &quot;castle&quot; track
-3. Creepy, slow &quot;dungeon&quot; track
-4. Happy ending credits track
-5. Rick Astley&#39;s hit #1 single &quot;Never Gonna Give You Up&quot;
-
-_(example)_
+reference music and sounds: https://drive.google.com/drive/u/1/folders/1fUL38Bz-ihXMLKg2w7TnoDE3HXy9D8o_
 
 ## _Schedule_
 
