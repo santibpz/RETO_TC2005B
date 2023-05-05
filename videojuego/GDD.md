@@ -313,34 +313,27 @@ Well-designed feedback, both good (e.g. leveling up) and bad (e.g. being hit), a
 
 1. Characters
    1. Human-like
-      1. Goblin (idle, walking, throwing)
-      2. Guard (idle, walking, stabbing)
-      3. Prisoner (walking, running)
+      1. Kael, our main protagonist from the wolf tribe (idle, walking, sprinting, attacking, healing)
+      2. Human enemies, able to attack to the distance or to perform melee atack within a smaller range, with different appearance depending on the tribe they belong to (idle, walking, attacking)
    2. Other
-      1. Wolf (idle, walking, running)
-      2. Giant Rat (idle, scurrying)
-2. Blocks
-   1. Dirt
+      1. Wolf, ally, grey color (idle, walking)
+      2. Animal enemies, different animals depending on the tribe the player is facing (idle, walking/flying, attacking)
+2. Blocks (More of each type will appear depending on the level)
+   1. Trees (Different sizes)
    2. Dirt/Grass
-   3. Stone Block
-   4. Stone Bricks
+   3. Stone Block, can work as an obstacle
+   4. Water drops 
    5. Tiled Floor
-   6. Weathered Stone Block
-   7. Weathered Stone Bricks
 3. Ambient
-   1. Tall Grass
-   2. Rodent (idle, scurrying)
-   3. Torch
-   4. Armored Suit
-   5. Chains (matching Weathered Stone Bricks)
-   6. Blood stains (matching Weathered Stone Bricks)
+   1. Tall Grass, can work as an obstacle
+   2. Waterfall
+   3. Interactable stone block (gives stone to the player)
+   4. Interactable tree block (gives wood to the player)
+   5. Water block
+   6. Map flora/vegetation, can work as an obstacle
 4. Other
-   1. Chest
-   2. Door (matching Stone Bricks)
-   3. Gate
-   4. Button (matching Weathered Stone Bricks)
-
-_(example)_
+   1. Weapons, created from the particles/materials the interactable blocks give to the player (Bow, spear, arrow, sling, knife, stick, sword, axe)
+   2. Checkpoints (To which the wolf will go throughout the level)
 
 ## _Sounds/Music_
 
