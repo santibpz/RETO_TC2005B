@@ -4,7 +4,14 @@
 
 ---
 
-##### **© 2023 Kali, All rights reserved/ Santiago Benitez, Carlos Soto, Ian Vázquez /**
+##### 
+
+**© 2023 Kali** 
+
+**All rights reserved**
+
+**Santiago Benitez, Carlos Soto, Ian Vázquez** 
+
 
 ##
 
@@ -23,11 +30,9 @@
    3. [Mechanics](#mechanics)
 4. [Level Design](#level-design)
    1. [Themes](#themes)
-      1. Ambience
-      2. Objects
-         1. Ambient
-         2. Interactive
-      3. Challenges
+      1. Forbidden Forest
+      2. Sarcos Lake
+      3. Bear tribe settlement
    2. [Game Flow](#game-flow)
 5. [Development](#development)
    1. [Abstract Classes](#abstract-classes--components)
@@ -39,6 +44,7 @@
    1. [Style Attributes](#style-attributes-1)
    2. [Sounds Needed](#sounds-needed)
    3. [Music Needed](#music-needed)
+8. [Data Collection](#data-collection)
 8. [Schedule](#schedule)
 
 ## _Game Design_
@@ -59,7 +65,7 @@ Wild Frontier: The Rescue will be a 2D action Role Playing Game with real-time c
 
 The game is set in a pre-civilization world and the player takes on the role of the main character Kael as he goes through different levels where he has to scavenge for resources such as materials for crafting weapons to kill the enemies and protect his tribe´s animal, the wolf, to track his son down.
 
-The player starts the game in the forbidden forest where he can explore the world and learn to craft his first weapons by interacting with the environment. The main character has two initial tool, the hand axe, which can be used to chop down trees and a pick axe, to work the stone rocks to craft different weapons. The weapons that can be crafted are bows and arrows, wooden sword, slingshots, spears, boomerangs and stone knives and each of them require different resources/materials that the player needs to collect from the environment.
+The player starts the game in the forbidden forest where he can explore the world and learn to craft his first weapons by interacting with the environment. The main character has two initial tool, the hand axe, which can be used to chop down trees and a pick axe, to work the stone rocks to craft different weapons. The weapons that can be crafted are bows and arrows, sword, slingshots, spears, boomerangs and stone knives and each of them require different resources/materials that the player needs to collect from the environment.
 
 The weapons have different stats that describe a characteristic about the weapon, such as the amount of damage the weapon inflicts when it hits an enemy (damage), the speed with which the weapon can execute an attack (speed) and the resistance of the weapon efficiency of the weapon during combat (efficiency).
 
@@ -121,6 +127,9 @@ Overall, we would want to create a balance between adventure and tension in the 
 
 4. Level Select screen
    1. Select available level
+
+
+![select level Screen](./screens/selectLevel.png)
 
 
 5. Game screen
@@ -189,15 +198,37 @@ Overall, we would want to create a balance between adventure and tension in the 
    1. Play Again 
    2. Exit
 
-_(example)_
+![End credits Screen](./screens/endCredits.png)
+
 
 ### **Controls**
 
-How will the player interact with the game? Will they be able to choose the controls? What kind of in-game events are they going to be able to trigger, and how? (e.g. pressing buttons, opening doors, etc.)
+1. Movement Control
+
+   1. The player can move up, left, down and right using the keys "W" "A" "S" "D" respectively.
+   2. The player is able to run using the "Shift" key.
+
+2. Player interaction with the world
+
+   1. The player is able to use the hand axe to chop down trees using the key "Z"
+   2. The player is able to use the pick axe to mine rocks using the key "X"
+   3. The player is able to click on the health potions, if any, to restore his health back.
+   4. The player can stop the movement of the wolf pressing the key "H"
+   5. The player can resume the movement of the wolf pressing the key "H"
+
+3. Fighting Controls
+
+   1. The player can execute 3 different attacks using the keys "J", "K" and "L"
+
+4. General Interface Controls
+
+   1. The player can restore his health by clicking on the health potions that are displayed under the health bar.
+   2. The player can open the inventory by clicking on the inventory icon just below the health potions.
+   3. The player can open the "build weapons" screen by clicking on the build button on the top right of the screen.
+   4. The player can open the "upgrade weapons" screen by clicking on the upgrade button on the top right of the screen.
+
 
 ### **Mechanics**
-
-**_Are there any interesting mechanics? If so, how are you going to accomplish them? Physics, algorithms, etc._**
 
 1. Game core loop Mechanic
 
@@ -241,7 +272,7 @@ How will the player interact with the game? Will they be able to choose the cont
 
 4. Building weapons mechanic
 
-   1. The player can build 6 weapons in total: bow and arrows, wooden sword, slingshots, spears, boomerangs and stone knives.
+   1. The player can build 6 weapons in total: bow and arrows, sword, slingshots, spears, boomerangs and stone knives.
 
    2. Each weapon requires a different amount of resources (wood and rock) to be made.
 
@@ -253,7 +284,7 @@ How will the player interact with the game? Will they be able to choose the cont
 
    6. The spear can be made with 45 wooden logs and 25 rocks.
 
-   7. The wooden sword can be made with 35 wooden logs.
+   7. The sword can be made with 15 wooden logs and 50 rocks.
 
    8. The bow and arrows can be made with 50 wooden logs and 40 rocks.
 
@@ -277,11 +308,11 @@ How will the player interact with the game? Will they be able to choose the cont
 
 4. Fighting Mechanics
 
-      1. The player can use 6 different weapons (bows and arrows, wooden sword, slingshots, spears, boomerangs and stone knives) to execute an attack.
+      1. The player can use 6 different weapons (bows and arrows, sword, slingshots, spears, boomerangs and stone knives) to execute an attack.
          1. The player can throw arrows at enemies with the bow.
          2. The player can throw rock projectiles at enemies using the slingshot.
          3. The player can throw the boomerang at enemies. The boomerang will return to the player.
-         4. The player can hit enemies with a wooden sword.
+         4. The player can hit enemies with a sword.
          5. The player can hit enemies with a stone knife.
          6. The player can hit enemies with a spear.
 
@@ -305,7 +336,7 @@ How will the player interact with the game? Will they be able to choose the cont
 
 ### **Themes**
 
-1. Frobidden Forest
+1. Forbidden Forest
    1. Mood
       1. Bright, open, enticing
    2. Objects
@@ -317,6 +348,10 @@ How will the player interact with the game? Will they be able to choose the cont
       2. _Interactive_
          1. short trees
          2. rocks
+
+   ![Forbidden Forest](./levels/forbiddenForest.png)
+
+
 2. Sarcos Lake
    1. Mood
       1. Vivid, active, confusing
@@ -329,6 +364,11 @@ How will the player interact with the game? Will they be able to choose the cont
       2. _Interactive_
          1. tall trees
          2. rocks
+
+
+   ![Sarcos Lake level](./levels/sarcosLake.png)
+
+
 3. Bear tribe settlement
    1. Mood
       1. dangerous, arid
@@ -342,7 +382,9 @@ How will the player interact with the game? Will they be able to choose the cont
          1. trees
          2. rocks
 
-_(example)_
+
+   ![Bear Tribe settlement level](./levels/bearTribeSettlement.png)
+
 
 ### **Game Flow**
 
@@ -360,7 +402,6 @@ _(example)_
 12. Player goes through this process until a final checkpoint is reached.
 13. Player kills all enemies in the final checkpoint and completes the level.
 
-_(example)_
 
 ## _Development_
 
@@ -425,7 +466,6 @@ _(example)_
    14. InteractableLogInBtn (gives access to the user if valid credentials)
    15. InteractableSignUpBtn (creates user account)
 
-_(example)_
 
 ## _Graphics_
 
@@ -444,24 +484,188 @@ As we've mentioned before, one of the main characteristics/features of our game 
 1. Characters
    1. Human-like
       1. Kael, our main protagonist from the wolf tribe (idle, walking, sprinting, attacking, healing)
-      2. Opposing tribe enemies, able to attack to the distance or perform atacks within a smaller range.
+
+      <div align="center">
+      <img src="./assets/Characters/player_front_view.png">
+      </div>
+
+      2. Opposing tribe enemies, able to attack to the distance or perform atacks within a shorter range.
+
+         1. Grim enemy
+         <div align="center">
+         <img src="./assets/Characters/grim.png">
+         </div>
+
+
+         2. Impaler enemy
+         <div align="center">
+         <img src="./assets/Characters/impaler.png">
+         </div>
+
+
+         3. Marauder enemy
+         <div align="center">
+         <img src="./assets/Characters/marauder.png">
+         </div>
+
+
       3. Final boss, leader of the bear tribe.
-   2. Other
-      1. Wolf, ally, grey color (idle, walking)
+
+         1. Final Boss
+            <div align="center">
+            <img src="./assets/Characters/finalBoss.png">
+            </div>
+
+
+   2. Animal Characters
+      1. Wolf, ally, brown color (idle, walking)
+
+         <div align="center">
+         <img src="./assets/animals/wolfsheet1.png">
+         </div>
+
       2. Animal enemy, the bear (idle, walking)
-2. Blocks (More of each type will appear depending on the level)
-   1. Trees
-   2. Dirt, Grass, rocky paths
-   3. Stone Block, can work as an obstacle
-   4. Tiled Floor
+
+         <div align="center">
+         <img src="./assets/animals/Bear.png">
+         </div>
+
+
 3. Ambient
-   1. Grass, works as ground
-   2. Interactable stone/rock block (gives stone to the player)
-   3. Interactable tree block (gives wood to the player)
-   4. game map, vegetation
-4. Other
-   1. Weapons, created from the particles/materials the interactable blocks give to the player (Bow, spear, arrow, slingshot, knife, sword)
-   2. Checkpoints (To which the wolf will go throughout the level)
+   1. Grass, dirt, rocky paths (work as ground) and water (lake). 
+      <div align="center">
+         <img src="./assets/tileset/grounds.png">
+      </div>
+
+   2. Arid paths
+
+      <div align="center">
+            <img src="./assets/tileset/arid.png">
+         </div>
+
+   3. Upheaval ground terrain 
+
+      <div align="center">
+            <img src="./assets/tileset/upheaval.png">
+         </div>
+
+
+   4. Interactable stone/rock (gives stone to the player)
+
+      <div align="center">
+            <img src="./assets/interactableObjects/RockObject.png">
+         </div>
+
+
+   5. Interactable tree (gives wood to the player)
+
+      <div align="center">
+            <img src="./assets/interactableObjects/treeobject1.png">
+         </div>
+
+
+      <div align="center">
+            <img src="./assets/interactableObjects/treeobject2.png">
+         </div>
+
+      <div align="center">
+            <img src="./assets/interactableObjects/treeobject3.png">
+         </div>
+
+
+   6. Tribe Bungalows
+
+
+      <div align="center">
+            <img src="./assets/tileset/tribeBungalow1.png">
+      </div>
+
+      
+      <div align="center">
+            <img src="./assets/tileset/tribeBungalow2.png">
+      </div>
+   
+
+
+4. Collectable items 
+   1. wooden log (collectable)
+
+   <div align="center">
+      <img src="./assets/collectableObjects/woodenLog.png">
+   </div>
+
+
+   2. Stone/rock Block, can work as an obstacle (collectable item)
+
+   <div align="center">
+      <img src="./assets/collectableObjects/collectableRock.png">
+   </div>
+
+   3. Health remedy (collectable item)
+
+   <div align="center">
+      <img src="./assets/collectableObjects/healingRemedy.png">
+   </div>
+
+5. Other
+   1. Main Player tools
+      1. Hand axe
+
+         <div align="center">
+         <img src="./assets/tools/handAxe.png">
+         </div>
+
+
+      2. Pick axe
+
+
+         <div align="center">
+         <img src="./assets/tools/pickAxe.png" width="20px" height="20px">
+         </div>
+   2. Weapons, created from the particles/materials the interactable blocks give to the player (Bow, spear, arrow, slingshot, knife, sword).
+
+      1. bow
+
+         <div align="center">
+         <img src="./assets/weapons/bow.png">
+         </div>
+
+      1. slingshot
+
+         <div align="center">
+         <img src="./assets/weapons/slingshot.png">
+         </div>
+      
+
+      1. boomerang
+
+         <div align="center">
+         <img src="./assets/weapons/boomerang.png">
+         </div>
+
+      1. spear
+
+         <div align="center">
+         <img src="./assets/weapons/spear.png">
+         </div>
+
+      
+      1. knife
+
+         <div align="center">
+         <img src="./assets/weapons/stoneKnife.png">
+         </div>
+
+      1. sword
+
+         <div align="center">
+         <img src="./assets/weapons/sword.png">
+         </div>
+   2. Health potion
+
+      <div align="center">
+         <img src="./assets/interactableObjects/hp_potion_x5.png" width="25px" height= "25px">
+      </div>
 
 ## _Sounds/Music_
 
@@ -469,13 +673,23 @@ As we've mentioned before, one of the main characteristics/features of our game 
 
 ### **Style Attributes**
 
-Again, consistency is key. Define that consistency here. What kind of instruments do you want to use in your music? Any particular tempo, key? Influences, genre? Mood?
+For this 2D pixel art game, we are considering the use of instrumental music that is associated with traditional tribal music. Percussion instruments such as drums, rattles, and shakers can give a sense of rhythm and movement, while wind instruments such as flutes and horns can add melody and emotion.
 
-Stylistically, what kind of sound effects are you looking for? Do you want to exaggerate actions with lengthy, cartoony sounds (e.g. mario&#39;s jump), or use just enough to let the player know something happened (e.g. mega man&#39;s landing)? Going for realism? You can use the music style as a bit of a reference too.
+1. Tempo 
 
-Remember, auditory feedback should stand out from the music and other sound effects so the player hears it well. Volume, panning, and frequency/pitch are all important aspects to consider in both music _and_ sounds - so plan accordingly!
+   The tempo and key of the music should match the mood and atmosphere of the game. For this game, we will start with a slower tempo to build tension and then increase the speed as the player reaches fighting zone checkpoint.
 
-### _Sounds Needed_
+2. Influences and Genre:
+
+
+   The game's setting and storyline allowed us to explore traditional tribal music. Incorporating elements of ambient music, such as nature sounds and atmospheric effects will also add to the game's immersive experience.
+
+3. Sound Effects:
+
+
+   For sound effects, we consider using a mix of realistic and exaggerated sounds. For example, the sound of the hunter-gatherer walking through the forest could be realistic, but the sound of the rival tribe's leader's footsteps could be exaggerated to add tension and anticipation. Volume, panning, and pitch can also be used to create a sense of space and depth in the game's audio.
+
+### **Sounds Needed**
 
 1. Effects
    1. Soft Footsteps (walk)
@@ -483,8 +697,8 @@ Remember, auditory feedback should stand out from the music and other sound effe
    3. Enemy hit
    4. Player hit
    5. Strong hit
-   6. Ax blow to tree(cut down trees)
-   7. Beak sound(chopped rock)
+   6. Ax blow to tree (cut down trees)
+   7. Beak sound (chopped rock)
    8. Bow shot sound
    9. "Glup" sound of healing
    10. Unlock sound
@@ -494,7 +708,7 @@ Remember, auditory feedback should stand out from the music and other sound effe
    2. Construction sound (The player builds the weapon)
    3. Game over sound (died)
 
-### _Music Needed_
+### **Music Needed**
 
 reference sounds:
 
@@ -507,13 +721,21 @@ reference sounds:
 7. &quot;Boss&quot; track
 8. Happy &quot;ending credits&quot; track
 
-reference music and sounds: https://drive.google.com/drive/u/1/folders/1fUL38Bz-ihXMLKg2w7TnoDE3HXy9D8o_
+Reference music and sounds that will be used in our game can be found [here](https://drive.google.com/drive/u/1/folders/1fUL38Bz-ihXMLKg2w7TnoDE3HXy9D8o_).
+
+##  _Data Collection_
+
+---
+
+This game will be embedded in a web page that has connection to a relational database (SQL). An important part of this game will be to recollect relevant information about the game of every player. This can help us determine key areas of improvement. The feedback can also let us know important information about the game. For this reason, the information that will be saved to the database for statistics of the game is as follows:
+
+1. Most built weapons by players.
+2. The most upgraded weapons by players.
+3. The amount of times the players have to 
 
 ## _Schedule_
 
 ---
-
-_(define the main activities and the expected dates when they should be finished. This is only a reference, and can change as the project is developed)_
 
 1. Develop main game core loop mechanic.
 
@@ -568,9 +790,9 @@ _(define the main activities and the expected dates when they should be finished
    2. Sarcos Lake
    3. Settlement of the bear tribe
 
-10. add sounds to game actions
+10. Add sounds to game actions
 
-11. add music
+11. Add music
+
 12. background music
 
-_(example)_
