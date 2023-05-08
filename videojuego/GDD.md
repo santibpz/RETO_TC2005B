@@ -136,7 +136,7 @@ Overall, we would want to create a balance between adventure and tension in the 
          2. Second Attack
          3. Third Attack
       3. Player Tools (hand axe and pick axe)
-      4. Health potions
+      4. Health potion buttons (one for the player and one for the wolf)
       5. Build weapons button
       6. Upgrade weapons button
       7. Pause button
@@ -250,7 +250,7 @@ Overall, we would want to create a balance between adventure and tension in the 
 
    1. The player can use the items that he collects (wood and rocks) to build his weapons.
    2. The player can upgrade the statistics of his weapons by using the items (wood and rocks) that he collects.
-   3. The player can restore his health or the wolf's health by using the healing potions that he can create with the healing remedies.
+   3. The player can restore his health or the wolf's health by using the health potions that he can create with the healing remedies. The player can create health potions for restoring the health of the main character and health potions for restoring the health of the wolf.
    4. The player can carry a maximum of 3 weapons at a time.
    5. The player can change his weapons every 3 minutes by selecting the desired weapons from the inventory.
    6. The player can use the keys "J", "K" and "L" to execute the desired attack. Each key will be linked to the 3 current weapons that the player has.
@@ -593,10 +593,16 @@ As we've mentioned before, one of the main characteristics/features of our game 
       <img src="./assets/collectableObjects/collectableRock.png">
    </div>
 
-   3. Health remedy (collectable item)
+   3. Red healing remedy (collectable item)
 
    <div align="center">
-      <img src="./assets/collectableObjects/healingRemedy.png">
+      <img src="./assets/collectableObjects/redHealingRemedy.png">
+   </div>
+
+   3. Blue healing remedy (collectable item)
+
+   <div align="center">
+      <img src="./assets/collectableObjects/blueHealingRemedy.png">
    </div>
 
 4. Other
@@ -653,10 +659,18 @@ As we've mentioned before, one of the main characteristics/features of our game 
          <img src="./assets/weapons/sword.png">
          </div>
 
-   3. Health potion
+   3. Health potions
+
+      1. Red health potion
 
       <div align="center">
-         <img src="./assets/interactableObjects/hp_potion_x5.png" width="25px" height= "25px">
+         <img src="./assets/interactableObjects/redHealthPotion.png" width="25px" height= "25px">
+      </div>
+
+      1. Blue health potion
+
+      <div align="center">
+         <img src="./assets/interactableObjects/blueHealthPotion.png" width="25px" height= "25px">
       </div>
 
 ## _Sounds/Music_
@@ -721,7 +735,12 @@ This game will be embedded in a web page that has connection to a relational dat
 
 1. Most built weapons by players.
 2. The most upgraded weapons by players.
-<!-- 3. The amount of times the players have to  -->
+3. The 3 weapons that are most used at one time.
+4. The most played level in the game.
+5. The level that causes the player to lose the most.
+6. The number of times that health potions are created to restore the player's health. 
+7. The number of times that health potions are created to restore the wolf's health. 
+8. The checkpoint where the player loses the most.
 
 ## _Schedule_
 
@@ -772,7 +791,7 @@ This game will be embedded in a web page that has connection to a relational dat
    7. level completed screen
    8. game over screen
    9. settings/config screen
-   10. sign in/ log in screen
+   10. sign in/log in screen
 
 9. Design levels
 
