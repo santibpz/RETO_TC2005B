@@ -1,3 +1,4 @@
+// game manager script
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -11,13 +12,13 @@ public class GameManager : MonoBehaviour
     [SerializeField] float minDistance;
     private NavMeshPath path;
     private Bounds worldBounds;
-    private Bounds quadrantBounds;
     private GameObject viewer;
 
     bool flag = false;
 
     // list of checkpoints
     private List<Vector3> checkpoints = new List<Vector3>();
+
 
     Vector3 randomPosition;
     // Start is called before the first frame update
@@ -28,12 +29,15 @@ public class GameManager : MonoBehaviour
         
         viewer = GameObject.Find("viewer");
         Debug.Log("world bounds are: " + worldBounds);
+        Debug.Log("min : " + worldBounds.min);
+        Debug.Log("max : " + worldBounds.max);
+        Debug.Log(".................");
         Debug.Log("min x is : " + worldBounds.min.x);
         Debug.Log("max x is : " + worldBounds.max.x);
         Debug.Log("min y is : " + worldBounds.min.y);
         Debug.Log("max y is : " + worldBounds.max.y);
         //Debug.Log(worldBounds.center);
-        //generateCheckpoints();
+        generateCheckpoints();
     }
 
     // Update is called once per frame
@@ -50,6 +54,7 @@ public class GameManager : MonoBehaviour
     {
         while(checkpoints.Count <= 3)
         {
+            // quadrants
             generateRandomDestination();
             
         }
@@ -62,7 +67,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    private void generateRandomDestination() // PASS it BOUNDSSS
+    private void generateRandomDestination()
     {
         float xPos = Random.Range(worldBounds.min.x, worldBounds.max.x);
         float yPos = Random.Range(worldBounds.min.y, worldBounds.max.y);
@@ -99,7 +104,6 @@ public class GameManager : MonoBehaviour
                 }
             }
             return true;
-
     }
 
 }
