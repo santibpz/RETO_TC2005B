@@ -27,15 +27,16 @@ public class GameManager : MonoBehaviour
         path = new NavMeshPath();
         worldBounds = groundTilemap.localBounds;
         
-        viewer = GameObject.Find("viewer");
-        Debug.Log("world bounds are: " + worldBounds);
-        Debug.Log("min : " + worldBounds.min);
-        Debug.Log("max : " + worldBounds.max);
-        Debug.Log(".................");
-        Debug.Log("min x is : " + worldBounds.min.x);
-        Debug.Log("max x is : " + worldBounds.max.x);
-        Debug.Log("min y is : " + worldBounds.min.y);
-        Debug.Log("max y is : " + worldBounds.max.y);
+        viewer = GameObject.Find("viewer"); 
+        Debug.Log("up is: " + Vector2.up);
+        //Debug.Log("world bounds are: " + worldBounds);
+        //Debug.Log("min : " + worldBounds.min);
+        //Debug.Log("max : " + worldBounds.max);
+        //Debug.Log(".................");
+        //Debug.Log("min x is : " + worldBounds.min.x);
+        //Debug.Log("max x is : " + worldBounds.max.x);
+        //Debug.Log("min y is : " + worldBounds.min.y);
+        //Debug.Log("max y is : " + worldBounds.max.y);
         //Debug.Log(worldBounds.center);
         generateCheckpoints();
     }
@@ -60,11 +61,11 @@ public class GameManager : MonoBehaviour
         }
         flag = true;
 
-        Debug.Log("finished filling up checkpoints list");
-        for (int i = 0; i < checkpoints.Count; i++)
-        {
-            Debug.Log($"Vector {i}: {checkpoints[i]}");
-        }
+        //Debug.Log("finished filling up checkpoints list");
+        //for (int i = 0; i < checkpoints.Count; i++)
+        //{
+        //    Debug.Log($"Vector {i}: {checkpoints[i]}");
+        //}
     }
 
     private void generateRandomDestination()
@@ -82,12 +83,12 @@ public class GameManager : MonoBehaviour
         if ((agent.wolfAgent.CalculatePath(randomDestination, path) && path.status == NavMeshPathStatus.PathComplete) && IsBetweenAcceptableDistance(randomDestination))
         {
             //if the destination position can be reached
-            Debug.Log("Vector checkpoints count: " + checkpoints.Count);
+           // Debug.Log("Vector checkpoints count: " + checkpoints.Count);
 
             checkpoints.Add(randomDestination);
         } else
         {
-            Debug.Log("generating random...");
+            //Debug.Log("generating random...");
             generateRandomDestination();
             // Invoke("generateRandomDestination", 10);
         }
@@ -97,7 +98,7 @@ public class GameManager : MonoBehaviour
     {
             for (int i = 0; i < checkpoints.Count; i++)
             {
-                Debug.Log($"Distance between point {i} and new position {destination} is:  {Vector3.Distance(checkpoints[i], destination)}");
+                //Debug.Log($"Distance between point {i} and new position {destination} is:  {Vector3.Distance(checkpoints[i], destination)}");
                 if (Vector3.Distance(checkpoints[i], destination) < minDistance)
                 {
                     return false;
