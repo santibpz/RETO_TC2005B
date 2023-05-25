@@ -9,7 +9,7 @@ public class Tool : MonoBehaviour
         Harvestable harvestable = collision.GetComponent<Harvestable>();
         if(harvestable != null)
         {
-            harvestable.Harvest();
+            harvestable.Harvest(Random.Range(1, 2));
         }
     }
 }

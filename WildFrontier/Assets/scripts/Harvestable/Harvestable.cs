@@ -5,10 +5,15 @@ using UnityEngine;
 
 public class Harvestable : MonoBehaviour
 {
+    // variable to check if the resources spawned has gone above the count
+    [SerializeField] int harvestLimit;
+
+    private int amountHarvested = 0;
+
+    [SerializeField]  ParticleSystem particleSystem;
     // Start is called before the first frame update
     void Start()
     {
-        
     }
 
     // Update is called once per frame
@@ -17,8 +22,20 @@ public class Harvestable : MonoBehaviour
         
     }
 
-    public void Harvest()
+    public void Harvest(int amount)
     {
-        Destroy(gameObject);
+        // It is not allowed to harvest more resources that specified
+        int amountToSpawn = Mathf.Min(amount, harvestLimit - amountHarvested);
+        if(amountToSpawn > 0)
+        {
+            particleSystem.Emit(amountToSpawn);
+            amountHarvested += amountToSpawn;
+        }
+        if(amountHarvested >= harvestLimit)
+        {
+            // Node is depleted
+            Destroy(gameObject);
+        }
+        
     }
 }
