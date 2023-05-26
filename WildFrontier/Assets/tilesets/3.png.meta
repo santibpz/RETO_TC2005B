@@ -229,8 +229,8 @@ TextureImporter:
         y: 64
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5253897, y: 0.25033474}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -335,7 +335,7 @@ TextureImporter:
         width: 32
         height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -343,6 +343,48 @@ TextureImporter:
       bones: []
       spriteID: 01d78b47db7922149b634156e7a6a013
       internalID: -866609266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: little_rock
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 98
+        width: 32
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa845ad6cadefbd41a8bf348270047ee
+      internalID: -1888753080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3_11
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 66
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a4aba31b937b9c418db4cae71076a11
+      internalID: -715273623
       vertices: []
       indices: 
       edges: []
@@ -361,6 +403,7 @@ TextureImporter:
       3_0: 1591788690
       3_1: 1576603325
       3_10: -866609266
+      3_11: -715273623
       3_2: -769754582
       3_3: 907926809
       3_4: 331384397
@@ -369,6 +412,7 @@ TextureImporter:
       3_7: -2146234573
       3_8: -383404353
       3_9: -1281478904
+      little_rock: -1888753080
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6445538289893763786}
   - component: {fileID: 2241047077078466752}
   - component: {fileID: 2268339816846503609}
+  - component: {fileID: 8170003835661903615}
   m_Layer: 0
   m_Name: Tool
   m_TagString: Untagged
@@ -101,6 +102,19 @@ CircleCollider2D:
   m_Offset: {x: 0.065, y: 0.02}
   serializedVersion: 2
   m_Radius: 0.05
+--- !u!114 &8170003835661903615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2757942699389356334}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a24a84397e4c7b48af1d453182d00c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _tool: {fileID: 0}
 --- !u!1 &3990767330827543436
 GameObject:
   m_ObjectHideFlags: 0
@@ -117,6 +131,8 @@ GameObject:
   - component: {fileID: 42439239051031086}
   - component: {fileID: 2790624865313416131}
   - component: {fileID: 8256633367574107426}
+  - component: {fileID: -9028565078457139675}
+  - component: {fileID: -5405953324294079245}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -327,4 +343,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce71f7907f67f0545ab7d3db14e0c4d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inventory: {fileID: 0}
+  inventory: {fileID: -9028565078457139675}
+--- !u!114 &-9028565078457139675
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3990767330827543436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4235205ffc5942448890eaca5202249, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resources:
+    m_keys: []
+    m_values: 
+--- !u!114 &-5405953324294079245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3990767330827543436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45272b8d0b355254baaf2e9dacd03182, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weapons:
+    m_keys: []
+    m_values: 

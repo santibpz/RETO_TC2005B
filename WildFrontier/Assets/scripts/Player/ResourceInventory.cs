@@ -30,6 +30,14 @@ public class ResourceInventory : MonoBehaviour
 
     public int AddResource(Resource type)
     {
-        return resources[type];
+        if (!resources.TryGetValue(type, out int currentCount))
+        {
+            resources.Add(type, 1);
+            return 1;
+        } else
+        {
+            return resources[type] += 1;
+             
+        }
     }
 }

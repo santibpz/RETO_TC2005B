@@ -24,9 +24,9 @@ public class CollectResources : MonoBehaviour
 
         if(newResource)
         {
+            Destroy(newResource.gameObject);
             inventory.AddResource(newResource.resourceType);
-        }
-
-        Destroy(collision.gameObject);
+        } 
+        
     }
 }

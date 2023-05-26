@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4074293032408115777}
   - component: {fileID: 4460564138703845565}
   - component: {fileID: 8414563034534314235}
+  - component: {fileID: -2442694901962173653}
   m_Layer: 0
   m_Name: HarvestableObject
   m_TagString: Untagged
@@ -4831,6 +4832,19 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 1}
   serializedVersion: 2
   m_Radius: 2.5
+--- !u!114 &-2442694901962173653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2836238458556874769}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43f2e424bb1b64b4a979186a2bdfba5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collectableResource: {fileID: 733490481869937931, guid: d0f740be1c7d9ba40b16769943337034, type: 3}
 --- !u!1001 &898026193090785898
 PrefabInstance:
   m_ObjectHideFlags: 0

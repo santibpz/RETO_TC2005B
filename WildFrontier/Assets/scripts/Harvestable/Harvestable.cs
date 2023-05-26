@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class Harvestable : MonoBehaviour
 {
+    [SerializeField] public ToolType toolType;
     // variable to check if the resources spawned has gone above the count
     [SerializeField] int harvestLimit;
 
