@@ -7,13 +7,13 @@ using UnityEngine;
 
 public class Weapon : ScriptableObject
 {
-    [SerializeField] string name;
+    [SerializeField] public string name;
     [SerializeField] string type;
-    [SerializeField] int woodRequirement;
-    [SerializeField] int rockRequirement;
+    [SerializeField] public int woodRequirement;
+    [SerializeField] public int rockRequirement;
     [SerializeField] int damage;
     [SerializeField] int speed;
     [SerializeField] int reload;
-    [SerializeField] Sprite icon;
+    [SerializeField] public Sprite icon;
 
 }

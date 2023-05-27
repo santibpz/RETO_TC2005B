@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ResourceInventory : MonoBehaviour
 {
-    [SerializeField] SerializableDictionary<Resource, int> resources;
+    [SerializeField] public SerializableDictionary<Resource, int> resources;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,8 +17,9 @@ public class ResourceInventory : MonoBehaviour
         
     }
 
-    public int GetResourceCount(Resource type)
+    public int GetResourceCount(Resource type) // function to get resource count
     {
+        
         if(resources.TryGetValue(type, out int currentCount))
         {
             return currentCount;
@@ -28,16 +29,27 @@ public class ResourceInventory : MonoBehaviour
         }
     }
 
-    public int AddResource(Resource type)
+    public int AddResource(Resource type) // function to add resources
     {
-        if (!resources.TryGetValue(type, out int currentCount))
+        if (!resources.TryGetValue(type, out int currentCount)) // check if resource already exists in dictionary
         {
-            resources.Add(type, 1);
+            resources.Add(type, 1); // if not, add resource
             return 1;
         } else
         {
-            return resources[type] += 1;
+            return resources[type] += 1; // if resource exists, add one to the resource count
              
+        }
+    }
+
+    public void UpdateInventory(Resource type, int newValue)
+    {
+        if(newValue < 0) // check that new resource value is not negative
+        {
+            resources[type] = 0;
+        } else
+        {
+            resources[type] = newValue; // update resource count with new value
         }
     }
 }
