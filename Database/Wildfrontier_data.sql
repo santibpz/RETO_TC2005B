@@ -36,7 +36,6 @@ INSERT INTO Player_Weapon (Player_ID, weapon_id, damage, speed, w_reload) VALUES
 (6, 6, 55, 75, 3),
 (7, 7, 50, 80, 2),
 (8, 8, 40, 90, 3),
-(9, 8, 40, 90, 3),
 (9, 9, 60, 70, 2),
 (10, 10, 70, 60, 3);
 
