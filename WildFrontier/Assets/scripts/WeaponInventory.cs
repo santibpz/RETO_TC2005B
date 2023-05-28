@@ -34,7 +34,7 @@ public class WeaponInventory : MonoBehaviour
 
         if(weaponSlots!=null)
         {
-            weaponSlots[0].SetActive(true);
+            //weaponSlots[0].SetActive(true);
             weaponSlots[0].GetComponent<Image>().sprite = weapon.icon;
         }
     }

@@ -5,7 +5,26 @@ using UnityEngine;
 
 public class BuildWeapon : MonoBehaviour
 {
-    [SerializeField] Weapon weapon;
+    public Weapon weapon
+    {
+        get
+        {
+            return _weapon;
+        }
+        set
+        {
+            if (_weapon != value)
+            {
+                _weapon = value;
+                // update the sprite
+                //UpdateSprite();
+            }
+        }
+    }
+
+    public Weapon _weapon;
+    public bool selectionChanged = false;
+
     [SerializeField] ResourceInventory resourceInventory;
     [SerializeField] WeaponInventory weaponInventory;
 
@@ -17,26 +36,39 @@ public class BuildWeapon : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        woodRequirement = weapon.woodRequirement;
-        rockRequirement = weapon.rockRequirement;
+        woodRequirement = _weapon.woodRequirement;
+        rockRequirement = _weapon.rockRequirement;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if(_weapon!= null && selectionChanged == true)
+        {
+            selectionChanged = false;
+            woodRequirement = _weapon.woodRequirement;
+            rockRequirement = _weapon.rockRequirement;
+        }
     }
 
     public void Build() 
     {
 
-        Debug.Log($"{weapon.name} requires {woodRequirement} woods and {rockRequirement}");
+        Debug.Log($"{_weapon.name} requires {woodRequirement} woods and {rockRequirement}");
 
-        //Debug.Log("keys are" + resourceInventory.resources.Keys);
-        int currentWoodAmount = resourceInventory.GetResourceCount(wood);
-        int currentRockAmount = resourceInventory.GetResourceCount(rock);
+        if(_weapon == null)
+        {
+            Debug.Log("No weapon selected");
+        }
+        else
+        {
+            //Debug.Log("keys are" + resourceInventory.resources.Keys);
+            int currentWoodAmount = resourceInventory.GetResourceCount(wood);
+            int currentRockAmount = resourceInventory.GetResourceCount(rock);
+
+            CheckIfCanBuild(currentWoodAmount, currentRockAmount);
+        }
         
-        CheckIfCanBuild(currentWoodAmount, currentRockAmount);
         
 
     }
@@ -46,14 +78,14 @@ public class BuildWeapon : MonoBehaviour
 
         if (currentWoodAmount >= woodRequirement && currentRockAmount >= rockRequirement)
         {
-            if(weaponInventory.weapons.ContainsKey(weapon))
+            if(weaponInventory.weapons.ContainsKey(_weapon))
             {
                 Debug.Log("weapon already exists in inventory");
                 return;
             } else
             {
                 // allow player to build weapon
-                weaponInventory.AddWeaponToInventory(weapon);
+                weaponInventory.AddWeaponToInventory(_weapon);
                 Debug.Log("Weapon successfully created");
 
                 // update resource inventory
