@@ -9,6 +9,7 @@ TagManager:
   - BlueH
   - RedH
   - WeaponSlot
+  - Inventory
   layers:
   - Default
   - TransparentFX
