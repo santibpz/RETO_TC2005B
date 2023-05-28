@@ -60,7 +60,6 @@ public class BuildWeapon : MonoBehaviour
                 resourceInventory.UpdateInventory(wood, currentWoodAmount - woodRequirement);
                 resourceInventory.UpdateInventory(rock, currentRockAmount - rockRequirement);
 
-                // add weapon sprite to a slot in the inventory
             }
             
 

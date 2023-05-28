@@ -10,6 +10,7 @@ TagManager:
   - RedH
   - WeaponSlot
   - Inventory
+  - ResourceSlot
   layers:
   - Default
   - TransparentFX
