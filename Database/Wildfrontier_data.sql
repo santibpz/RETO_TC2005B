@@ -116,3 +116,6 @@ INSERT INTO Death_Count (status_id, wolf_death_count, player_death_count) VALUES
 (8, 2, 2),
 (9, 1, 1),
 (10, 0, 3);
+
+
+
