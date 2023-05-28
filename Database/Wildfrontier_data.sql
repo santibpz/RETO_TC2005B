@@ -116,3 +116,9 @@ INSERT INTO Death_Count (status_id, wolf_death_count, player_death_count) VALUES
 (8, 2, 2),
 (9, 1, 1),
 (10, 0, 3);
+
+
+-- Queries
+use wildfrontier;
+SELECT w.w_name, w.w_type, w.upgrade_count FROM Weapon w ORDER BY w.upgrade_count DESC LIMIT 2;
+
