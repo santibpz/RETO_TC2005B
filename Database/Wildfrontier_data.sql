@@ -1,5 +1,6 @@
 -- Wildfrontier data
 
+SET AUTOCOMMIT=0;
 INSERT INTO Player (Username, Passw, Email) VALUES
 ('player1', 'password1', 'player1@example.com'),
 ('player2', 'password2', 'player2@example.com'),
@@ -12,6 +13,7 @@ INSERT INTO Player (Username, Passw, Email) VALUES
 ('player9', 'password9', 'player9@example.com'),
 ('player10', 'password10', 'player10@example.com');
 
+SET AUTOCOMMIT=0;
 INSERT INTO Weapon (w_name, w_type, upgrade_count) VALUES
 ('Sword', 'Short range', 3),
 ('Bow', 'Long range', 2),
@@ -24,6 +26,7 @@ INSERT INTO Weapon (w_name, w_type, upgrade_count) VALUES
 ('Bow', 'Long range', 3),
 ('Sword', 'Short range', 4);
 
+SET AUTOCOMMIT=0;
 INSERT INTO Player_Weapon (Player_ID, weapon_id, damage, speed, w_reload) VALUES
 (1, 1, 50, 80, 2),
 (2, 2, 40, 90, 3),
@@ -36,6 +39,7 @@ INSERT INTO Player_Weapon (Player_ID, weapon_id, damage, speed, w_reload) VALUES
 (9, 9, 60, 70, 2),
 (10, 10, 70, 60, 3);
 
+SET AUTOCOMMIT=0;
 INSERT INTO Item_inventory (item_name, i_type) VALUES
 ('Health Potion', 'Potion'),
 ('Mana Potion', 'Potion'),
@@ -48,6 +52,7 @@ INSERT INTO Item_inventory (item_name, i_type) VALUES
 ('Ring', 'Accessory'),
 ('Gem', 'Misc');
 
+SET AUTOCOMMIT=0;
 INSERT INTO Player_item (Player_ID, item_id, quantity) VALUES
 (1, 1, 5),
 (2, 2, 3),
@@ -60,6 +65,7 @@ INSERT INTO Player_item (Player_ID, item_id, quantity) VALUES
 (9, 9, 1),
 (10, 10, 4);
 
+SET AUTOCOMMIT=0;
 INSERT INTO Player_Status (Player_ID, completed_levels, current_level, last_checkpoint) VALUES
 (1, 5, 6, 3),
 (2, 3, 4, 2),
@@ -72,6 +78,7 @@ INSERT INTO Player_Status (Player_ID, completed_levels, current_level, last_chec
 (9, 6, 7, 4),
 (10, 3, 4, 2);
 
+SET AUTOCOMMIT=0;
 INSERT INTO G_Level (lvl_name, difficulty, level_lose_count) VALUES
 ('Level 1', 'Easy', 0),
 ('Level 2', 'Medium', 1),
@@ -84,6 +91,7 @@ INSERT INTO G_Level (lvl_name, difficulty, level_lose_count) VALUES
 ('Level 9', 'Medium', 1),
 ('Level 10', 'Hard', 4);
 
+SET AUTOCOMMIT=0;
 INSERT INTO Player_level (Player_ID, level_id, player_lose_count) VALUES
 (1, 1, 0),
 (2, 2, 1),
@@ -96,6 +104,7 @@ INSERT INTO Player_level (Player_ID, level_id, player_lose_count) VALUES
 (9, 9, 2),
 (10, 10, 3);
 
+SET AUTOCOMMIT=0;
 INSERT INTO Death_Count (status_id, wolf_death_count, player_death_count) VALUES
 (1, 2, 1),
 (2, 0, 3),
