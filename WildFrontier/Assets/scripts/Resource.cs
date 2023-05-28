@@ -7,5 +7,5 @@ using UnityEngine;
 public class Resource : ScriptableObject
 {
     [SerializeField] string name;
-    [SerializeField] Sprite icon;
+    [SerializeField] public Sprite icon;
 }

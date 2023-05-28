@@ -8,6 +8,10 @@ TagManager:
   - Wooden
   - BlueH
   - RedH
+  - WeaponSlot
+  - Inventory
+  - ResourceSlot
+  - Build
   layers:
   - Default
   - TransparentFX
