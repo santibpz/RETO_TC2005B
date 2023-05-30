@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class Harvesting : MonoBehaviour
 {
+    [SerializeField] Tool _tool;
+    private SpriteRenderer spriteRenderer;
     public Tool tool
     {
         get
@@ -35,15 +37,13 @@ public class Harvesting : MonoBehaviour
         }
     }
 
-    [SerializeField] Tool _tool;
-    private SpriteRenderer spriteRenderer;
 
     private void Start()
     {
-        spriteRenderer = GetComponent<SpriteRenderer>();
-        UpdateSprite();
+        spriteRenderer = GetComponent<SpriteRenderer>(); // get the spriterenderer component
+        UpdateSprite(); // update the sprite if the tool selection changes
     }
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D collision) // check when the tool collides with either a rock or a tree
     {
         Harvestable harvestable = collision.GetComponent<Harvestable>();
         if(harvestable != null && harvestable.toolType == tool.type)

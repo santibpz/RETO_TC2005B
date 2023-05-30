@@ -1,3 +1,4 @@
+// script for setting the different state animations
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
