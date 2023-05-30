@@ -8,13 +8,14 @@ using TMPro;
 public class WeaponInventory : MonoBehaviour
 {
     [SerializeField] public SerializableDictionary<Weapon, bool> weapons;
-
-    private GameObject[] weaponSlots;
+    [SerializeField] GameObject[] weaponSlots;
+    int avaliableWeaponSlot = 0;
 
     // Start is called before the first frame update
     void Start()
     {
-        weaponSlots = GameObject.FindGameObjectsWithTag("WeaponSlot");
+        
+        
     }
 
     // Update is called once per frame
@@ -35,8 +36,19 @@ public class WeaponInventory : MonoBehaviour
         if(weaponSlots!=null)
         {
             //weaponSlots[0].SetActive(true);
-            weaponSlots[0].GetComponent<Image>().sprite = weapon.icon;
+            SetWeaponToInventorySlot(weapon);
+        }
+        else
+        {
+            Debug.Log("if not entered");
         }
     }
 
+    private void SetWeaponToInventorySlot(Weapon weapon)
+    {
+        weaponSlots[avaliableWeaponSlot].GetComponent<Image>().sprite = weapon.icon;
+        weaponSlots[avaliableWeaponSlot].GetComponent<SetAttackWeapon>().weapon = weapon;
+        avaliableWeaponSlot++;
+        
+    }
 }
