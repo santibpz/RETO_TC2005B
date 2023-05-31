@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3933ec47889c443469041352fa4eee9e, type: 3}
-  m_Name: DirectionalAnimationSet_attack
+  m_Name: DirectionalAnimation_useTool
   m_EditorClassIdentifier: 
-  Up: {fileID: 7400000, guid: 812fe5dd7760bd141aaa11ef6b1f5864, type: 2}
-  Down: {fileID: 7400000, guid: 7f0d4f491dc79b5458509f241958034f, type: 2}
-  Left: {fileID: 7400000, guid: 33b6d485867ab32458f2fb26ae3784de, type: 2}
-  Right: {fileID: 7400000, guid: deb94f086559da744a57e5a41e30a7d8, type: 2}
+  Up: {fileID: 7400000, guid: 1a84f9637b20c634e9d57d1067417a88, type: 2}
+  Down: {fileID: 7400000, guid: 3e107c29ddfa7744088bee510711a1c6, type: 2}
+  Left: {fileID: 7400000, guid: c94010f3dfef4ad4ebdb36aaad49ddbc, type: 2}
+  Right: {fileID: 7400000, guid: 227a61434fa517648bebb18d296e5f73, type: 2}

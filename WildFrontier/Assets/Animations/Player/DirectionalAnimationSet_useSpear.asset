@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3933ec47889c443469041352fa4eee9e, type: 3}
+  m_Name: DirectionalAnimationSet_useSpear
+  m_EditorClassIdentifier: 
+  Up: {fileID: 7400000, guid: c8761883321481e4f886882df8aae932, type: 2}
+  Down: {fileID: 7400000, guid: 705db5e4c53dad64ba5b4b956748b52a, type: 2}
+  Left: {fileID: 7400000, guid: a831f02d9df777e4eb9b7abee81b918d, type: 2}
+  Right: {fileID: 7400000, guid: 36a9a60f6c449de419be946e96f906ea, type: 2}
