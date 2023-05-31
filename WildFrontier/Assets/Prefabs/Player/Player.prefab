@@ -182,19 +182,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1077054b005d4014e9bf60dd45850ac5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  attack: {fileID: 2385620506719385167}
   moveSpeed: 300
   Idle: {fileID: 11400000, guid: b51935bcaa0ea4c4fb1aa77f303b5b5f, type: 2}
   Walk: {fileID: 11400000, guid: 3957bff9630cc04469eca7266fdeed78, type: 2}
-  Use: {fileID: 11400000, guid: 63caef3cb38017a49b7092734a8b22d1, type: 2}
+  UseTool: {fileID: 11400000, guid: 63caef3cb38017a49b7092734a8b22d1, type: 2}
+  UseSword: {fileID: 11400000, guid: bc1b25fe7efacf141b63abb756c36e8f, type: 2}
+  UseSpear: {fileID: 11400000, guid: 926b4ddacf433944faffda4c4ae2ce84, type: 2}
   StateAnimations:
     m_keys:
     - {fileID: 11400000, guid: b51935bcaa0ea4c4fb1aa77f303b5b5f, type: 2}
     - {fileID: 11400000, guid: 63caef3cb38017a49b7092734a8b22d1, type: 2}
     - {fileID: 11400000, guid: 3957bff9630cc04469eca7266fdeed78, type: 2}
+    - {fileID: 11400000, guid: bc1b25fe7efacf141b63abb756c36e8f, type: 2}
+    - {fileID: 11400000, guid: 926b4ddacf433944faffda4c4ae2ce84, type: 2}
     m_values:
     - {fileID: 11400000, guid: cb70485f4e632b64aaf69c685256e69b, type: 2}
     - {fileID: 11400000, guid: 38f68bb3e8066d444b68f7eeec3b4338, type: 2}
     - {fileID: 11400000, guid: 4b8aeb87052af9c4a8f9ca68062c9fd5, type: 2}
+    - {fileID: 11400000, guid: 955a10405417fea42b936539b5583e9b, type: 2}
+    - {fileID: 11400000, guid: ef0e00d84339cf74ea3b36a2d4074ef0, type: 2}
 --- !u!95 &1297159195911220014
 Animator:
   serializedVersion: 5
@@ -385,7 +392,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8803900373231230391}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.146, y: 0.187, z: 0}
+  m_LocalPosition: {x: 0.174, y: 0.211, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -433,7 +440,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: e6abe839f591ab247b1a44e8a8f48f52, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -441,7 +448,7 @@ SpriteRenderer:
   m_Size: {x: 0.32, y: 0.32}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &2385620506719385167

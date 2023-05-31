@@ -7,6 +7,7 @@ public class PlayerController : MonoBehaviour
 {
     private Vector2 movementInput;
     private Vector2 facingDirection;
+    [SerializeField] Attack attack;
 
     private Rigidbody2D rb;
     [SerializeField] float moveSpeed;
@@ -15,7 +16,11 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] CharacterState Walk;
 
-    [SerializeField] CharacterState Use;
+    [SerializeField] CharacterState UseTool;
+
+    [SerializeField] CharacterState UseSword;
+
+    [SerializeField] CharacterState UseSpear;
 
 
     [SerializeField] StateAnimationsSetDictionary StateAnimations;
@@ -100,9 +105,26 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    private void GetAttackState()
+    {
+        if(attack.weaponToUse.name == "sword")
+        {
+            CurrentState = UseSword;
+        } else if(attack.weaponToUse.name == "spear")
+        {
+            CurrentState = UseSpear;
+        }
+    }
+
     private void OnUse()
     {
-        CurrentState = Use;
+        CurrentState = UseTool;
+    }
+
+    private void OnAttack()
+    {
+        Debug.Log("attack action trigggered");
+        GetAttackState();
     }
 
 
