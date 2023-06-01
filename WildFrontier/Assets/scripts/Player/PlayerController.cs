@@ -113,6 +113,9 @@ public class PlayerController : MonoBehaviour
         } else if(attack.weaponToUse.name == "spear")
         {
             CurrentState = UseSpear;
+        } else
+        {
+            return;
         }
     }
 
