@@ -3,6 +3,7 @@
 import express from "express";
 import mysql from "mysql2/promise";
 import fs from "fs";
+import { log } from "console";
 
 const app = express();
 const port = 3000;
@@ -37,13 +38,52 @@ app.post("/api/signup", async (req, res) => {
     //console.log("body of request: ", req.body)
     const newPlayer = req.body
     const {username, password, email} = newPlayer
+    let connection = null
     try {
-        let connection = await connectToDB()
-        const [results, fields] = connection.query("insert into Player(username, password, email) values(?, ?, ?)", [username, password, email])
-        res.json(results)
-    } catch(err) {
-        console.log(err)
+        connection = await connectToDB()
+        const [results, fields] = await connection.query("insert into Player(username, password, email) values(?, ?, ?)", [username, password, email])
+        // res.json(results)
+        console.log(results)
+        if(results.serverStatus == 2) { 
+
+          res.status(200).send('OK')
+        }
+        console.log("results of post op: ", results) 
+    } 
+    catch(err) {
+      res.status(500).json({err}) 
+    } 
+    finally {
+      if (connection !== null) {
+              connection.end();
+              console.log("Connection closed succesfully!");
+            }
     }
+})
+
+app.post('/api/login', async (req, res) => {
+  const credentials = req.body
+  const { username, password } = credentials 
+  let connection = null
+  try {
+    connection = await connectToDB()
+    const [results, fields] = await connection.query("select player_id, username from Player where username like ? and password like ?", [username, password])
+
+    results == false ? // if no results are registered 
+    res.status(400).json({error: "invalid credentials"}) : // invalid credentials message 
+    res.status(200).json(results) // result sent
+    
+ 
+  } catch (err) { 
+    res.status(500).json({error: "internal server error"})
+  }
+
+  finally {
+    if (connection !== null) {
+            connection.end();
+            console.log("Connection closed succesfully!");
+          }
+  }
 })
 
 // app.get("/", (request, response) => {
