@@ -129,28 +129,28 @@ public class CreatePlayer : MonoBehaviour
         string jsonData = JsonUtility.ToJson(newPlayer);
 
         Debug.Log("BODY: " + jsonData);
-        yield return jsonData;
+        //yield return jsonData;
         // Send using the Put method:
         // https://stackoverflow.com/questions/68156230/unitywebrequest-post-not-sending-body
-        //using (UnityWebRequest www = UnityWebRequest.Put(url + endpoint, jsonData))
-        //{
-        //    //UnityWebRequest www = UnityWebRequest.Post(url + getUsersEP, form);
-        //    // Set the method later, and indicate the encoding is JSON
-        //    www.method = "POST";
-        //    www.SetRequestHeader("Content-Type", "application/json");
-        //    yield return www.SendWebRequest();
+        using (UnityWebRequest www = UnityWebRequest.Put(url + endpoint, jsonData))
+        {
+            //UnityWebRequest www = UnityWebRequest.Post(url + getUsersEP, form);
+            // Set the method later, and indicate the encoding is JSON
+            www.method = "POST";
+            www.SetRequestHeader("Content-Type", "application/json");
+            yield return www.SendWebRequest();
 
-        //    if (www.result == UnityWebRequest.Result.Success)
-        //    {
-        //        Debug.Log("Response: " + www.downloadHandler.text);
-        //        //if (errorText != null) errorText.text = "";
-        //    }
-        //    else
-        //    {
-        //        Debug.Log("Error: " + www.error);
-        //        //if (errorText != null) errorText.text = "Error: " + www.error;
-        //    }
-        //}
+            if (www.result == UnityWebRequest.Result.Success)
+            {
+                Debug.Log("Response: " + www.downloadHandler.text);
+                //if (errorText != null) errorText.text = "";
+            }
+            else
+            {
+                Debug.Log("Error: " + www.error);
+                //if (errorText != null) errorText.text = "Error: " + www.error;
+            }
+        }
     }
 
 
