@@ -52,4 +52,14 @@ public class Attack : MonoBehaviour
         }
 
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.gameObject.CompareTag("Enemy"))
+        {
+            EnemyController enemyController = collision.gameObject.GetComponent<EnemyController>();
+            enemyController.enemy.health -= _weapon.damage;
+            Debug.Log($"{enemyController.enemy.name} enemey new health is: {enemyController.enemy.health}");
+        }
+    }
 }

@@ -8,30 +8,25 @@ using UnityEngine.AI;
 
 public class EnemyController : MonoBehaviour
 {
-    [SerializeField] Enemy enemy;
+    [SerializeField] public Enemy enemy;
     [SerializeField] GameObject player;
     [SerializeField] GameObject wolf;
-    private NavMeshAgent enemyAgent;
-    int target;
+    public NavMeshAgent enemyAgent;
+    [SerializeField] float attackRadius;
 
-    List<Vector2>TargetPosition = new List<Vector2>();
-
-
+    [SerializeField] ImpalerMovement impaler;
     // Start is called before the first frame update
     void Start()
     {
         enemyAgent = GetComponent<NavMeshAgent>();
         enemyAgent.updateRotation = false;
         enemyAgent.updateUpAxis = false;
-        InitializeTargetPositions();
     }
 
 
     // Update is called once per frame
     void Update()
     {
-
-        //enemyAgent.SetDestination(TargetPosition[target]);
         
         if(enemy.name == "Impaler" || enemy.name == "Marauder")
         {
@@ -40,21 +35,29 @@ public class EnemyController : MonoBehaviour
         {
             enemyAgent.SetDestination(wolf.transform.position);
         }
-        
+        TriggerAttack();
+
+
     }
 
-    private void InitializeTargetPositions()
+    private void TriggerAttack()
     {
-       
-            Vector2 playerTarget = new Vector2(player.transform.position.x, player.transform.position.y);
-            Vector2 wolfTarget = new Vector2(wolf.transform.position.x, wolf.transform.position.y);
-            TargetPosition.Add(playerTarget);
-            TargetPosition.Add(wolfTarget);
-            target = UnityEngine.Random.Range(0, 2);
-            Debug.Log("player target: "+ playerTarget);
-            Debug.Log("wolf target: " + wolfTarget);
-
+        if(enemy.name == "Impaler")
+        {
+            if (Vector3.Distance(enemyAgent.transform.position, player.transform.position) <= attackRadius)
+            {
+                enemyAgent.isStopped = true;
+                impaler.animator.SetBool("isInAttackRange", true);
+            }
+            else
+            {
+                enemyAgent.isStopped = false;
+                impaler.animator.SetBool("isInAttackRange", false);
+            }
+        }
         
     }
+
+    
 
 }
