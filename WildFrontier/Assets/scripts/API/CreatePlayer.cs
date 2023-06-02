@@ -23,13 +23,6 @@ public class Player
     public string email;
 }
 
-// Allow the class to be extracted from Unity
-//[System.Serializable]
-//public class UserList
-//{
-//    public List<User> users;
-//}
-
 public class CreatePlayer : MonoBehaviour
 {
 
@@ -38,74 +31,15 @@ public class CreatePlayer : MonoBehaviour
     [SerializeField] TMP_InputField password;
     [SerializeField] string url;
     [SerializeField] string endpoint;
+    [SerializeField] Message notification;
 
-    //[SerializeField] Text errorText;
-
-    // This is where the information from the api will be extracted
-    //public UserList allUsers;
-
-    // Update is called once per frame
-    void Update()
+    public void InsertNewPlayer()
     {
-        /*
-        if (Input.GetKeyDown(KeyCode.Space)) {
-            QueryUsers();
-        }
-        if (Input.GetKeyDown(KeyCode.N)) {
-            InsertNewUser();
-        }
-        */
+        StartCoroutine(AddPlayer());
     }
 
-    // Show the results of the Query in the Unity UI elements,
-    // via another script that fills a scrollview
-    //void DisplayUsers()
-    //{
-    //    TMPro_Test texter = GetComponent<TMPro_Test>();
-    //    texter.LoadNames(allUsers);
-    //}
 
-    // These are the functions that must be called to interact with the API
-
-    //public void QueryUsers()
-    //{
-    //    StartCoroutine(GetUsers());
-    //}
-
-    public void InsertNewUser()
-    {
-        StartCoroutine(AddUser());
-    }
-
-    ////////////////////////////////////////////////////
-    // These functions make the connection to the API //
-    ////////////////////////////////////////////////////
-
-    //IEnumerator GetUsers()
-    //{
-    //    using (UnityWebRequest www = UnityWebRequest.Get(url + getUsersEP))
-    //    {
-    //        yield return www.SendWebRequest();
-
-    //        if (www.result == UnityWebRequest.Result.Success)
-    //        {
-    //            //Debug.Log("Response: " + www.downloadHandler.text);
-    //            // Compose the response to look like the object we want to extract
-    //            // https://answers.unity.com/questions/1503047/json-must-represent-an-object-type.html
-    //            string jsonString = "{\"users\":" + www.downloadHandler.text + "}";
-    //            allUsers = JsonUtility.FromJson<UserList>(jsonString);
-    //            DisplayUsers();
-    //            if (errorText != null) errorText.text = "";
-    //        }
-    //        else
-    //        {
-    //            Debug.Log("Error: " + www.error);
-    //            if (errorText != null) errorText.text = "Error: " + www.error;
-    //        }
-    //    }
-    //}
-
-    IEnumerator AddUser()
+    IEnumerator AddPlayer()
     {
         /*
         // This should work with an API that does NOT expect JSON
@@ -125,17 +59,16 @@ public class CreatePlayer : MonoBehaviour
         Debug.Log($"username is : {newPlayer.username}");
         Debug.Log($"password is : {newPlayer.password}");
         Debug.Log($"email is : {newPlayer.email}");
-        //Debug.Log("USER: " + testUser);
         string jsonData = JsonUtility.ToJson(newPlayer);
 
         Debug.Log("BODY: " + jsonData);
-        //yield return jsonData;
+
         // Send using the Put method:
         // https://stackoverflow.com/questions/68156230/unitywebrequest-post-not-sending-body
+
         using (UnityWebRequest www = UnityWebRequest.Put(url + endpoint, jsonData))
         {
-            //UnityWebRequest www = UnityWebRequest.Post(url + getUsersEP, form);
-            // Set the method later, and indicate the encoding is JSON
+          
             www.method = "POST";
             www.SetRequestHeader("Content-Type", "application/json");
             yield return www.SendWebRequest();
@@ -143,55 +76,16 @@ public class CreatePlayer : MonoBehaviour
             if (www.result == UnityWebRequest.Result.Success)
             {
                 Debug.Log("Response: " + www.downloadHandler.text);
-                //if (errorText != null) errorText.text = "";
+                string succesMessage = www.downloadHandler.text;
+                notification.Send(succesMessage);
             }
             else
             {
                 Debug.Log("Error: " + www.error);
-                //if (errorText != null) errorText.text = "Error: " + www.error;
+                string errorMessage = www.downloadHandler.text;
+                notification.Send(errorMessage);
             }
         }
     }
 
-
-    ////////////////////////////////////////////////////
-    // These functions allow making a callback after the API request finishes
-    ////////////////////////////////////////////////////
-
-    // Test function to get a response and act accordingly
-    // https://answers.unity.com/questions/24640/how-do-i-return-a-value-from-a-coroutine.html
-    //public void GetResults()
-    //{
-    //    UserList localUsers;
-    //    // Call the IEnumerator and pass a lambda function to be called
-    //    StartCoroutine(GetUsersString((reply) => {
-    //        localUsers = JsonUtility.FromJson<UserList>(reply);
-    //        DisplayUsers();
-    //    }));
-    //}
-
-    // Sending the data back to the caller of the Coroutine, using a callback
-    // https://answers.unity.com/questions/24640/how-do-i-return-a-value-from-a-coroutine.html
-    //IEnumerator GetUsersString(System.Action<string> callback)
-    //{
-    //    using (UnityWebRequest www = UnityWebRequest.Get(url + getUsersEP))
-    //    {
-    //        yield return www.SendWebRequest();
-
-    //        if (www.result == UnityWebRequest.Result.Success)
-    //        {
-    //            //Debug.Log("Response: " + www.downloadHandler.text);
-    //            // Compose the response to look like the object we want to extract
-    //            // https://answers.unity.com/questions/1503047/json-must-represent-an-object-type.html
-    //            string jsonString = "{\"users\":" + www.downloadHandler.text + "}";
-    //            callback(jsonString);
-    //            if (errorText != null) errorText.text = "";
-    //        }
-    //        else
-    //        {
-    //            Debug.Log("Error: " + www.error);
-    //            if (errorText != null) errorText.text = "Error: " + www.error;
-    //        }
-    //    }
-    //}
 }
