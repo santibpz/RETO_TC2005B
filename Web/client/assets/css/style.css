@@ -9,6 +9,15 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+@font-face {
+  font-family: "OldGameFatty";
+  src: "./OldGameFatty.ttf"
+}
+
+* {
+  font-family: "OldGameFatty";
+}
+
 body {
   background: #fff;
   color: #666666;
@@ -141,7 +150,7 @@ h6 {
   font-weight: 700;
   letter-spacing: 3px;
   padding-left: 10px;
-  border-left: 4px solid #18d26e;
+  border-left: 4px
 }
 
 #header .logo a {
