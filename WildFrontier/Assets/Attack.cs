@@ -29,6 +29,7 @@ public class Attack : MonoBehaviour
     void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
+        UpdateSprite();
     }
 
     // Update is called once per frame
@@ -39,8 +40,16 @@ public class Attack : MonoBehaviour
 
     private void UpdateSprite()
     {
-        
+
+        if (_weapon != null)
+        {
             spriteRenderer.sprite = _weapon.icon;
-        
+
+        }
+        else
+        {
+            spriteRenderer.sprite = null;
+        }
+
     }
 }
