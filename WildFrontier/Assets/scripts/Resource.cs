@@ -6,6 +6,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "Resource", menuName = "WildFrontier/Resource")]
 public class Resource : ScriptableObject
 {
-    [SerializeField] string name;
+    [SerializeField] public int item_id;
+    [SerializeField] public string item_name;
     [SerializeField] public Sprite icon;
 }

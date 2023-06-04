@@ -5,7 +5,7 @@ create schema WildFrontier;
 use wildfrontier;
 
 create table Player(
-player_id tinyint unsigned not null auto_increment,
+player_id int unsigned not null auto_increment,
 username varchar(30) not null,
 password varchar(30) not null,
 email varchar (45) not null, 
@@ -22,7 +22,7 @@ primary key (weapon_id)
 
 create table Player_Weapon(
 player_weapon_id tinyint unsigned not null auto_increment,
-player_id tinyint unsigned not null,
+player_id int unsigned not null,
 weapon_id tinyint unsigned not null,
 weapon_damage smallint not null,
 weapon_speed smallint not null,
@@ -33,7 +33,7 @@ foreign key (weapon_id) references Weapon (weapon_id) ON DELETE RESTRICT ON UPDA
 )ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 create table Item_inventory (
-item_id tinyint unsigned not null auto_increment,
+item_id int unsigned not null auto_increment,
 item_name varchar(30) not null,
 item_type varchar(30) not null,
 primary key (item_id)
@@ -41,8 +41,8 @@ primary key (item_id)
 
 create table Player_Item(
 player_item_id tinyint unsigned not null auto_increment,
-player_id tinyint unsigned not null,
-item_id tinyint unsigned not null,
+player_id int unsigned not null,
+item_id int unsigned not null,
 quantity smallint not null,
 primary key (player_item_id),
 foreign key (player_id) references Player (player_id) ON DELETE RESTRICT ON UPDATE CASCADE,
@@ -51,7 +51,7 @@ foreign key (item_id) references Item_inventory (item_id) ON DELETE RESTRICT ON 
 
 create table Player_Status(
 player_status_id tinyint unsigned not null auto_increment,
-player_id tinyint unsigned not null,
+player_id int unsigned not null,
 completed_levels smallint not null,
 current_level smallint not null,
 last_checkpoint smallint not null,
@@ -69,7 +69,7 @@ primary key (level_id)
 
 create table Player_level(
 player_lvl_id tinyint unsigned not null auto_increment,
-player_id tinyint unsigned not null,
+player_id int unsigned not null,
 level_id tinyint unsigned not null,
 player_lose_count smallint not null,
 primary key (player_lvl_id),

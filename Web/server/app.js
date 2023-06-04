@@ -3,7 +3,6 @@
 import express from "express";
 import mysql from "mysql2/promise";
 import fs from "fs";
-import { log } from "console";
 
 const app = express();
 const port = 3000;
@@ -26,7 +25,7 @@ app.get("/api/players", async (req, res) => {
   try {
     let connection = await connectToDB();
     const [results, fields] = await connection.execute("select * from Player");
-    res.json(results)
+    res.json(results);
   } catch (err) {
     console.log(err);
   }
@@ -35,56 +34,123 @@ app.get("/api/players", async (req, res) => {
 // endpoint to create a new player account
 
 app.post("/api/signup", async (req, res) => {
-    //console.log("body of request: ", req.body)
-    const newPlayer = req.body
-    const {username, password, email} = newPlayer
-    let connection = null
-    try {
-        connection = await connectToDB()
-        const [results, fields] = await connection.query("insert into Player(username, password, email) values(?, ?, ?)", [username, password, email])
-        // res.json(results)
-        console.log(results)
-        if(results.serverStatus == 2) { 
-
-          res.status(200).send('OK')
-        }
-        console.log("results of post op: ", results) 
-    } 
-    catch(err) {
-      res.status(500).json({err}) 
-    } 
-    finally {
-      if (connection !== null) {
-              connection.end();
-              console.log("Connection closed succesfully!");
-            }
+  //console.log("body of request: ", req.body)
+  const newPlayer = req.body;
+  const { username, password, email } = newPlayer;
+  let connection = null;
+  try {
+    connection = await connectToDB(); 
+    const [results, fields] = await connection.query(
+      "insert into Player(username, password, email) values(?, ?, ?)",
+      [username, password, email]
+    );
+    // res.json(results)
+    console.log(results);
+    if (results.serverStatus == 2) {
+      res.status(200).send("Account Successfully Created");
     }
-})
+    console.log("results of post op: ", results);
+  } catch (err) {
+    res.status(500).send("There was an error creating the account.\n Try again later.");
+  } finally {
+    if (connection !== null) {
+      connection.end();
+      console.log("Connection closed succesfully!");
+    }
+  }
+});
 
-app.post('/api/login', async (req, res) => {
-  const credentials = req.body
-  const { username, password } = credentials 
+app.post("/api/login", async (req, res) => {
+  const credentials = req.body;
+  const { username, password } = credentials;
+  let connection = null;
+  try {
+    connection = await connectToDB();
+    const [results, fields] = await connection.query(
+      "select player_id, username from Player where username = ? and password = ?",
+      [username, password]
+    );
+
+    console.log(results)
+
+    const playerFound = results ? results[0] : null // player, if exists
+    // console.log("these are results", results)
+
+    !playerFound  // if no player was found, send message `invalid credentials`
+      ? res.status(400).send("invalid credentials") // invalid credentials message
+      : res.status(200).json(playerFound); // send player if found
+  } catch (err) {
+    res.status(500).send("internal server error");
+  } finally {
+    if (connection !== null) {
+      connection.end();
+      console.log("Connection closed succesfully!");
+    }
+  }
+});
+
+
+app.get('/api/playerStatus/:id', async (req, res) => {
   let connection = null
+  console.log(req.params.id)
   try {
     connection = await connectToDB()
-    const [results, fields] = await connection.query("select player_id, username from Player where username like ? and password like ?", [username, password])
+    const [results, fields] = await connection.query("CALL player_status(?)", Number(req.params.id))
+    const playerStatus = results ? results[0][0] : null
+    console.log(playerStatus)                
+    !playerStatus ?
+    res.status(400).send("No player status was found") :
+    res.status(200).json(playerStatus)
 
-    results == false ? // if no results are registered 
-    res.status(400).json({error: "invalid credentials"}) : // invalid credentials message 
-    res.status(200).json(results) // result sent
-    
+  } catch(err) {
+    res.status(500).send("internal server error");
  
-  } catch (err) { 
-    res.status(500).json({error: "internal server error"})
-  }
-
-  finally {
+  } finally {
     if (connection !== null) {
-            connection.end();
-            console.log("Connection closed succesfully!");
-          }
+      connection.end();
+      console.log("Connection closed succesfully!");
+    }
   }
 })
+
+ 
+app.put('/api/updateResources', async (req, res) => {
+  const update = req.body
+  const { player_id, item_id } = update
+
+  console.log(update)
+
+
+  let connection = null   
+  try {
+    
+    connection = await connectToDB()
+    const [results, fields] = await connection.query("CALL update_resources(?, ?)", [player_id, item_id])
+    
+    console.log("update results", results)
+    results.affectedRows == 1 ? // when one row is affected, the update operation was successful
+    res.status(200).send('ok') :
+    res.status(400).send('Error updating database')
+
+  } catch(err) {  
+    console.log("err in catch", err)
+    res.status(500).send("internal server error");
+ 
+  } finally {
+    if (connection !== null) {
+      connection.end();
+      console.log("Connection closed succesfully!");
+    }
+  }
+})
+
+
+
+
+
+
+
+
 
 // app.get("/", (request, response) => {
 //   fs.readFile("./public/html/mysqlUseCases.html", "utf8", (err, html) => {
