@@ -117,3760 +117,3760 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: impaler (2)_0
+      name: impaler (2) 2_0
       rect:
         serializedVersion: 2
         x: 0
         y: 1280
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 24525a09be9ed9249800987cba56ad5b
-      internalID: 941533135
+      spriteID: 05a0d5b9d6fe85b4a9e93c783bf6f6aa
+      internalID: 128026708
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_1
+      name: impaler (2) 2_1
       rect:
         serializedVersion: 2
         x: 64
         y: 1280
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 365bd07d0ae54234f897a337187af2d4
-      internalID: -70551323
+      spriteID: ae6215f6c72fe4542a0bf1a8a607e582
+      internalID: 975636798
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_2
+      name: impaler (2) 2_2
       rect:
         serializedVersion: 2
         x: 128
         y: 1280
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 14b0b16da30b7c14081325c8811e681e
-      internalID: 1724949399
+      spriteID: 2945b961b276f29458ece6b6717e34f8
+      internalID: 845678015
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_3
+      name: impaler (2) 2_3
       rect:
         serializedVersion: 2
         x: 192
         y: 1280
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6ae284376c54269469f413d3ec5528a2
-      internalID: -28930488
+      spriteID: af2b020f2f8f56442ae113fd35386c66
+      internalID: -1378344151
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_4
+      name: impaler (2) 2_4
       rect:
         serializedVersion: 2
         x: 256
         y: 1280
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7fb7e69852148544bbf8d6258d6ab542
-      internalID: 526616145
+      spriteID: b4d0598fbbfbe184f911afa8e481d7db
+      internalID: 197197425
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_5
+      name: impaler (2) 2_5
       rect:
         serializedVersion: 2
         x: 320
         y: 1280
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c8635845953afb3469c11618416d65bb
-      internalID: -731990209
+      spriteID: 2bebf97d39c6c7a4883bf370f2baa9ef
+      internalID: -490275130
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_6
+      name: impaler (2) 2_6
       rect:
         serializedVersion: 2
         x: 384
         y: 1280
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4466e185b98a27c4194b55272ea8b500
-      internalID: -1270964120
+      spriteID: 9cbc21ee10a5de44a8828ea6f71e72c9
+      internalID: 1267506601
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_7
+      name: impaler (2) 2_7
       rect:
         serializedVersion: 2
         x: 448
         y: 1280
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2b9c1a36b9ecbc147a936cf3d1d6fc75
-      internalID: -1945486801
+      spriteID: b4f55520e9d81604ebc2cd47d2b77312
+      internalID: 2057332202
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_8
+      name: impaler (2) 2_8
       rect:
         serializedVersion: 2
         x: 0
         y: 1216
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a71119919f49d964387babd24b309f8b
-      internalID: 516952936
+      spriteID: 312f6010e4fd1854fac9df8198292030
+      internalID: 1086580683
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_9
+      name: impaler (2) 2_9
       rect:
         serializedVersion: 2
         x: 64
         y: 1216
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bcdccddae0b2e4c46978fddbb7d200d0
-      internalID: -157451548
+      spriteID: 69eae5ecada2d6749b5078188871a849
+      internalID: 727192161
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_10
+      name: impaler (2) 2_10
       rect:
         serializedVersion: 2
         x: 128
         y: 1216
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a3ad1e031b6ba9a4d8903378fbf6d196
-      internalID: -229484835
+      spriteID: 4adb152d82935614f9a6a40e77f39edc
+      internalID: -2006668224
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_11
+      name: impaler (2) 2_11
       rect:
         serializedVersion: 2
         x: 192
         y: 1216
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d7c7fdd8dcf620941af8a6e5726c2051
-      internalID: -1785242682
+      spriteID: 62e3eeb4770dde64ca090767dcb258a7
+      internalID: -805439080
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_12
+      name: impaler (2) 2_12
       rect:
         serializedVersion: 2
         x: 256
         y: 1216
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 032714386148bd54abbfa8ac08200f51
-      internalID: 1880323076
+      spriteID: 5062415540e85724c9ee3a964149a3e5
+      internalID: 1951213293
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_13
+      name: impaler (2) 2_13
       rect:
         serializedVersion: 2
         x: 320
         y: 1216
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 16f3286a92cc00847abdf27f16305b16
-      internalID: -1546352810
+      spriteID: fe1b71c4e9786ec43a2fd02fb4e35491
+      internalID: 1405330361
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_14
+      name: impaler (2) 2_14
       rect:
         serializedVersion: 2
         x: 384
         y: 1216
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3ad5352e0dd806d4a85fb899af8e5fc0
-      internalID: -1371045417
+      spriteID: ab0fc8cd276947b498f07d833ba60a5b
+      internalID: 159976390
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_15
+      name: impaler (2) 2_15
       rect:
         serializedVersion: 2
         x: 0
         y: 1152
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 27e350a4c2288b54e86cb09fd8e1b6b1
-      internalID: 2138757421
+      spriteID: 075c53e1219abfb4da0016324b66c83a
+      internalID: 2121871007
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_16
+      name: impaler (2) 2_16
       rect:
         serializedVersion: 2
         x: 64
         y: 1152
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3884d544bb11df34f985ac23f11fd1f8
-      internalID: 153729096
+      spriteID: 67c5353ba197b994d879e6f2f4a95a33
+      internalID: 820644746
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_17
+      name: impaler (2) 2_17
       rect:
         serializedVersion: 2
         x: 128
         y: 1152
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: db6213909547ece4b8047501960019ee
-      internalID: -540147546
+      spriteID: 76c87356a64c2f347848cafc0a167571
+      internalID: 1462363250
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_18
+      name: impaler (2) 2_18
       rect:
         serializedVersion: 2
         x: 192
         y: 1152
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9dd481594a0659f499fbdd7793b68174
-      internalID: 1755289885
+      spriteID: 24d2c4f0331456a47a9ad4a126c46527
+      internalID: 1495712168
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_19
+      name: impaler (2) 2_19
       rect:
         serializedVersion: 2
         x: 256
         y: 1152
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 650a88b4a47296a4ea45ec1b1c872bff
-      internalID: -837621661
+      spriteID: 9ce1b7039a815654bba1e3e94f125b50
+      internalID: 303385247
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_20
+      name: impaler (2) 2_20
       rect:
         serializedVersion: 2
         x: 320
         y: 1152
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 139e6b33c68749b4e88735a13e649339
-      internalID: 1695606356
+      spriteID: 393ba095b257c874fbc59d33eee0b422
+      internalID: 1190844697
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_21
+      name: impaler (2) 2_21
       rect:
         serializedVersion: 2
         x: 384
         y: 1152
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2667d29e5d4c7d6468e93c3d007b391b
-      internalID: -1317147487
+      spriteID: e31e6b34ff3697e4eac7205f725c0b3b
+      internalID: -1650290296
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_22
+      name: impaler (2) 2_22
       rect:
         serializedVersion: 2
         x: 0
         y: 1088
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fb556e79d21d0ff40aa60f8bce821061
-      internalID: -698888702
+      spriteID: 1e30efc96c17a69468d0a13ec9a1da5a
+      internalID: -368060919
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_23
+      name: impaler (2) 2_23
       rect:
         serializedVersion: 2
         x: 64
         y: 1088
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 78a74649cd36e3447bf07f91bc8015d6
-      internalID: 1309088567
+      spriteID: 8f98172767b7b9540bcdc25dec238871
+      internalID: -357698912
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_24
+      name: impaler (2) 2_24
       rect:
         serializedVersion: 2
         x: 128
         y: 1088
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 44fe9ace3debac24eb6435ed7b350d14
-      internalID: 2125430454
+      spriteID: 0a6e2874770403e4f9bab9ad18a5491e
+      internalID: 1230642277
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_25
+      name: impaler (2) 2_25
       rect:
         serializedVersion: 2
         x: 192
         y: 1088
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 46c7bf689bd71194db569e0a5cba7314
-      internalID: -1037512031
+      spriteID: 7f5b9fdc808128d4eaf28dfbdd2a349d
+      internalID: -1078266328
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_26
+      name: impaler (2) 2_26
       rect:
         serializedVersion: 2
         x: 256
         y: 1088
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 70b8a634de377084c861b62e49e2ca72
-      internalID: 1766111774
+      spriteID: c461770c3efe6c447bfe29a3d520fd86
+      internalID: 773874281
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_27
+      name: impaler (2) 2_27
       rect:
         serializedVersion: 2
         x: 320
         y: 1088
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d1207e6c4853d094993aa50915e7bad7
-      internalID: -2049369071
+      spriteID: c28f7271ea539554e92831acce795b9b
+      internalID: 1716567176
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_28
+      name: impaler (2) 2_28
       rect:
         serializedVersion: 2
         x: 384
         y: 1088
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9b7eb9bed69b3364583c3c0d28bd9f1e
-      internalID: 1029029259
+      spriteID: 6e2283c5912d19046a9fd1d8bf878561
+      internalID: -476207118
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_29
+      name: impaler (2) 2_29
       rect:
         serializedVersion: 2
         x: 0
         y: 1024
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 101ad62ec15400547b7ae51a297d0535
-      internalID: -1296188432
+      spriteID: 43f1da5f165799b43a4ef36622e2be15
+      internalID: -964801128
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_30
+      name: impaler (2) 2_30
       rect:
         serializedVersion: 2
         x: 64
         y: 1024
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 21843e68b1c30a3419ea196ee65eecb8
-      internalID: -26921134
+      spriteID: 49975b4906753cd4dad6d381fc1745b5
+      internalID: 578523818
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_31
+      name: impaler (2) 2_31
       rect:
         serializedVersion: 2
         x: 128
         y: 1024
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 301d6c1b645bc484299216010952703d
-      internalID: 1516657763
+      spriteID: 4cfada521923c794d805950bd6ec9c8f
+      internalID: 984059473
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_32
+      name: impaler (2) 2_32
       rect:
         serializedVersion: 2
         x: 192
         y: 1024
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 626fb0546eef3f44fa01ecb1dcd0952c
-      internalID: -756204714
+      spriteID: 1d1206087689d534e9d330e6922e0ce5
+      internalID: -957018219
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_33
+      name: impaler (2) 2_33
       rect:
         serializedVersion: 2
         x: 256
         y: 1024
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9d7c1610db80fc64ca33640631fd67c9
-      internalID: -1577543945
+      spriteID: 14f1df9c3ce087c418ae0a4a90b56429
+      internalID: 1748123202
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_34
+      name: impaler (2) 2_34
       rect:
         serializedVersion: 2
         x: 320
         y: 1024
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 08a00335841b934469ba15773b5a467e
-      internalID: 1354691349
+      spriteID: 96d045f0191877142a9b1f6bb846065e
+      internalID: -1212231339
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_35
+      name: impaler (2) 2_35
       rect:
         serializedVersion: 2
         x: 384
         y: 1024
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3089841700db45649b7bb073d0c3b403
-      internalID: 1555956311
+      spriteID: ea7bb4cf45a1f984a85c83c1a4063138
+      internalID: 27272858
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_36
+      name: impaler (2) 2_36
       rect:
         serializedVersion: 2
         x: 448
         y: 1024
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 301fa8caa53d1f040b9382c2cb5de717
-      internalID: 564293097
+      spriteID: 622ab2669f91ceb47b52d86bfaa66fc9
+      internalID: -378123581
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_37
+      name: impaler (2) 2_37
       rect:
         serializedVersion: 2
         x: 0
         y: 960
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4a75efc8410ec6f49ae12a652a07b711
-      internalID: 1235847159
+      spriteID: dacceeb889402ba48b105b133ebb95bf
+      internalID: 1352005378
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_38
+      name: impaler (2) 2_38
       rect:
         serializedVersion: 2
         x: 64
         y: 960
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ac1ce118b7b69e74d9b841cca7d9ad9a
-      internalID: 1437433826
+      spriteID: d2632ef6a342cf74fb0789990c19198f
+      internalID: -1768990328
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_39
+      name: impaler (2) 2_39
       rect:
         serializedVersion: 2
         x: 128
         y: 960
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 63ce4486f0eb1624eb16880e74cd6a51
-      internalID: -1744381920
+      spriteID: 95c91a3daadd38942b8b54b7f6308a34
+      internalID: 1094717810
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_40
+      name: impaler (2) 2_40
       rect:
         serializedVersion: 2
         x: 192
         y: 960
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e1316ae82835ce94c8b8bbfb80fd6f56
-      internalID: 1187626832
+      spriteID: a50836c96883db64d9ac03a81f7f8c82
+      internalID: -1838330188
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_41
+      name: impaler (2) 2_41
       rect:
         serializedVersion: 2
         x: 256
         y: 960
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 79b7e12bb2a13d44c94f048cea053a26
-      internalID: -1714280382
+      spriteID: 8c6ff15d531b9a54db0ba0c8b2cc3b62
+      internalID: 89288287
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_42
+      name: impaler (2) 2_42
       rect:
         serializedVersion: 2
         x: 320
         y: 960
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aa48fb9ab74518f4badce3fb1dcf8979
-      internalID: -1684106873
+      spriteID: 6df6457fe843b9647b5c5c70c0b6a38d
+      internalID: -3097865
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_43
+      name: impaler (2) 2_43
       rect:
         serializedVersion: 2
         x: 384
         y: 960
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 16f6ff57228ed4d4eb13e7d845cb70d1
-      internalID: -618729267
+      spriteID: bd8a5a92dc63aed4d8fec8008c316641
+      internalID: 2004954675
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_44
+      name: impaler (2) 2_44
       rect:
         serializedVersion: 2
         x: 448
         y: 960
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a9ad62291032d1944ac0f5493cc2f7ed
-      internalID: -618049228
+      spriteID: 0c448e741bf12b54ebe6300c767d2fd6
+      internalID: 1870696768
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_45
+      name: impaler (2) 2_45
       rect:
         serializedVersion: 2
         x: 0
         y: 896
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cac4d6f4a8c7bf143be42f5238d704c6
-      internalID: 956530346
+      spriteID: ede74f93a04af2f48a6ea080ec37175c
+      internalID: -111570134
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_46
+      name: impaler (2) 2_46
       rect:
         serializedVersion: 2
         x: 64
         y: 896
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5162701849bca404889180000bdf91b0
-      internalID: 757838725
+      spriteID: 8a8d87500d4fc074992ac64544228a15
+      internalID: -888953687
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_47
+      name: impaler (2) 2_47
       rect:
         serializedVersion: 2
         x: 128
         y: 896
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 45758cf95d09b9641bb7c7868d6577ff
-      internalID: -1468835932
+      spriteID: dc3625f0c5f2dde4ab2cf34efdd991e5
+      internalID: 1787662288
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_48
+      name: impaler (2) 2_48
       rect:
         serializedVersion: 2
         x: 192
         y: 896
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0d1fbaf1f1c2d8b4c93f11d3cae2d896
-      internalID: -272703233
+      spriteID: 3c49d6becf02917449b16b2c47ae8ed8
+      internalID: 1228533179
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_49
+      name: impaler (2) 2_49
       rect:
         serializedVersion: 2
         x: 256
         y: 896
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4a3d1942aa364f8418cc5a31e5ce3f1d
-      internalID: -1084054811
+      spriteID: c50c1533954981c42a42caf7a2855afd
+      internalID: -1246900835
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_50
+      name: impaler (2) 2_50
       rect:
         serializedVersion: 2
         x: 320
         y: 896
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f39ada16b4770cd43856fe455626ca4c
-      internalID: 1218057146
+      spriteID: f7a736f435b85134e82587f06c39bc95
+      internalID: -712202480
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_51
+      name: impaler (2) 2_51
       rect:
         serializedVersion: 2
         x: 384
         y: 896
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0276b23d68277fc43a78e56927bf44bf
-      internalID: -408032997
+      spriteID: 60a3299200051964d9101c4dd1d2ea09
+      internalID: 501366514
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_52
+      name: impaler (2) 2_52
       rect:
         serializedVersion: 2
         x: 448
         y: 896
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8d734ff5ab2e8f14a9484cf9f76efefe
-      internalID: 744239295
+      spriteID: 34a3d06921a7e7d49b7240d607ec17ac
+      internalID: 1318477528
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_53
+      name: impaler (2) 2_53
       rect:
         serializedVersion: 2
         x: 0
         y: 832
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6be827ec60fd39d4f9c4a364ebb27a7d
-      internalID: -646245211
+      spriteID: 4d3348c5cca9bf04b937309275d7f93c
+      internalID: 1058612096
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_54
+      name: impaler (2) 2_54
       rect:
         serializedVersion: 2
         x: 64
         y: 832
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9f1c45f7ba7314f4a8e4696d93effe82
-      internalID: 1422715829
+      spriteID: 2e2e709c5a717dd478ac32643630538d
+      internalID: 1921262375
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_55
+      name: impaler (2) 2_55
       rect:
         serializedVersion: 2
         x: 128
         y: 832
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2a40102606003424ebce343442b57b1a
-      internalID: 493061400
+      spriteID: ecb90b1fa2ca25143b8a8d2115a3cd5d
+      internalID: 1953897026
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_56
+      name: impaler (2) 2_56
       rect:
         serializedVersion: 2
         x: 192
         y: 832
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d81e7da79e86c4f4a80f2b992c87b816
-      internalID: -2061856896
+      spriteID: 96b47d605abceea4aae143c982dd9662
+      internalID: -1389959046
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_57
+      name: impaler (2) 2_57
       rect:
         serializedVersion: 2
         x: 256
         y: 832
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 89f0b8ea5a070634d85c249f069f72b3
-      internalID: -1882454140
+      spriteID: 4eef296993a94c94ea8ef2ca5b2d7421
+      internalID: 1447165326
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_58
+      name: impaler (2) 2_58
       rect:
         serializedVersion: 2
         x: 320
         y: 832
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 51bc492dd4f067b45a0a37f996e78cd9
-      internalID: 702815004
+      spriteID: a06cf1d265f10a740b5c21e5f8f3c781
+      internalID: 1482658155
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_59
+      name: impaler (2) 2_59
       rect:
         serializedVersion: 2
         x: 384
         y: 832
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8c4c3eb8edfa5934aa2bc7537bc83a9b
-      internalID: -1048287117
+      spriteID: 89b6dbcf43dffb341ae0ebade2e959a5
+      internalID: 19278135
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_60
+      name: impaler (2) 2_60
       rect:
         serializedVersion: 2
         x: 448
         y: 832
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1d1103847ad7d9d448c2f91b320db1f1
-      internalID: -1222734499
+      spriteID: 9e8b6ad05299c26428fa254150e3e782
+      internalID: 1064006031
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_61
+      name: impaler (2) 2_61
       rect:
         serializedVersion: 2
         x: 0
         y: 768
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2cf093c68acaddb4fbe65adb94f42caa
-      internalID: -1034152648
+      spriteID: 0883006d95509df46bc7d510f003ce07
+      internalID: -845826536
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_62
+      name: impaler (2) 2_62
       rect:
         serializedVersion: 2
         x: 64
         y: 768
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b17661335d75b894e8e3cbfc5d025028
-      internalID: -32773559
+      spriteID: be13bcaed7abfbe4bb38573606986f54
+      internalID: -604695555
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_63
+      name: impaler (2) 2_63
       rect:
         serializedVersion: 2
         x: 128
         y: 768
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b95890ba60812d549882ed2000aa66bf
-      internalID: 1706069532
+      spriteID: 82d08d62027a7734799a4f46f3126910
+      internalID: -110772052
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_64
+      name: impaler (2) 2_64
       rect:
         serializedVersion: 2
         x: 192
         y: 768
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a9ae81873b8391a4c85547a9ff0efa4a
-      internalID: 71797522
+      spriteID: 4d1c0f4946fa3ba4b834a87933075f01
+      internalID: -1352176100
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_65
+      name: impaler (2) 2_65
       rect:
         serializedVersion: 2
         x: 256
         y: 768
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5070704ab78c86549bbf362f99d6fbf7
-      internalID: 1555526230
+      spriteID: 3f2ab92c9af7f4246b09d39a8e736561
+      internalID: -955811464
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_66
+      name: impaler (2) 2_66
       rect:
         serializedVersion: 2
         x: 320
         y: 768
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cbf1962fb78f77a4b85a236af918b3c8
-      internalID: 801396511
+      spriteID: 42573a4ad2e114d4780e4a8069e44512
+      internalID: -1588144724
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_67
+      name: impaler (2) 2_67
       rect:
         serializedVersion: 2
         x: 384
         y: 768
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d378ac971e33fd340881d3a6ef9378e6
-      internalID: -1849358778
+      spriteID: 65573359795296f4e959527025508710
+      internalID: 442074365
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_68
+      name: impaler (2) 2_68
       rect:
         serializedVersion: 2
         x: 448
         y: 768
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 07285756cf9b5a546b63a039ceb73b60
-      internalID: 1086903950
+      spriteID: f2b7cf6ff3d6cad419c31ef57564a26c
+      internalID: 1477440078
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_69
+      name: impaler (2) 2_69
       rect:
         serializedVersion: 2
         x: 512
         y: 768
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c3d69e5f02c2290478d22e5bc647bbc2
-      internalID: -589847405
+      spriteID: 53dd27e5f65906349af8e2ef77567b37
+      internalID: -1281982124
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_70
+      name: impaler (2) 2_70
       rect:
         serializedVersion: 2
         x: 0
         y: 704
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1e4cf90ab545df24ea56f16175cfbbd5
-      internalID: 941715975
+      spriteID: 59a525c570ba0ad4ea2383572a801266
+      internalID: 76086866
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_71
+      name: impaler (2) 2_71
       rect:
         serializedVersion: 2
         x: 64
         y: 704
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: db5161516ca413d4eaf8249bd3739126
-      internalID: 1464685796
+      spriteID: 7726d742d969288459773b4fdb7ddc72
+      internalID: 1395405618
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_72
+      name: impaler (2) 2_72
       rect:
         serializedVersion: 2
         x: 128
         y: 704
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 378592d782da9fe4bbb3edd09dfc2cfa
-      internalID: 900566129
+      spriteID: 3933a55c408d7ac41b22898c84721937
+      internalID: -783005338
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_73
+      name: impaler (2) 2_73
       rect:
         serializedVersion: 2
         x: 192
         y: 704
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0860df980aeacfe46baa3c75b97453da
-      internalID: -1618259835
+      spriteID: c7f849b9ff6f17d4997580444e96717a
+      internalID: -1280156846
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_74
+      name: impaler (2) 2_74
       rect:
         serializedVersion: 2
         x: 256
         y: 704
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 93b549915d68783408308b9d2fdaf743
-      internalID: -830239166
+      spriteID: 5531fccbfe036d845a73e628053461ef
+      internalID: 343580535
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_75
+      name: impaler (2) 2_75
       rect:
         serializedVersion: 2
         x: 320
         y: 704
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 26665fbba2ff0194a9ca1d21ab95cf82
-      internalID: -463299016
+      spriteID: 6010d4b9dc394f348b31ae0c14614155
+      internalID: 631218130
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_76
+      name: impaler (2) 2_76
       rect:
         serializedVersion: 2
         x: 384
         y: 704
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 62558c0aa6fa52a479e5d518933ecfe5
-      internalID: 1587838846
+      spriteID: 803b9a31dc78d9f4b82e15c9f14ea7c0
+      internalID: -871611011
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_77
+      name: impaler (2) 2_77
       rect:
         serializedVersion: 2
         x: 448
         y: 704
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c48c3cb4a27361d46a19c96054ae3b1a
-      internalID: -39686467
+      spriteID: 6e8c3a4fbeb8db34b88c7c9bc2088e3e
+      internalID: -387544018
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_78
+      name: impaler (2) 2_78
       rect:
         serializedVersion: 2
         x: 512
         y: 704
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ab74165ea179d5a409ff48457973dc96
-      internalID: -1725579409
+      spriteID: 29a3b1bb5cc828c43afcab6cf51e8972
+      internalID: 694300831
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_79
+      name: impaler (2) 2_79
       rect:
         serializedVersion: 2
         x: 0
         y: 640
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d3d36bdb918282942894ed06cda88561
-      internalID: 221911494
+      spriteID: 76f5a441984c0cd45b5ea03e4956d945
+      internalID: -888597977
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_80
+      name: impaler (2) 2_80
       rect:
         serializedVersion: 2
         x: 64
         y: 640
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 793b368604fb10649a457c9e4645e2f6
-      internalID: 1420536810
+      spriteID: c2143512c67a8bd43a5536fa6f253b26
+      internalID: 1211099745
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_81
+      name: impaler (2) 2_81
       rect:
         serializedVersion: 2
         x: 128
         y: 640
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9993341c8d21f4f4f9c28813eb085038
-      internalID: 1645344528
+      spriteID: 974bb37abed22364798673d4e1422593
+      internalID: -578413453
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_82
+      name: impaler (2) 2_82
       rect:
         serializedVersion: 2
         x: 192
         y: 640
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6bae09f26d9807144ad3df137535724a
-      internalID: -346252501
+      spriteID: dd16401943dc8b845b77363163f63002
+      internalID: 1092553050
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_83
+      name: impaler (2) 2_83
       rect:
         serializedVersion: 2
         x: 256
         y: 640
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 833f51d2328383545b1c5f76806f5168
-      internalID: 2034677514
+      spriteID: 78311f942f5392b48b4664e8c8be615f
+      internalID: 401858757
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_84
+      name: impaler (2) 2_84
       rect:
         serializedVersion: 2
         x: 320
         y: 640
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5844cd1738f4b8f4793daa6ae0d8d2e8
-      internalID: -1324758937
+      spriteID: 16e67152a0f15934e9def094b4fb4b20
+      internalID: -1832458454
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_85
+      name: impaler (2) 2_85
       rect:
         serializedVersion: 2
         x: 384
         y: 640
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d91f7e0846da1c84288fc575e34dda0a
-      internalID: 1154065281
+      spriteID: 8eedaaae04d6711429fb325fdd71fbb1
+      internalID: -323448337
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_86
+      name: impaler (2) 2_86
       rect:
         serializedVersion: 2
         x: 448
         y: 640
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c21e5f5e0a16bf249b2336b9d9f09e43
-      internalID: -1991142068
+      spriteID: 6939d95e44cb0ab4c98c891aa8272fd6
+      internalID: 620252092
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_87
+      name: impaler (2) 2_87
       rect:
         serializedVersion: 2
         x: 512
         y: 640
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cf35b77e0a68cea4c820f2b1ea583437
-      internalID: 1798327710
+      spriteID: c5a17ff58302ee646b0054e5acda0c77
+      internalID: 883852096
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_88
+      name: impaler (2) 2_88
       rect:
         serializedVersion: 2
         x: 0
         y: 576
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b668f26c9ec3f7e4fbf3cb0aa9d5e80d
-      internalID: -2097721049
+      spriteID: eb2b000db2c1af64990745e8ed8a9dae
+      internalID: 838062254
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_89
+      name: impaler (2) 2_89
       rect:
         serializedVersion: 2
         x: 64
         y: 576
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d3603613274ef0642bc497ea06e0c121
-      internalID: 1165934809
+      spriteID: f0acdda46813d64458870bc10e806ff5
+      internalID: 1437899732
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_90
+      name: impaler (2) 2_90
       rect:
         serializedVersion: 2
         x: 128
         y: 576
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 200b9f76d9295f840b2bf2106a9719b9
-      internalID: -731647543
+      spriteID: e8b8c28116bc4db49b61eaa6720d5d39
+      internalID: 788184845
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_91
+      name: impaler (2) 2_91
       rect:
         serializedVersion: 2
         x: 192
         y: 576
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e4109bca9c199b8468a1257e8dd7eb7e
-      internalID: -2062632727
+      spriteID: b41b1ddeb07584043bc6d72ba546c1ab
+      internalID: -93562943
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_92
+      name: impaler (2) 2_92
       rect:
         serializedVersion: 2
         x: 256
         y: 576
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 65d0b53f350debe419141a7aad3ddd61
-      internalID: -963096702
+      spriteID: 0f9e7c6fbd3438e4cbe1cca67f87b8d6
+      internalID: 101224384
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_93
+      name: impaler (2) 2_93
       rect:
         serializedVersion: 2
         x: 320
         y: 576
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2093336fadf8bbb4e8b44732afeaabaa
-      internalID: -1205406452
+      spriteID: 00dd0b5f9c7b43447b84208b8e0149f8
+      internalID: 971896050
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_94
+      name: impaler (2) 2_94
       rect:
         serializedVersion: 2
         x: 384
         y: 576
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cba750b53c09a9241b478da9424199f9
-      internalID: -159841106
+      spriteID: d6280693ae6801140865366d7678f10a
+      internalID: 329784124
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_95
+      name: impaler (2) 2_95
       rect:
         serializedVersion: 2
         x: 448
         y: 576
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ba4f211eed182064696edd36d7a1e95f
-      internalID: -261392430
+      spriteID: 81a090ef76d4c5b43ac688c81a3e0b2d
+      internalID: -995632495
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_96
+      name: impaler (2) 2_96
       rect:
         serializedVersion: 2
         x: 512
         y: 576
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4d30fe03b65eb2247b529e79c0f90133
-      internalID: -1773210680
+      spriteID: 8cd293ded3ddf5f48b4e651931356839
+      internalID: 525350534
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_97
+      name: impaler (2) 2_97
       rect:
         serializedVersion: 2
         x: 0
         y: 512
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: db3282fab5abd4746bdf0a828546f3ee
-      internalID: 761345700
+      spriteID: c9e0575f20c21ff4092055b195db176e
+      internalID: -1830005609
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_98
+      name: impaler (2) 2_98
       rect:
         serializedVersion: 2
         x: 64
         y: 512
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4e102f24851c5264981ca800c652a248
-      internalID: -633293507
+      spriteID: dd5f8f621ee02c94e9bf3630018557eb
+      internalID: 466987710
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_99
+      name: impaler (2) 2_99
       rect:
         serializedVersion: 2
         x: 128
         y: 512
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 225677885333df040ab333ef4d0ae130
-      internalID: 328935763
+      spriteID: b2f72e1a76283cd44bfc9ebbb14420c2
+      internalID: -2008931337
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_100
+      name: impaler (2) 2_100
       rect:
         serializedVersion: 2
         x: 192
         y: 512
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fbd8846ffc9e14e49b48199a7eb4fdb5
-      internalID: -909734762
+      spriteID: 668ef69a7362fb64481f8857c350cce0
+      internalID: -2141091087
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_101
+      name: impaler (2) 2_101
       rect:
         serializedVersion: 2
         x: 256
         y: 512
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2df22e9a31618fb4184cc9a97d084364
-      internalID: -1615815741
+      spriteID: 9a39bdc9e3331aa4097457c745b20aa2
+      internalID: -2096627737
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_102
+      name: impaler (2) 2_102
       rect:
         serializedVersion: 2
         x: 320
         y: 512
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 75dda1e1f6786dc48890d2403de94937
-      internalID: 1640413407
+      spriteID: 8b245be194093954193af9d763ce2468
+      internalID: 1453479530
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_103
+      name: impaler (2) 2_103
       rect:
         serializedVersion: 2
         x: 0
         y: 448
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a57b5463e88c03046aec5331d951742d
-      internalID: 173849055
+      spriteID: 25212c9c043d3164e9301dc50a25b681
+      internalID: -1821227668
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_104
+      name: impaler (2) 2_104
       rect:
         serializedVersion: 2
         x: 64
         y: 448
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d3521b86b2d36e44c9b2bf313b229b61
-      internalID: -2042295507
+      spriteID: 4fef1de8e03df0048bba23e703e14c6c
+      internalID: 1457765410
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_105
+      name: impaler (2) 2_105
       rect:
         serializedVersion: 2
         x: 128
         y: 448
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1dc37444de1fd9244b36e1b841bea792
-      internalID: -12661344
+      spriteID: 77de01917c9fcc941a6c4b4494b340a4
+      internalID: -1396774000
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_106
+      name: impaler (2) 2_106
       rect:
         serializedVersion: 2
         x: 192
         y: 448
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8cbb6859304b4f34da580f2baa0882e9
-      internalID: 1928775088
+      spriteID: a2d4f459a6c96e7459ceeb9838bae33f
+      internalID: -1985019878
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_107
+      name: impaler (2) 2_107
       rect:
         serializedVersion: 2
         x: 256
         y: 448
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4419a043e0962bc4fa4ce9e68c3cff5b
-      internalID: 1053541553
+      spriteID: ce2a26178accee043b2aee9ddb706f72
+      internalID: -917589578
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_108
+      name: impaler (2) 2_108
       rect:
         serializedVersion: 2
         x: 320
         y: 448
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b760bda7fc078c44d82f1071ee27221f
-      internalID: -361816201
+      spriteID: 7fba4ace7b11f0d49bb5a012798c5779
+      internalID: 570799014
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_109
+      name: impaler (2) 2_109
       rect:
         serializedVersion: 2
         x: 0
         y: 384
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 62fb6446fe4c2b9479fa1f0ed54ec319
-      internalID: -1345132273
+      spriteID: 57041e745b0c5704cbbf072ac1d83e34
+      internalID: -2079898700
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_110
+      name: impaler (2) 2_110
       rect:
         serializedVersion: 2
         x: 64
         y: 384
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c17383cd580a5da49a7b63f5fd1ea545
-      internalID: 1240880915
+      spriteID: 38bf6053520383e4ca539c002bc1560d
+      internalID: 376686220
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_111
+      name: impaler (2) 2_111
       rect:
         serializedVersion: 2
         x: 128
         y: 384
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c6dbc1f090832ae48a4b630520296ec1
-      internalID: -994056313
+      spriteID: 03656e932eeb5b44190457da7108863f
+      internalID: -1502591704
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_112
+      name: impaler (2) 2_112
       rect:
         serializedVersion: 2
         x: 192
         y: 384
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 17272add5fb3f7745abb3a3d0cf69861
-      internalID: -2073893271
+      spriteID: ff581befae8f3584eb81df6ff77a96f5
+      internalID: 1383292224
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_113
+      name: impaler (2) 2_113
       rect:
         serializedVersion: 2
         x: 256
         y: 384
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f8d1aaee83823aa429cab9fd0b471cc6
-      internalID: 786486265
+      spriteID: d17fa7e9bfde3c648b6674accdc19ca6
+      internalID: 823873254
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_114
+      name: impaler (2) 2_114
       rect:
         serializedVersion: 2
         x: 320
         y: 384
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8c95a6be9c9ae2148a0da8fe7df1ac3f
-      internalID: -1809279274
+      spriteID: 82fadcb066884874d880966530d37b2d
+      internalID: -1245623844
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_115
+      name: impaler (2) 2_115
       rect:
         serializedVersion: 2
         x: 0
         y: 320
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ba3221e0363a1464d90d7a3bc4173912
-      internalID: -1102372479
+      spriteID: e4e604cd8bc22d1409ed49362572e132
+      internalID: 1127923068
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_116
+      name: impaler (2) 2_116
       rect:
         serializedVersion: 2
         x: 64
         y: 320
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 937ab99867da2174ca2b7a83a7939c9e
-      internalID: 1631971813
+      spriteID: a04462a9ebce28d4ead3a7bc50882d13
+      internalID: -1370252225
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_117
+      name: impaler (2) 2_117
       rect:
         serializedVersion: 2
         x: 128
         y: 320
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1401fe0a4ef907f4d9adead97e89b867
-      internalID: 1550690447
+      spriteID: c2837fd8d423b2c47adf9e610c092c0e
+      internalID: 1053234706
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_118
+      name: impaler (2) 2_118
       rect:
         serializedVersion: 2
         x: 192
         y: 320
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 137937b846ac76d44b781f15d6e9c7bf
-      internalID: 1290716624
+      spriteID: c53bba04c502c4e4898cae25c38a97c4
+      internalID: -604703308
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_119
+      name: impaler (2) 2_119
       rect:
         serializedVersion: 2
         x: 256
         y: 320
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 58ce42edb09f13544a1d5d8fe344f26a
-      internalID: -120630768
+      spriteID: 45d0831b8ac713c4ea9c3f6c32b4086f
+      internalID: -1241606391
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_120
+      name: impaler (2) 2_120
       rect:
         serializedVersion: 2
         x: 320
         y: 320
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 300f874c219d20e49937e902ca034d8e
-      internalID: -758523740
+      spriteID: 1c61b6dcfc44d5c43a6bce851f78e2c4
+      internalID: -402240620
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_121
+      name: impaler (2) 2_121
       rect:
         serializedVersion: 2
         x: 0
         y: 256
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 54910b4717595704cb59e6dba1219d9b
-      internalID: -260775034
+      spriteID: ff38af66e1f3bf54db5ee327b5019d66
+      internalID: -619711873
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_122
+      name: impaler (2) 2_122
       rect:
         serializedVersion: 2
         x: 64
         y: 256
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e8d09951f90433445b937bebb19d34ba
-      internalID: -2019768517
+      spriteID: 7824b078f47be794591e09c5431facdb
+      internalID: 2036806633
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_123
+      name: impaler (2) 2_123
       rect:
         serializedVersion: 2
         x: 128
         y: 256
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 90a4f575d74bd1345bf1635dc54dfc3b
-      internalID: -769256859
+      spriteID: c00323eee4cbc0e4897bf0eb2c6348d1
+      internalID: -382251192
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_124
+      name: impaler (2) 2_124
       rect:
         serializedVersion: 2
         x: 192
         y: 256
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 997c7c7930f6e0041bbda221c5120089
-      internalID: -1483830033
+      spriteID: e8ce033ae1f80844a871fd54815eab73
+      internalID: -1536161150
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_125
+      name: impaler (2) 2_125
       rect:
         serializedVersion: 2
         x: 256
         y: 256
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f9c86b671a2ef044799b438b030cd8ce
-      internalID: 491970761
+      spriteID: 5c381c7a3fc196f409a182cb11f1f441
+      internalID: 463842947
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_126
+      name: impaler (2) 2_126
       rect:
         serializedVersion: 2
         x: 320
         y: 256
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 161944e99fac702489dff931c51400e4
-      internalID: 1597191984
+      spriteID: 4552f7ab7adcc98429185754f07cbeba
+      internalID: -279644898
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_127
+      name: impaler (2) 2_127
       rect:
         serializedVersion: 2
         x: 384
         y: 256
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8faeb8ef332093a49b0d1127ab6d8498
-      internalID: 1140300580
+      spriteID: de5c413bf891cbe4e95f91d0ed082ebe
+      internalID: -2059996850
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_128
+      name: impaler (2) 2_128
       rect:
         serializedVersion: 2
         x: 448
         y: 256
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6c013163dff7b13429c3320e847112ac
-      internalID: 952112201
+      spriteID: 0b39660eb24abf8468bd1e13768f8e46
+      internalID: 860785570
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_129
+      name: impaler (2) 2_129
       rect:
         serializedVersion: 2
         x: 512
         y: 256
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 61ca1f5af13ff32488a32a19f75ba5c8
-      internalID: -901938498
+      spriteID: d2e9025e88f34a94bb9eaef12edce456
+      internalID: -27808228
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_130
+      name: impaler (2) 2_130
       rect:
         serializedVersion: 2
         x: 576
         y: 256
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0307fda4e6bd16d499cd13c3fd5e391b
-      internalID: -1732415796
+      spriteID: 87719085608d6c741b9aeaae738f299e
+      internalID: 106795900
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_131
+      name: impaler (2) 2_131
       rect:
         serializedVersion: 2
         x: 640
         y: 256
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8b9756fc89d60ea408c64e70397a3bc8
-      internalID: 251094227
+      spriteID: 9cedbaee56f7de84b8e69367359af58d
+      internalID: -2073683316
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_132
+      name: impaler (2) 2_132
       rect:
         serializedVersion: 2
         x: 704
         y: 256
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 40d9d9ff59e27f445927c03c565411de
-      internalID: 1148170173
+      spriteID: 51de05b17b6a2414aad77191e315845e
+      internalID: 498284618
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_133
+      name: impaler (2) 2_133
       rect:
         serializedVersion: 2
         x: 768
         y: 256
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 714df5c5daf8a214d93788b0d9d3617a
-      internalID: -1329447766
+      spriteID: 437c1d12c053f984dac92d746ed0d895
+      internalID: -959964537
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_134
+      name: impaler (2) 2_134
       rect:
         serializedVersion: 2
         x: 0
         y: 192
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 13fb59f1abfd90c4fbbab32bd60b4af1
-      internalID: -854958535
+      spriteID: 3fa970fc54faca84fafc83d49c408698
+      internalID: -1093629624
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_135
+      name: impaler (2) 2_135
       rect:
         serializedVersion: 2
         x: 64
         y: 192
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 708d156890176be4db108e46f4d1219c
-      internalID: 774799844
+      spriteID: bc538bd03c1486547a5f7861c9b30197
+      internalID: -937520157
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_136
+      name: impaler (2) 2_136
       rect:
         serializedVersion: 2
         x: 128
         y: 192
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 539436c3dac37ec4b8ec5ebac02ff364
-      internalID: 1305425847
+      spriteID: adc8541d3aac926429f6001ce04875d2
+      internalID: 2031346605
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_137
+      name: impaler (2) 2_137
       rect:
         serializedVersion: 2
         x: 192
         y: 192
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2b5eeef5f71818c4183f998f4b9029dc
-      internalID: 634888068
+      spriteID: 9fc6c6e097165054f8715f48b0504b21
+      internalID: 2110058828
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_138
+      name: impaler (2) 2_138
       rect:
         serializedVersion: 2
         x: 256
         y: 192
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f9e89e350a8a13b429dd62719dacb24a
-      internalID: -1800872296
+      spriteID: 38ad9cb187cf88f429fdd66978731c88
+      internalID: 1045498314
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_139
+      name: impaler (2) 2_139
       rect:
         serializedVersion: 2
         x: 320
         y: 192
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3a6f9b86e8cca6c4c96420dd8ed4cfce
-      internalID: -680585475
+      spriteID: e9afa1e28b4d7db4da9b346a59c5c7ba
+      internalID: -1364502118
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_140
+      name: impaler (2) 2_140
       rect:
         serializedVersion: 2
         x: 384
         y: 192
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a357edaa55d77f742beb25cae91b8db9
-      internalID: 1884060075
+      spriteID: 7cb12161e9e93174e93ceeff96257fb5
+      internalID: -1002981318
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_141
+      name: impaler (2) 2_141
       rect:
         serializedVersion: 2
         x: 448
         y: 192
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 11d3a08fee6b7124a970b10ff007510e
-      internalID: -38190810
+      spriteID: 4aa97fb8caa60df4c86635dba707236e
+      internalID: -980954242
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_142
+      name: impaler (2) 2_142
       rect:
         serializedVersion: 2
         x: 512
         y: 192
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: de691646cfe0bcb4da5c5dc09e1c9121
-      internalID: 1675320261
+      spriteID: c56db209acd905c4c813d730ed5bf67c
+      internalID: 1391651044
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_143
+      name: impaler (2) 2_143
       rect:
         serializedVersion: 2
         x: 576
         y: 192
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5a87f29c894b10c44be9f0a37cf6e23d
-      internalID: -1500452454
+      spriteID: 1ec26753f8c97dd46af79e53a8d8269e
+      internalID: -1728299226
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_144
+      name: impaler (2) 2_144
       rect:
         serializedVersion: 2
         x: 640
         y: 192
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 23e7c1332da5c18409306d516356caf0
-      internalID: 1193003262
+      spriteID: 45984febe181d47469cea6ca49ad2ee8
+      internalID: 192952992
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_145
+      name: impaler (2) 2_145
       rect:
         serializedVersion: 2
         x: 704
         y: 192
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cdf88814f43deb046b981095fb8572d9
-      internalID: -1033019326
+      spriteID: 33bc32c5e8208994a99c5ae0e458318c
+      internalID: -2140394339
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_146
+      name: impaler (2) 2_146
       rect:
         serializedVersion: 2
         x: 768
         y: 192
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3de72b2be825f9f489a19313af012a47
-      internalID: -1777713117
+      spriteID: ea7ce3490f2cbab40a5d415e0b94de00
+      internalID: -1914903482
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_147
+      name: impaler (2) 2_147
       rect:
         serializedVersion: 2
         x: 0
         y: 128
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 96c3e30b7f35a294fad2590e88450df9
-      internalID: -693103591
+      spriteID: b90dfa76ccb8e4a4081c300940524766
+      internalID: -2146047345
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_148
+      name: impaler (2) 2_148
       rect:
         serializedVersion: 2
         x: 64
         y: 128
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d2146f717b770d441b1c34a8fed01ab7
-      internalID: 917316484
+      spriteID: 020d2ba543291814cbdb36d31b6f7af2
+      internalID: 76510569
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_149
+      name: impaler (2) 2_149
       rect:
         serializedVersion: 2
         x: 128
         y: 128
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9addda258b50af442bd269888e7f446c
-      internalID: -290993193
+      spriteID: 082be36301041ac4883340cc5d82d533
+      internalID: 1559663149
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_150
+      name: impaler (2) 2_150
       rect:
         serializedVersion: 2
         x: 192
         y: 128
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b43de48bf14b88f44bb5170a9bede148
-      internalID: 1502026989
+      spriteID: e325b523ab224724b9b105c0130ba203
+      internalID: -1136065862
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_151
+      name: impaler (2) 2_151
       rect:
         serializedVersion: 2
         x: 256
         y: 128
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 121ea29efaa0d9440a06a2b12f781a37
-      internalID: 1679126272
+      spriteID: e1bd8eefd40be4e4abde69b83ae1db1f
+      internalID: 655984082
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_152
+      name: impaler (2) 2_152
       rect:
         serializedVersion: 2
         x: 320
         y: 128
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6442a51b44d922948b99ec2bd5f60d1e
-      internalID: 420748783
+      spriteID: 49d17d65caa483540991cc5737f61447
+      internalID: 524871115
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_153
+      name: impaler (2) 2_153
       rect:
         serializedVersion: 2
         x: 384
         y: 128
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7c68f54668bd1ca4c8e78a14bfb55cd3
-      internalID: -654056566
+      spriteID: 97adf95bc4102c44e82f0dc7c028ceab
+      internalID: 410131603
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_154
+      name: impaler (2) 2_154
       rect:
         serializedVersion: 2
         x: 448
         y: 128
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0ec0f45416d623a4eaa136444379602d
-      internalID: 1583512691
+      spriteID: 7052044d663140744ad07c283cb158e9
+      internalID: -1081635110
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_155
+      name: impaler (2) 2_155
       rect:
         serializedVersion: 2
         x: 512
         y: 128
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 363aaf0e93f2cf548983ceaba37a35b9
-      internalID: 1182046748
+      spriteID: 824a34d271ea9724ab1c6e8fed93460d
+      internalID: 1569220299
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_156
+      name: impaler (2) 2_156
       rect:
         serializedVersion: 2
         x: 576
         y: 128
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: de95c71cad6f7214abee3622ff25db56
-      internalID: -587060522
+      spriteID: c201efbb58e21484b9b49ee68f57d6dc
+      internalID: 272144286
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_157
+      name: impaler (2) 2_157
       rect:
         serializedVersion: 2
         x: 640
         y: 128
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d6ad6ef0bce998243a2d216b3b6bb27a
-      internalID: -1316571114
+      spriteID: c9fb8d168c91fc643a373fab42d60750
+      internalID: 1361580719
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_158
+      name: impaler (2) 2_158
       rect:
         serializedVersion: 2
         x: 704
         y: 128
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4e80f9226e668b14b9565d4050570089
-      internalID: -1221587304
+      spriteID: efa6df08400cb664b9b35af180fe73b3
+      internalID: 1974662629
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_159
+      name: impaler (2) 2_159
       rect:
         serializedVersion: 2
         x: 768
         y: 128
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e3bd1de5ce88cb34197c3f104c7d5b64
-      internalID: -1106888205
+      spriteID: eb423d42e575b714e864849f475e523b
+      internalID: 1791426666
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_160
+      name: impaler (2) 2_160
       rect:
         serializedVersion: 2
         x: 0
         y: 64
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 79d107d3b05fa154e902501015fb063d
-      internalID: -479970185
+      spriteID: 3536281cf170f2b4d87e79959a292fef
+      internalID: 723098728
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_161
+      name: impaler (2) 2_161
       rect:
         serializedVersion: 2
         x: 64
         y: 64
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6f4562dce4ddd9e49899f81401dda82e
-      internalID: 56145973
+      spriteID: 38da543fad1c5f040b800c73d88b505f
+      internalID: 855785176
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_162
+      name: impaler (2) 2_162
       rect:
         serializedVersion: 2
         x: 128
         y: 64
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 76d7fd413466bc541b2dac7978f2c185
-      internalID: -1052169198
+      spriteID: bb6f4ce180a09904ebc782d911612a55
+      internalID: -1296039264
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_163
+      name: impaler (2) 2_163
       rect:
         serializedVersion: 2
         x: 192
         y: 64
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 890b915f21dff1c40a81d3c96d21015c
-      internalID: -1085759796
+      spriteID: 9cf5b93a6b35af649a892346fb430c08
+      internalID: -1067104759
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_164
+      name: impaler (2) 2_164
       rect:
         serializedVersion: 2
         x: 256
         y: 64
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 21e7fa574a214fe419bb13537e86b195
-      internalID: 744950620
+      spriteID: c0209ec994c84cd48b382912168ad617
+      internalID: -1181215180
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_165
+      name: impaler (2) 2_165
       rect:
         serializedVersion: 2
         x: 320
         y: 64
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2b7a286a1d5ce4949bc062007e97897b
-      internalID: 1500579337
+      spriteID: 0d2a891940f06cf41b3fe39fc96a09a4
+      internalID: 2109273005
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_166
+      name: impaler (2) 2_166
       rect:
         serializedVersion: 2
         x: 384
         y: 64
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 367dba97095a15c47959f3a0cc61f112
-      internalID: -1124972352
+      spriteID: 3cce9d4d668e9a34ba498532ed6c30f7
+      internalID: -1005552848
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_167
+      name: impaler (2) 2_167
       rect:
         serializedVersion: 2
         x: 448
         y: 64
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5cd1f6f408f38c9428c3220011c9ddb3
-      internalID: 1979019602
+      spriteID: 971d17b1a740798468c329b6d033389c
+      internalID: 2135841756
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_168
+      name: impaler (2) 2_168
       rect:
         serializedVersion: 2
         x: 512
         y: 64
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4885053cb9fabc1489bd25c0c92e7c77
-      internalID: 425449507
+      spriteID: b9a3daf6668eb354094acf4c7c74593b
+      internalID: 1658234422
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_169
+      name: impaler (2) 2_169
       rect:
         serializedVersion: 2
         x: 576
         y: 64
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9c2cb38df06d5374e8d995387a55c673
-      internalID: 1074536811
+      spriteID: b088c363dec78be4ea54b303f9152ee2
+      internalID: -1451029669
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_170
+      name: impaler (2) 2_170
       rect:
         serializedVersion: 2
         x: 640
         y: 64
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c6e950d2f5a29b3478df82ef495158d4
-      internalID: -466505644
+      spriteID: 6b1c15cf5203d4941985e8b8ad7814ce
+      internalID: 1617351468
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_171
+      name: impaler (2) 2_171
       rect:
         serializedVersion: 2
         x: 704
         y: 64
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cec602fbd4cebd94198a17993112b85f
-      internalID: 1602031087
+      spriteID: e3cd334d9509b114598c89b8c13c4529
+      internalID: -164563662
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_172
+      name: impaler (2) 2_172
       rect:
         serializedVersion: 2
         x: 768
         y: 64
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dea7f94911832d34cb8171c7fc21b291
-      internalID: -495772421
+      spriteID: 4f9e29a6de7e51a44b4735ace4eba90c
+      internalID: 1667697923
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_173
+      name: impaler (2) 2_173
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fd88199e13c9b1b47955352e1c26fa6b
-      internalID: 466856776
+      spriteID: 79782e7f7005c9d4689b902579f18903
+      internalID: -233471003
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_174
+      name: impaler (2) 2_174
       rect:
         serializedVersion: 2
         x: 64
         y: 0
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 784c972afd4a158488e7e3bc2b0ddbea
-      internalID: -1553815362
+      spriteID: 9657bd1af9f1b7843a9da513db24cc5b
+      internalID: 212419536
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_175
+      name: impaler (2) 2_175
       rect:
         serializedVersion: 2
         x: 128
         y: 0
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f2c92b8cbdba4ba4e9e4771185074b49
-      internalID: -907274282
+      spriteID: e66d1d8168e900549b87e8cbc61a81a8
+      internalID: 1074149817
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_176
+      name: impaler (2) 2_176
       rect:
         serializedVersion: 2
         x: 192
         y: 0
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 00d1c3d465b1c1d46ad882ba6fd7d5c8
-      internalID: 1012479854
+      spriteID: b3336aa31673b1f4b91236cf30ae20e7
+      internalID: 595921146
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_177
+      name: impaler (2) 2_177
       rect:
         serializedVersion: 2
         x: 256
         y: 0
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eaaf9c69ed7a69d42860ae0ac2a3e44e
-      internalID: -2127561010
+      spriteID: a4f40a0b400dd4d49839734c321429e7
+      internalID: -1159205512
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: impaler (2)_178
+      name: impaler (2) 2_178
       rect:
         serializedVersion: 2
         x: 320
         y: 0
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.1090832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e16cac92e1be7184bbe7a0c391a2ba97
-      internalID: -147642690
+      spriteID: 5ca204a372f5e4e4ab880addc18f2774
+      internalID: 139862488
       vertices: []
       indices: 
       edges: []
@@ -3886,185 +3886,185 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      impaler (2)_0: 941533135
-      impaler (2)_1: -70551323
-      impaler (2)_10: -229484835
-      impaler (2)_100: -909734762
-      impaler (2)_101: -1615815741
-      impaler (2)_102: 1640413407
-      impaler (2)_103: 173849055
-      impaler (2)_104: -2042295507
-      impaler (2)_105: -12661344
-      impaler (2)_106: 1928775088
-      impaler (2)_107: 1053541553
-      impaler (2)_108: -361816201
-      impaler (2)_109: -1345132273
-      impaler (2)_11: -1785242682
-      impaler (2)_110: 1240880915
-      impaler (2)_111: -994056313
-      impaler (2)_112: -2073893271
-      impaler (2)_113: 786486265
-      impaler (2)_114: -1809279274
-      impaler (2)_115: -1102372479
-      impaler (2)_116: 1631971813
-      impaler (2)_117: 1550690447
-      impaler (2)_118: 1290716624
-      impaler (2)_119: -120630768
-      impaler (2)_12: 1880323076
-      impaler (2)_120: -758523740
-      impaler (2)_121: -260775034
-      impaler (2)_122: -2019768517
-      impaler (2)_123: -769256859
-      impaler (2)_124: -1483830033
-      impaler (2)_125: 491970761
-      impaler (2)_126: 1597191984
-      impaler (2)_127: 1140300580
-      impaler (2)_128: 952112201
-      impaler (2)_129: -901938498
-      impaler (2)_13: -1546352810
-      impaler (2)_130: -1732415796
-      impaler (2)_131: 251094227
-      impaler (2)_132: 1148170173
-      impaler (2)_133: -1329447766
-      impaler (2)_134: -854958535
-      impaler (2)_135: 774799844
-      impaler (2)_136: 1305425847
-      impaler (2)_137: 634888068
-      impaler (2)_138: -1800872296
-      impaler (2)_139: -680585475
-      impaler (2)_14: -1371045417
-      impaler (2)_140: 1884060075
-      impaler (2)_141: -38190810
-      impaler (2)_142: 1675320261
-      impaler (2)_143: -1500452454
-      impaler (2)_144: 1193003262
-      impaler (2)_145: -1033019326
-      impaler (2)_146: -1777713117
-      impaler (2)_147: -693103591
-      impaler (2)_148: 917316484
-      impaler (2)_149: -290993193
-      impaler (2)_15: 2138757421
-      impaler (2)_150: 1502026989
-      impaler (2)_151: 1679126272
-      impaler (2)_152: 420748783
-      impaler (2)_153: -654056566
-      impaler (2)_154: 1583512691
-      impaler (2)_155: 1182046748
-      impaler (2)_156: -587060522
-      impaler (2)_157: -1316571114
-      impaler (2)_158: -1221587304
-      impaler (2)_159: -1106888205
-      impaler (2)_16: 153729096
-      impaler (2)_160: -479970185
-      impaler (2)_161: 56145973
-      impaler (2)_162: -1052169198
-      impaler (2)_163: -1085759796
-      impaler (2)_164: 744950620
-      impaler (2)_165: 1500579337
-      impaler (2)_166: -1124972352
-      impaler (2)_167: 1979019602
-      impaler (2)_168: 425449507
-      impaler (2)_169: 1074536811
-      impaler (2)_17: -540147546
-      impaler (2)_170: -466505644
-      impaler (2)_171: 1602031087
-      impaler (2)_172: -495772421
-      impaler (2)_173: 466856776
-      impaler (2)_174: -1553815362
-      impaler (2)_175: -907274282
-      impaler (2)_176: 1012479854
-      impaler (2)_177: -2127561010
-      impaler (2)_178: -147642690
-      impaler (2)_18: 1755289885
-      impaler (2)_19: -837621661
-      impaler (2)_2: 1724949399
-      impaler (2)_20: 1695606356
-      impaler (2)_21: -1317147487
-      impaler (2)_22: -698888702
-      impaler (2)_23: 1309088567
-      impaler (2)_24: 2125430454
-      impaler (2)_25: -1037512031
-      impaler (2)_26: 1766111774
-      impaler (2)_27: -2049369071
-      impaler (2)_28: 1029029259
-      impaler (2)_29: -1296188432
-      impaler (2)_3: -28930488
-      impaler (2)_30: -26921134
-      impaler (2)_31: 1516657763
-      impaler (2)_32: -756204714
-      impaler (2)_33: -1577543945
-      impaler (2)_34: 1354691349
-      impaler (2)_35: 1555956311
-      impaler (2)_36: 564293097
-      impaler (2)_37: 1235847159
-      impaler (2)_38: 1437433826
-      impaler (2)_39: -1744381920
-      impaler (2)_4: 526616145
-      impaler (2)_40: 1187626832
-      impaler (2)_41: -1714280382
-      impaler (2)_42: -1684106873
-      impaler (2)_43: -618729267
-      impaler (2)_44: -618049228
-      impaler (2)_45: 956530346
-      impaler (2)_46: 757838725
-      impaler (2)_47: -1468835932
-      impaler (2)_48: -272703233
-      impaler (2)_49: -1084054811
-      impaler (2)_5: -731990209
-      impaler (2)_50: 1218057146
-      impaler (2)_51: -408032997
-      impaler (2)_52: 744239295
-      impaler (2)_53: -646245211
-      impaler (2)_54: 1422715829
-      impaler (2)_55: 493061400
-      impaler (2)_56: -2061856896
-      impaler (2)_57: -1882454140
-      impaler (2)_58: 702815004
-      impaler (2)_59: -1048287117
-      impaler (2)_6: -1270964120
-      impaler (2)_60: -1222734499
-      impaler (2)_61: -1034152648
-      impaler (2)_62: -32773559
-      impaler (2)_63: 1706069532
-      impaler (2)_64: 71797522
-      impaler (2)_65: 1555526230
-      impaler (2)_66: 801396511
-      impaler (2)_67: -1849358778
-      impaler (2)_68: 1086903950
-      impaler (2)_69: -589847405
-      impaler (2)_7: -1945486801
-      impaler (2)_70: 941715975
-      impaler (2)_71: 1464685796
-      impaler (2)_72: 900566129
-      impaler (2)_73: -1618259835
-      impaler (2)_74: -830239166
-      impaler (2)_75: -463299016
-      impaler (2)_76: 1587838846
-      impaler (2)_77: -39686467
-      impaler (2)_78: -1725579409
-      impaler (2)_79: 221911494
-      impaler (2)_8: 516952936
-      impaler (2)_80: 1420536810
-      impaler (2)_81: 1645344528
-      impaler (2)_82: -346252501
-      impaler (2)_83: 2034677514
-      impaler (2)_84: -1324758937
-      impaler (2)_85: 1154065281
-      impaler (2)_86: -1991142068
-      impaler (2)_87: 1798327710
-      impaler (2)_88: -2097721049
-      impaler (2)_89: 1165934809
-      impaler (2)_9: -157451548
-      impaler (2)_90: -731647543
-      impaler (2)_91: -2062632727
-      impaler (2)_92: -963096702
-      impaler (2)_93: -1205406452
-      impaler (2)_94: -159841106
-      impaler (2)_95: -261392430
-      impaler (2)_96: -1773210680
-      impaler (2)_97: 761345700
-      impaler (2)_98: -633293507
-      impaler (2)_99: 328935763
+      impaler (2) 2_0: 128026708
+      impaler (2) 2_1: 975636798
+      impaler (2) 2_10: -2006668224
+      impaler (2) 2_100: -2141091087
+      impaler (2) 2_101: -2096627737
+      impaler (2) 2_102: 1453479530
+      impaler (2) 2_103: -1821227668
+      impaler (2) 2_104: 1457765410
+      impaler (2) 2_105: -1396774000
+      impaler (2) 2_106: -1985019878
+      impaler (2) 2_107: -917589578
+      impaler (2) 2_108: 570799014
+      impaler (2) 2_109: -2079898700
+      impaler (2) 2_11: -805439080
+      impaler (2) 2_110: 376686220
+      impaler (2) 2_111: -1502591704
+      impaler (2) 2_112: 1383292224
+      impaler (2) 2_113: 823873254
+      impaler (2) 2_114: -1245623844
+      impaler (2) 2_115: 1127923068
+      impaler (2) 2_116: -1370252225
+      impaler (2) 2_117: 1053234706
+      impaler (2) 2_118: -604703308
+      impaler (2) 2_119: -1241606391
+      impaler (2) 2_12: 1951213293
+      impaler (2) 2_120: -402240620
+      impaler (2) 2_121: -619711873
+      impaler (2) 2_122: 2036806633
+      impaler (2) 2_123: -382251192
+      impaler (2) 2_124: -1536161150
+      impaler (2) 2_125: 463842947
+      impaler (2) 2_126: -279644898
+      impaler (2) 2_127: -2059996850
+      impaler (2) 2_128: 860785570
+      impaler (2) 2_129: -27808228
+      impaler (2) 2_13: 1405330361
+      impaler (2) 2_130: 106795900
+      impaler (2) 2_131: -2073683316
+      impaler (2) 2_132: 498284618
+      impaler (2) 2_133: -959964537
+      impaler (2) 2_134: -1093629624
+      impaler (2) 2_135: -937520157
+      impaler (2) 2_136: 2031346605
+      impaler (2) 2_137: 2110058828
+      impaler (2) 2_138: 1045498314
+      impaler (2) 2_139: -1364502118
+      impaler (2) 2_14: 159976390
+      impaler (2) 2_140: -1002981318
+      impaler (2) 2_141: -980954242
+      impaler (2) 2_142: 1391651044
+      impaler (2) 2_143: -1728299226
+      impaler (2) 2_144: 192952992
+      impaler (2) 2_145: -2140394339
+      impaler (2) 2_146: -1914903482
+      impaler (2) 2_147: -2146047345
+      impaler (2) 2_148: 76510569
+      impaler (2) 2_149: 1559663149
+      impaler (2) 2_15: 2121871007
+      impaler (2) 2_150: -1136065862
+      impaler (2) 2_151: 655984082
+      impaler (2) 2_152: 524871115
+      impaler (2) 2_153: 410131603
+      impaler (2) 2_154: -1081635110
+      impaler (2) 2_155: 1569220299
+      impaler (2) 2_156: 272144286
+      impaler (2) 2_157: 1361580719
+      impaler (2) 2_158: 1974662629
+      impaler (2) 2_159: 1791426666
+      impaler (2) 2_16: 820644746
+      impaler (2) 2_160: 723098728
+      impaler (2) 2_161: 855785176
+      impaler (2) 2_162: -1296039264
+      impaler (2) 2_163: -1067104759
+      impaler (2) 2_164: -1181215180
+      impaler (2) 2_165: 2109273005
+      impaler (2) 2_166: -1005552848
+      impaler (2) 2_167: 2135841756
+      impaler (2) 2_168: 1658234422
+      impaler (2) 2_169: -1451029669
+      impaler (2) 2_17: 1462363250
+      impaler (2) 2_170: 1617351468
+      impaler (2) 2_171: -164563662
+      impaler (2) 2_172: 1667697923
+      impaler (2) 2_173: -233471003
+      impaler (2) 2_174: 212419536
+      impaler (2) 2_175: 1074149817
+      impaler (2) 2_176: 595921146
+      impaler (2) 2_177: -1159205512
+      impaler (2) 2_178: 139862488
+      impaler (2) 2_18: 1495712168
+      impaler (2) 2_19: 303385247
+      impaler (2) 2_2: 845678015
+      impaler (2) 2_20: 1190844697
+      impaler (2) 2_21: -1650290296
+      impaler (2) 2_22: -368060919
+      impaler (2) 2_23: -357698912
+      impaler (2) 2_24: 1230642277
+      impaler (2) 2_25: -1078266328
+      impaler (2) 2_26: 773874281
+      impaler (2) 2_27: 1716567176
+      impaler (2) 2_28: -476207118
+      impaler (2) 2_29: -964801128
+      impaler (2) 2_3: -1378344151
+      impaler (2) 2_30: 578523818
+      impaler (2) 2_31: 984059473
+      impaler (2) 2_32: -957018219
+      impaler (2) 2_33: 1748123202
+      impaler (2) 2_34: -1212231339
+      impaler (2) 2_35: 27272858
+      impaler (2) 2_36: -378123581
+      impaler (2) 2_37: 1352005378
+      impaler (2) 2_38: -1768990328
+      impaler (2) 2_39: 1094717810
+      impaler (2) 2_4: 197197425
+      impaler (2) 2_40: -1838330188
+      impaler (2) 2_41: 89288287
+      impaler (2) 2_42: -3097865
+      impaler (2) 2_43: 2004954675
+      impaler (2) 2_44: 1870696768
+      impaler (2) 2_45: -111570134
+      impaler (2) 2_46: -888953687
+      impaler (2) 2_47: 1787662288
+      impaler (2) 2_48: 1228533179
+      impaler (2) 2_49: -1246900835
+      impaler (2) 2_5: -490275130
+      impaler (2) 2_50: -712202480
+      impaler (2) 2_51: 501366514
+      impaler (2) 2_52: 1318477528
+      impaler (2) 2_53: 1058612096
+      impaler (2) 2_54: 1921262375
+      impaler (2) 2_55: 1953897026
+      impaler (2) 2_56: -1389959046
+      impaler (2) 2_57: 1447165326
+      impaler (2) 2_58: 1482658155
+      impaler (2) 2_59: 19278135
+      impaler (2) 2_6: 1267506601
+      impaler (2) 2_60: 1064006031
+      impaler (2) 2_61: -845826536
+      impaler (2) 2_62: -604695555
+      impaler (2) 2_63: -110772052
+      impaler (2) 2_64: -1352176100
+      impaler (2) 2_65: -955811464
+      impaler (2) 2_66: -1588144724
+      impaler (2) 2_67: 442074365
+      impaler (2) 2_68: 1477440078
+      impaler (2) 2_69: -1281982124
+      impaler (2) 2_7: 2057332202
+      impaler (2) 2_70: 76086866
+      impaler (2) 2_71: 1395405618
+      impaler (2) 2_72: -783005338
+      impaler (2) 2_73: -1280156846
+      impaler (2) 2_74: 343580535
+      impaler (2) 2_75: 631218130
+      impaler (2) 2_76: -871611011
+      impaler (2) 2_77: -387544018
+      impaler (2) 2_78: 694300831
+      impaler (2) 2_79: -888597977
+      impaler (2) 2_8: 1086580683
+      impaler (2) 2_80: 1211099745
+      impaler (2) 2_81: -578413453
+      impaler (2) 2_82: 1092553050
+      impaler (2) 2_83: 401858757
+      impaler (2) 2_84: -1832458454
+      impaler (2) 2_85: -323448337
+      impaler (2) 2_86: 620252092
+      impaler (2) 2_87: 883852096
+      impaler (2) 2_88: 838062254
+      impaler (2) 2_89: 1437899732
+      impaler (2) 2_9: 727192161
+      impaler (2) 2_90: 788184845
+      impaler (2) 2_91: -93562943
+      impaler (2) 2_92: 101224384
+      impaler (2) 2_93: 971896050
+      impaler (2) 2_94: 329784124
+      impaler (2) 2_95: -995632495
+      impaler (2) 2_96: 525350534
+      impaler (2) 2_97: -1830005609
+      impaler (2) 2_98: 466987710
+      impaler (2) 2_99: -2008931337
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

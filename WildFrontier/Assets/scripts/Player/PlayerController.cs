@@ -7,6 +7,10 @@ public class PlayerController : MonoBehaviour
 {
     private Vector2 movementInput;
     private Vector2 facingDirection;
+    public int health = 100;
+    public bool isDead = false;
+
+    bool flag = true;
     [SerializeField] Attack attack;
 
     private Rigidbody2D rb;
@@ -21,6 +25,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] CharacterState UseSword;
 
     [SerializeField] CharacterState UseSpear;
+
+    public AnimationClip deathAnim;
 
 
     [SerializeField] StateAnimationsSetDictionary StateAnimations;
@@ -44,7 +50,7 @@ public class PlayerController : MonoBehaviour
 
     private CharacterState currentState;
 
-    private Animator animator;
+    public Animator animator;
 
     private AnimationClip currentClip;
 
@@ -83,6 +89,10 @@ public class PlayerController : MonoBehaviour
             ChangeClip();
         }
 
+        if(isDead == true)
+        {
+            animator.Play(deathAnim.name);
+        }
 
     }
 

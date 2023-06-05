@@ -11,18 +11,19 @@ public class EnemyController : MonoBehaviour
     [SerializeField] public Enemy enemy;
     [SerializeField] GameObject player;
     [SerializeField] GameObject wolf;
-    public NavMeshAgent enemyAgent;
+    [SerializeField] public NavMeshAgent enemyAgent;
     [SerializeField] float attackRadius;
 
-    [SerializeField] ImpalerMovement impaler;
+    Vector3 direction;
+
+    [SerializeField] EnemyMovement impaler;
+   // [SerializeField] EnemyMovement impaler;
     // Start is called before the first frame update
     void Start()
     {
-        enemyAgent = GetComponent<NavMeshAgent>();
         enemyAgent.updateRotation = false;
         enemyAgent.updateUpAxis = false;
     }
-
 
     // Update is called once per frame
     void Update()
@@ -35,9 +36,12 @@ public class EnemyController : MonoBehaviour
         {
             enemyAgent.SetDestination(wolf.transform.position);
         }
+
         TriggerAttack();
 
+        direction = enemyAgent.desiredVelocity;
 
+        EndAttack();
     }
 
     private void TriggerAttack()
@@ -47,17 +51,53 @@ public class EnemyController : MonoBehaviour
             if (Vector3.Distance(enemyAgent.transform.position, player.transform.position) <= attackRadius)
             {
                 enemyAgent.isStopped = true;
-                impaler.animator.SetBool("isInAttackRange", true);
+                if (direction.x > 0.7)
+                {
+                    impaler.animator.SetBool("CanAttackRight", true);
+                }
+                else if (direction.x < -0.7)
+                {
+                    impaler.animator.SetBool("CanAttackLeft", true);
+
+                }
+                else if (direction.y > 0.7)
+                {
+                    impaler.animator.SetBool("CanAttackUp", true);
+
+                }
+                else if (direction.y < -0.7)
+                {
+                    impaler.animator.SetBool("CanAttackDown", true);
+
+                }
             }
             else
             {
+
                 enemyAgent.isStopped = false;
-                impaler.animator.SetBool("isInAttackRange", false);
+                impaler.animator.SetBool("CanAttackRight", false);
+                impaler.animator.SetBool("CanAttackLeft", false);
+                impaler.animator.SetBool("CanAttackUp", false);
+                impaler.animator.SetBool("CanAttackDown", false);
+
             }
         }
-        
+            
     }
 
-    
+
+    private void EndAttack()
+    {
+        if (player.GetComponent<PlayerController>().health == 0 || wolf.GetComponent<WolfAgentMovement>().health == 0)
+        {
+            enemyAgent.isStopped = true;
+            player.GetComponent<PlayerController>().isDead = true;
+            impaler.animator.SetBool("CanAttackRight", false);
+            impaler.animator.SetBool("CanAttackLeft", false);
+            impaler.animator.SetBool("CanAttackUp", false);
+            impaler.animator.SetBool("CanAttackDown", false);
+        }
+    }
+
 
 }
