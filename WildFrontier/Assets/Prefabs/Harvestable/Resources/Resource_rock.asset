@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f5694effa600224b842ac5cdf0cc267, type: 3}
   m_Name: Resource_rock
   m_EditorClassIdentifier: 
-  name: Rock
+  item_id: 2
+  item_name: Rock
   icon: {fileID: -715273623, guid: 797f04ad4f5dce3488ecf7f713ecbb1b, type: 3}
