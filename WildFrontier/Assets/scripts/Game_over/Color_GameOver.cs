@@ -1,19 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Color_GameOver : MonoBehaviour
 {
     public float duration = 1f; // Transition duration in seconds
     public float targetAlpha = 0f; // Target alpha value you want to achieve
 
-    private SpriteRenderer spriteRenderer;
+    private Image spriteRenderer;
     private Color initialColor;
     private float startTime;
 
     private void Start()
     {
-        spriteRenderer = GetComponent<SpriteRenderer>();
+        spriteRenderer = GetComponent<Image>();
         initialColor = spriteRenderer.color;
         startTime = Time.time;
     }

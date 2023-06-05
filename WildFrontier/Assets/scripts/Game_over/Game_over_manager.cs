@@ -17,8 +17,9 @@ public class Game_over_manager : MonoBehaviour
         
     }
 
-    public void gamescene()
+    public void gamescene(string scene)
     {
-        SceneManager.LoadScene("Log_in");
+        SceneManager.LoadScene(scene);
     }
+
 }
