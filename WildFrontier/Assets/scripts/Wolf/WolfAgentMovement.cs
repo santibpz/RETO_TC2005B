@@ -34,7 +34,7 @@ public class WolfAgentMovement : MonoBehaviour
         if (levelCheckpoints.Count != 0)
         {
             MovementController(); // wolf movement controler
-            toggleWolfMovement();// check if player stops wolf movement
+            toggleWolfMovement();//  check if player stops wolf movement
         }
        // wolfAgent.SetDestination(viewer.transform.position);
     }
@@ -54,15 +54,13 @@ public class WolfAgentMovement : MonoBehaviour
                 Debug.Log("No: " + checkpointNo);
                 Debug.Log("count: " + levelCheckpoints.Count);
                 wolfGraphic.isMoving = false;
-                hasReachedLastCheckpoint = true;
+                hasReachedLastCheckpoint = true; // last checkpoint has been reached
             } else
             {
                 viewer.transform.position = levelCheckpoints[checkpointNo];
                 wolfAgent.SetDestination(levelCheckpoints[checkpointNo]); // set wolf destination to a checkpoint
-                //wolfGraphic.isMoving = true;
                 checkpointNo++;
             }
-            
         }
     }
 

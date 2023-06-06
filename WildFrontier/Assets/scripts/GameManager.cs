@@ -24,8 +24,6 @@ public class GameManager : MonoBehaviour
     // Helper vector to find a random position on the map
     Vector3 randomPosition;
 
-
-
     // Start is called before the first frame update
     void Start()
     {
