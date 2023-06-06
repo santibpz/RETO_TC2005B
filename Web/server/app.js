@@ -1,14 +1,22 @@
 "use strict";
 
+import cors from "cors"
 import express from "express";
 import mysql from "mysql2/promise";
 import fs from "fs";
+
+
 
 const app = express();
 const port = 3000;
 
 // middlewares
+
+app.use(cors({ origin: 'http://127.0.0.1:5500'}))
+
 app.use(express.json());
+
+
 // app.use(express.static('./public'))
 
 const connectToDB = async () => {
@@ -100,7 +108,7 @@ app.get('/api/playerStatus/:id', async (req, res) => {
     const playerStatus = results ? results[0][0] : null
     console.log(playerStatus)                
     !playerStatus ?
-    res.status(400).send("No player status was found") :
+    res.sendStatus(404) :
     res.status(200).json(playerStatus)
 
   } catch(err) {
@@ -124,7 +132,7 @@ app.get('/api/playerItems/:id', async (req, res) => {
     const playerItems = results ? results[0][0] : null
     console.log(playerItems)                
     !playerItems ?
-    res.status(400).send("No player items were found") :
+    res.sendStatus(404) :
     res.status(200).json(playerItems)
 
   } catch(err) {
@@ -148,7 +156,7 @@ app.get('/api/playerWeapons/:id', async (req, res) => {
     const playerWeapons = results ? results[0][0] : null
     console.log(playerWeapons)                
     !playerWeapons ?
-    res.status(400).send("No player weapons was found") :
+    res.sendStatus(404) :
     res.status(200).json(playerWeapons)
 
   } catch(err) {
@@ -199,9 +207,70 @@ app.put('/api/updateResources', async (req, res) => {
 
 // Most created weapons by players 
 
+app.get('/api/createdWeaponsChart', async (req, res) => {
+  let connection = null
+
+  try {
+    connection = await connectToDB()
+    const [results, fields] = await connection.execute('select * from weapons_created_by_players')
+
+    results ? 
+    res.status(200).json(results) : 
+    res.sendStatus(404)
+
+  } catch (err) {
+    res.status(500).send("internal server error");
+  } finally {
+    if (connection !== null) {
+      connection.end();
+      console.log("Connection closed succesfully!");
+    }
+  }
+
+})
 
 
+app.get('/api/createdWeaponsChart', async (req, res) => {
+  let connection = null
 
+  try {
+    connection = await connectToDB()
+    const [results, fields] = await connection.execute('select * from weapons_created_by_players')
+
+    results ? 
+    res.status(200).json(results) : 
+    res.sendStatus(404)
+
+  } catch (err) {
+    res.status(500).send("internal server error");
+  } finally {
+    if (connection !== null) {
+      connection.end();
+      console.log("Connection closed succesfully!");
+    }
+  }
+})
+
+app.get('/api/playerDeathTypes', async (req, res) => {
+  let connection = null
+
+  try {
+    connection = await connectToDB()
+    const [results, fields] = await connection.execute('select * from number_of_player_death_types')
+
+    results ? 
+    res.status(200).json(results) : 
+    res.sendStatus(404)
+
+  } catch (err) {
+    res.status(500).send("internal server error");
+  } finally {
+    if (connection !== null) {
+      connection.end();
+      console.log("Connection closed succesfully!");
+    }
+  }
+})
 
 // app.get("/", (request, response) => {
 //   fs.readFile("./public/html/mysqlUseCases.html", "utf8", (err, html) => {

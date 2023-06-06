@@ -129,6 +129,8 @@ USING (death_type_id);
 -- The most collected resource
 
 
+select * from weapons_created_by_players
+
 
 
 
