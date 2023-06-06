@@ -9,7 +9,8 @@ public class GameManager : MonoBehaviour
 {
     [SerializeField] Tilemap groundTilemap;
     [SerializeField] WolfAgentMovement agent;
-    [SerializeField] PlayerController player;
+    [SerializeField] PlayerController playerController;
+    [SerializeField] WolfDirection wolfController;
     [SerializeField] float minDistance;
     private NavMeshPath path;
     private Bounds worldBounds;
@@ -120,7 +121,7 @@ public class GameManager : MonoBehaviour
 
     IEnumerator EndGame()
     {
-        if (player.health == 0 || agent.health == 0)
+        if (playerController.health == 0 || wolfController.health == 0)
         {
             yield return new WaitForSeconds(2);
             // pause the game

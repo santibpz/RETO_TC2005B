@@ -78,6 +78,7 @@ public class ValidatePlayerCredentials : MonoBehaviour
 
 
                 // Fetch player information
+
                // QueryPlayerStatus(playerCredentials);
 
                 yield return new WaitForSeconds(4);

@@ -16,7 +16,7 @@ public class EnemyController : MonoBehaviour
 
     Vector3 direction;
 
-    [SerializeField] EnemyMovement impaler;
+    [SerializeField] EnemyMovement enemyGraphic;
    // [SerializeField] EnemyMovement impaler;
     // Start is called before the first frame update
     void Start()
@@ -42,32 +42,37 @@ public class EnemyController : MonoBehaviour
         direction = enemyAgent.desiredVelocity;
 
         EndAttack();
+
+        if(enemy.health == 0)
+        {
+            StartCoroutine(DestroyEnemy());
+        }
     }
 
     private void TriggerAttack()
     {
-        if(enemy.name == "Impaler")
-        {
-            if (Vector3.Distance(enemyAgent.transform.position, player.transform.position) <= attackRadius)
+        //if(enemy.name == "Impaler")
+        //{
+            if (Vector3.Distance(enemyAgent.transform.position, player.transform.position) <= attackRadius || Vector3.Distance(enemyAgent.transform.position, wolf.transform.position) <= attackRadius)
             {
                 enemyAgent.isStopped = true;
-                if (direction.x > 0.7)
+                if (direction.x > 0.6)
                 {
-                    impaler.animator.SetBool("CanAttackRight", true);
+                   enemyGraphic.animator.SetBool("CanAttackRight", true);
                 }
-                else if (direction.x < -0.7)
+                else if (direction.x < -0.6)
                 {
-                    impaler.animator.SetBool("CanAttackLeft", true);
+                   enemyGraphic.animator.SetBool("CanAttackLeft", true);
 
                 }
-                else if (direction.y > 0.7)
+                else if (direction.y > 0.6)
                 {
-                    impaler.animator.SetBool("CanAttackUp", true);
+                   enemyGraphic.animator.SetBool("CanAttackUp", true);
 
                 }
-                else if (direction.y < -0.7)
+                else if (direction.y < -0.6)
                 {
-                    impaler.animator.SetBool("CanAttackDown", true);
+                   enemyGraphic.animator.SetBool("CanAttackDown", true);
 
                 }
             }
@@ -75,28 +80,34 @@ public class EnemyController : MonoBehaviour
             {
 
                 enemyAgent.isStopped = false;
-                impaler.animator.SetBool("CanAttackRight", false);
-                impaler.animator.SetBool("CanAttackLeft", false);
-                impaler.animator.SetBool("CanAttackUp", false);
-                impaler.animator.SetBool("CanAttackDown", false);
+                enemyGraphic.animator.SetBool("CanAttackRight", false);
+                enemyGraphic.animator.SetBool("CanAttackLeft", false);
+                enemyGraphic.animator.SetBool("CanAttackUp", false);
+                enemyGraphic.animator.SetBool("CanAttackDown", false);
 
             }
-        }
+       // }
             
     }
 
 
     private void EndAttack()
     {
-        if (player.GetComponent<PlayerController>().health == 0 || wolf.GetComponent<WolfAgentMovement>().health == 0)
+        if (player.GetComponent<PlayerController>().health == 0 || wolf.GetComponent<WolfDirection>().health == 0)
         {
             enemyAgent.isStopped = true;
-            player.GetComponent<PlayerController>().isDead = true;
-            impaler.animator.SetBool("CanAttackRight", false);
-            impaler.animator.SetBool("CanAttackLeft", false);
-            impaler.animator.SetBool("CanAttackUp", false);
-            impaler.animator.SetBool("CanAttackDown", false);
+            //player.GetComponent<PlayerController>().isDead = true;
+            enemyGraphic.animator.SetBool("CanAttackRight", false);
+            enemyGraphic.animator.SetBool("CanAttackLeft", false);
+            enemyGraphic.animator.SetBool("CanAttackUp", false);
+            enemyGraphic.animator.SetBool("CanAttackDown", false);
         }
+    }
+
+    IEnumerator DestroyEnemy()
+    {
+        yield return new WaitForSeconds(1);
+        Destroy(gameObject);
     }
 
 

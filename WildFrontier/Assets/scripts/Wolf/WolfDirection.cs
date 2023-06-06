@@ -6,20 +6,26 @@ using UnityEngine;
 public class WolfDirection : MonoBehaviour
 {
     [SerializeField] WolfAgentMovement navmeshagent;
-    public Animator animator;
+    [SerializeField] AnimationClip deathAnim;
+    [SerializeField] Animator animator;
     private Vector3 direction;
-    public bool isMoving = false;
+    public bool isMoving = true;
+    public int health = 100;
 
     // Start is called before the first frame update
     void Start()
     {
-        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
         SetAnimation();
+
+        if(health == 0)
+        {
+            animator.Play(deathAnim.name);
+        }
     }
 
     void SetAnimation()

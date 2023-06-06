@@ -6,6 +6,7 @@ public class EnemyMovement : MonoBehaviour
 {
     [SerializeField] EnemyController enemyController;
     [SerializeField] public Animator animator;
+    [SerializeField] AnimationClip deathAnim;
     private Vector3 direction;
     // Start is called before the first frame update
     void Start()
@@ -17,6 +18,11 @@ public class EnemyMovement : MonoBehaviour
     void Update()
     {
         SetAnimation();
+
+        if(enemyController.enemy.health==0)
+        {
+            animator.Play(deathAnim.name);
+        }
     }
 
     void SetAnimation()

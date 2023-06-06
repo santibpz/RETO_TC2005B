@@ -15,7 +15,7 @@ public class WolfAgentMovement : MonoBehaviour
     private bool hasReachedLastCheckpoint = false;
     bool isWolfStopped = false;
     private List<Vector3> levelCheckpoints;
-    public int health = 100;
+    
 
     // Start is called before the first frame update
     void Start()
