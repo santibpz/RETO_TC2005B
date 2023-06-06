@@ -10,7 +10,6 @@ public class PlayerController : MonoBehaviour
     public int health = 100;
     public bool isDead = false;
 
-    bool flag = true;
     [SerializeField] Attack attack;
 
     private Rigidbody2D rb;

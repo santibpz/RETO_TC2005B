@@ -9,7 +9,7 @@ public class WolfDirection : MonoBehaviour
     [SerializeField] AnimationClip deathAnim;
     [SerializeField] Animator animator;
     private Vector3 direction;
-    public bool isMoving = true;
+    public bool isMoving = false;
     public int health = 100;
 
     // Start is called before the first frame update
@@ -30,13 +30,13 @@ public class WolfDirection : MonoBehaviour
 
     void SetAnimation()
     {
-        if(isMoving)
+        if(isMoving == true)
         {
             animator.SetBool("isWalking", true);
             direction = navmeshagent.wolfAgent.desiredVelocity;
             animator.SetFloat("x", direction.x);
             animator.SetFloat("y", direction.y);
-        } else
+        } else if(isMoving == false)
         {
             animator.SetBool("isWalking", false);
         }
