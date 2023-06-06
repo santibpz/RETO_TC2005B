@@ -9,6 +9,8 @@ public class GameManager : MonoBehaviour
 {
     [SerializeField] Tilemap groundTilemap;
     [SerializeField] WolfAgentMovement agent;
+    [SerializeField] PlayerController playerController;
+    [SerializeField] WolfDirection wolfController;
     [SerializeField] float minDistance;
     private NavMeshPath path;
     private Bounds worldBounds;
@@ -16,17 +18,17 @@ public class GameManager : MonoBehaviour
 
     bool flag = false;
 
-    // list of checkpoints
+    // list of level checkpoints
     private List<Vector3> checkpoints = new List<Vector3>();
 
-
+    // Helper vector to find a random position on the map
     Vector3 randomPosition;
+
     // Start is called before the first frame update
     void Start()
     {
         path = new NavMeshPath();
         worldBounds = groundTilemap.localBounds;
-        
         viewer = GameObject.Find("viewer"); 
         Debug.Log("up is: " + Vector2.up);
         //Debug.Log("world bounds are: " + worldBounds);
@@ -49,6 +51,9 @@ public class GameManager : MonoBehaviour
             flag = false;
             agent.GetLevelCheckpoints(checkpoints);
         }
+
+        // Game over 
+        //GameOver();
     }
 
     private void generateCheckpoints()
@@ -107,4 +112,20 @@ public class GameManager : MonoBehaviour
             return true;
     }
 
+    private void GameOver()
+    {
+        StartCoroutine(EndGame());
+    }
+
+    IEnumerator EndGame()
+    {
+        if (playerController.health == 0 || wolfController.health == 0)
+        {
+            yield return new WaitForSeconds(2);
+            // pause the game
+            Time.timeScale = 0;
+            // load game over screen
+            Debug.Log("You have lost!!");
+        }
+    }
 }

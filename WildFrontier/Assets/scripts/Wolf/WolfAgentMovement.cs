@@ -13,8 +13,9 @@ public class WolfAgentMovement : MonoBehaviour
     public WolfDirection wolfGraphic;
     private int checkpointNo = 0;
     private bool hasReachedLastCheckpoint = false;
-    bool isWolfStopped = false;
+    bool isWolfStopped = true;
     private List<Vector3> levelCheckpoints;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -24,6 +25,7 @@ public class WolfAgentMovement : MonoBehaviour
         wolfAgent.updateUpAxis = false;
         viewer = GameObject.Find("viewer");
 
+        wolfAgent.isStopped = isWolfStopped; // initially the wolf is stopped
     }
 
     // Update is called once per frame
@@ -32,9 +34,9 @@ public class WolfAgentMovement : MonoBehaviour
         if (levelCheckpoints.Count != 0)
         {
             MovementController(); // wolf movement controler
-            toggleWolfMovement();// check if player stops wolf movement
+            toggleWolfMovement();//  check if player stops wolf movement
         }
-        wolfAgent.SetDestination(viewer.transform.position);
+       // wolfAgent.SetDestination(viewer.transform.position);
     }
 
     public void GetLevelCheckpoints(List<Vector3>checkpoints)
@@ -52,25 +54,23 @@ public class WolfAgentMovement : MonoBehaviour
                 Debug.Log("No: " + checkpointNo);
                 Debug.Log("count: " + levelCheckpoints.Count);
                 wolfGraphic.isMoving = false;
-                hasReachedLastCheckpoint = true;
+                hasReachedLastCheckpoint = true; // last checkpoint has been reached
             } else
             {
                 viewer.transform.position = levelCheckpoints[checkpointNo];
                 wolfAgent.SetDestination(levelCheckpoints[checkpointNo]); // set wolf destination to a checkpoint
-                wolfGraphic.isMoving = true;
                 checkpointNo++;
             }
-            
         }
     }
 
     private void toggleWolfMovement()
     {
-        if(Input.GetKeyDown("h"))
+        if(Input.GetKeyDown("h")) // pressing 'h' to stop the wolf movement
         {
-            Debug.Log("V pressed");
-            wolfGraphic.isMoving = isWolfStopped;
             isWolfStopped = !isWolfStopped;
+            wolfGraphic.isMoving = !isWolfStopped;
+            
             wolfAgent.isStopped = isWolfStopped;
             
             Debug.Log("status: " + wolfAgent.isStopped);
