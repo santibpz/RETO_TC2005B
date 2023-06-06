@@ -75,7 +75,7 @@ DELIMITER
 -- procedure to update player resources
 
 DELIMITER //
-CREATE PROCEDURE update_resources(IN in_player_id INT, IN in_item_id INT)
+CREATE PROCEDURE update_resources(IN in_player_id INT, IN in_item_id INT, IN in_quantity INT)
 BEGIN
     DECLARE row_count INT; 
     
@@ -88,11 +88,11 @@ BEGIN
     IF row_count = 0 THEN
         -- Insert the new row using the parameter values
         INSERT INTO player_item (player_id, item_id, quantity)
-        VALUES (in_player_id, in_item_id, 1);
+        VALUES (in_player_id, in_item_id, in_quantity);
     ELSE
         -- Perform the desired UPDATE operation
         UPDATE player_item
-        SET quantity = quantity + 1
+        SET quantity = in_quantity
 		WHERE player_id = in_player_id
 		AND item_id = in_item_id;
     END IF;
@@ -102,11 +102,31 @@ DELIMITER
 
 
 
+-- statistics graphs
+
+-- The number of player that created a type of weapon
+
+CREATE VIEW weapons_created_by_players AS
+SELECT weapon_name, player_count FROM weapon INNER JOIN
+(SELECT weapon_id, COUNT(DISTINCT player_id) AS player_count
+FROM Player_Weapon
+GROUP BY weapon_id)
+AS weapons_by_players
+USING (weapon_id);
 
 
+-- The number of players that died a certain way
 
-CALL player_items(14);
+CREATE VIEW number_of_player_death_types AS
+SELECT death_type, Player_Count FROM Death_Type INNER JOIN
+(SELECT death_type_id, COUNT(DISTINCT(player_status_id)) as Player_Count
+FROM Player_Death GROUP BY death_type_id) AS Player_Deaths
+USING (death_type_id);
 
+-- Amount of players that have upgraded a weapon
+
+
+-- The most collected resource
 
 
 

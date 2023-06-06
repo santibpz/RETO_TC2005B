@@ -33,7 +33,7 @@ app.get("/api/players", async (req, res) => {
 
 // endpoint to create a new player account
 
-app.post("/api/signup", async (req, res) => {
+app.post('/api/signup', async (req, res) => {
   //console.log("body of request: ", req.body)
   const newPlayer = req.body;
   const { username, password, email } = newPlayer;
@@ -60,7 +60,7 @@ app.post("/api/signup", async (req, res) => {
   }
 });
 
-app.post("/api/login", async (req, res) => {
+app.post('/api/login', async (req, res) => {
   const credentials = req.body;
   const { username, password } = credentials;
   let connection = null;
@@ -89,6 +89,7 @@ app.post("/api/login", async (req, res) => {
   }
 });
 
+// Endpoint to fetch the player status
 
 app.get('/api/playerStatus/:id', async (req, res) => {
   let connection = null
@@ -113,19 +114,68 @@ app.get('/api/playerStatus/:id', async (req, res) => {
   }
 })
 
+// Endpoint to fetch the player items/resources
+
+app.get('/api/playerItems/:id', async (req, res) => {
+  let connection = null
+  try {
+    connection = await connectToDB()
+    const [results, fields] = await connection.query("CALL player_items(?)", Number(req.params.id))
+    const playerItems = results ? results[0][0] : null
+    console.log(playerItems)                
+    !playerItems ?
+    res.status(400).send("No player items were found") :
+    res.status(200).json(playerItems)
+
+  } catch(err) {
+    res.status(500).send("internal server error");
+ 
+  } finally {
+    if (connection !== null) {
+      connection.end();
+      console.log("Connection closed succesfully!");
+    }
+  }
+})
+
+// Endpoint to fetch the player weapons
+
+app.get('/api/playerWeapons/:id', async (req, res) => {
+  let connection = null
+  try {
+    connection = await connectToDB()
+    const [results, fields] = await connection.query("CALL player_weapons(?)", Number(req.params.id))
+    const playerWeapons = results ? results[0][0] : null
+    console.log(playerWeapons)                
+    !playerWeapons ?
+    res.status(400).send("No player weapons was found") :
+    res.status(200).json(playerWeapons)
+
+  } catch(err) {
+    res.status(500).send("internal server error");
+ 
+  } finally {
+    if (connection !== null) {
+      connection.end();
+      console.log("Connection closed succesfully!");
+    }
+  }
+})
+
+
+// Endpoint to update the player resources
  
 app.put('/api/updateResources', async (req, res) => {
   const update = req.body
-  const { player_id, item_id } = update
+  const { player_id, item_id, quantity } = update
 
   console.log(update)
-
 
   let connection = null   
   try {
     
     connection = await connectToDB()
-    const [results, fields] = await connection.query("CALL update_resources(?, ?)", [player_id, item_id])
+    const [results, fields] = await connection.query("CALL update_resources(?, ?, ?)", [player_id, item_id, quantity])
     
     console.log("update results", results)
     results.affectedRows == 1 ? // when one row is affected, the update operation was successful
@@ -145,8 +195,9 @@ app.put('/api/updateResources', async (req, res) => {
 })
 
 
+//  Game statistics endpoint
 
-
+// Most created weapons by players 
 
 
 
