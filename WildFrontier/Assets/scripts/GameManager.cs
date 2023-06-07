@@ -10,19 +10,33 @@ public class GameManager : MonoBehaviour
     [SerializeField] Tilemap groundTilemap;
     [SerializeField] WolfAgentMovement agent;
     [SerializeField] PlayerController playerController;
-    [SerializeField] WolfDirection wolfController;
+    //[SerializeField] WolfDirection wolfController;
     [SerializeField] float minDistance;
+    [SerializeField] float InstantiateOffset; 
     private NavMeshPath path;
     private Bounds worldBounds;
     private GameObject viewer;
 
     bool flag = false;
 
+    private int numberOfEnemies = 4; // number of enemies to be instantiated at checkpoint
+
     // list of level checkpoints
     private List<Vector3> checkpoints = new List<Vector3>();
 
     // Helper vector to find a random position on the map
     Vector3 randomPosition;
+
+    // list of enemies
+    private GameObject[] enemies;
+
+    // enemies to instantiate
+    [SerializeField] GameObject ImpalerEnemy;
+    [SerializeField] GameObject GrimEnemy;
+
+    // variable to check if enemies are instantiated
+
+    bool areEnemiesInstantiated;
 
     // Start is called before the first frame update
     void Start()
@@ -41,6 +55,7 @@ public class GameManager : MonoBehaviour
         //Debug.Log("max y is : " + worldBounds.max.y);
         //Debug.Log(worldBounds.center);
         generateCheckpoints();
+
     }
 
     // Update is called once per frame
@@ -50,6 +65,14 @@ public class GameManager : MonoBehaviour
         { // if valid checkpoints have been generated
             flag = false;
             agent.GetLevelCheckpoints(checkpoints);
+        }
+
+        if(areEnemiesInstantiated == true) // enemies instantiated
+        {
+            areEnemiesInstantiated = false;
+            // store them in a gameobject array
+            enemies = GameObject.FindGameObjectsWithTag("Enemy");
+            //checkEnemiesStatus = 
         }
 
         // Game over 
@@ -112,6 +135,31 @@ public class GameManager : MonoBehaviour
             return true;
     }
 
+    public void InstantiateEnemies(Vector3 currentCheckpoint)
+    {
+        // Create a copy of the enemies
+
+        for (int i = 0; i < numberOfEnemies; i++)
+        {
+            Vector3 newPos = new Vector3(Random.Range(currentCheckpoint.x - InstantiateOffset, currentCheckpoint.x + InstantiateOffset), Random.Range(currentCheckpoint.y - InstantiateOffset, currentCheckpoint.y + InstantiateOffset), 0);
+
+            if (i%2==0)
+            {
+                Instantiate(ImpalerEnemy, newPos, Quaternion.identity); // quaternion for rotation
+            }
+            else
+            {
+                Instantiate(GrimEnemy, newPos, Quaternion.identity); // quaternion for rotation
+            }
+        }
+
+        areEnemiesInstantiated = true;
+
+
+
+    }
+
+
     private void GameOver()
     {
         StartCoroutine(EndGame());
@@ -119,7 +167,7 @@ public class GameManager : MonoBehaviour
 
     IEnumerator EndGame()
     {
-        if (playerController.health == 0 || wolfController.health == 0)
+        if (playerController.health == 0 || agent.health == 0)
         {
             yield return new WaitForSeconds(2);
             // pause the game

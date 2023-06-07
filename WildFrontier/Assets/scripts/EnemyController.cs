@@ -9,8 +9,8 @@ using UnityEngine.AI;
 public class EnemyController : MonoBehaviour
 {
     [SerializeField] public Enemy enemy;
-    [SerializeField] GameObject player;
-    [SerializeField] GameObject wolf;
+    GameObject player;
+    GameObject wolf;
     [SerializeField] public NavMeshAgent enemyAgent;
     [SerializeField] float attackRadius;
 
@@ -21,6 +21,8 @@ public class EnemyController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        player = GameObject.FindGameObjectWithTag("Player");
+        wolf = GameObject.FindGameObjectWithTag("Wolf");
         enemyAgent.updateRotation = false;
         enemyAgent.updateUpAxis = false;
     }
@@ -93,7 +95,7 @@ public class EnemyController : MonoBehaviour
 
     private void EndAttack()
     {
-        if (player.GetComponent<PlayerController>().health == 0 || wolf.GetComponent<WolfDirection>().health == 0)
+        if (player.GetComponent<PlayerController>().health == 0 || wolf.GetComponent<WolfAgentMovement>().health == 0)
         {
             enemyAgent.isStopped = true;
             //player.GetComponent<PlayerController>().isDead = true;
