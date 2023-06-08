@@ -11,7 +11,7 @@ public class Weapon : ScriptableObject
     [SerializeField] string type;
     [SerializeField] public int woodRequirement;
     [SerializeField] public int rockRequirement;
-    [SerializeField] int damage;
+    [SerializeField] public int damage;
     [SerializeField] int speed;
     [SerializeField] int reload;
     [SerializeField] public Sprite icon;

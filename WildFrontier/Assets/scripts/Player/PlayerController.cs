@@ -7,6 +7,9 @@ public class PlayerController : MonoBehaviour
 {
     private Vector2 movementInput;
     private Vector2 facingDirection;
+    public int health = 100;
+    public bool isDead = false;
+
     [SerializeField] Attack attack;
 
     private Rigidbody2D rb;
@@ -21,6 +24,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] CharacterState UseSword;
 
     [SerializeField] CharacterState UseSpear;
+
+    public AnimationClip deathAnim;
 
 
     [SerializeField] StateAnimationsSetDictionary StateAnimations;
@@ -44,7 +49,7 @@ public class PlayerController : MonoBehaviour
 
     private CharacterState currentState;
 
-    private Animator animator;
+    public Animator animator;
 
     private AnimationClip currentClip;
 
@@ -83,6 +88,10 @@ public class PlayerController : MonoBehaviour
             ChangeClip();
         }
 
+        if(health == 0)
+        {
+            animator.Play(deathAnim.name);
+        }
 
     }
 
@@ -113,6 +122,9 @@ public class PlayerController : MonoBehaviour
         } else if(attack.weaponToUse.name == "spear")
         {
             CurrentState = UseSpear;
+        } else
+        {
+            return;
         }
     }
 

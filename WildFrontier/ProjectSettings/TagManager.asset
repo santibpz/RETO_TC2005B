@@ -12,6 +12,8 @@ TagManager:
   - Inventory
   - ResourceSlot
   - Build
+  - Enemy
+  - Wolf
   layers:
   - Default
   - TransparentFX
