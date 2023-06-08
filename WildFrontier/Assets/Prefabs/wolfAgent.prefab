@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5979840476349003722}
   - component: {fileID: 5979840476349003727}
   - component: {fileID: 5979840476349003724}
+  - component: {fileID: 7905970171081319886}
   m_Layer: 0
   m_Name: wolfAgent
   m_TagString: Untagged
@@ -125,6 +126,8 @@ MonoBehaviour:
   gameManager: {fileID: 0}
   wolfAgent: {fileID: 0}
   wolfGraphic: {fileID: 5979840476551170805}
+  health: 100
+  freeToMove: 0
 --- !u!50 &5979840476349003724
 Rigidbody2D:
   serializedVersion: 4
@@ -146,6 +149,32 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!61 &7905970171081319886
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5979840476349003723}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.0055566058, y: -0.045380294}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.3862173, y: 0.23188493}
+  m_EdgeRadius: 0
 --- !u!1 &5979840476551170800
 GameObject:
   m_ObjectHideFlags: 0
@@ -158,7 +187,6 @@ GameObject:
   - component: {fileID: 5979840476551170806}
   - component: {fileID: 5979840476551170805}
   - component: {fileID: 5979840476551170804}
-  - component: {fileID: 5979840476551170811}
   m_Layer: 0
   m_Name: wolf
   m_TagString: Wolf
@@ -249,7 +277,7 @@ MonoBehaviour:
   deathAnim: {fileID: 7400000, guid: 653346a90b56ee64095a3ac10ee1ab5a, type: 2}
   animator: {fileID: 5979840476551170804}
   isMoving: 0
-  health: 100
+  isWolfDead: 0
 --- !u!95 &5979840476551170804
 Animator:
   serializedVersion: 5
@@ -271,29 +299,3 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!61 &5979840476551170811
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5979840476551170800}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.0040672123, y: -0.01071009}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.41}
-    newSize: {x: 0.64, y: 0.41}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.29386473, y: 0.27945822}
-  m_EdgeRadius: 0

@@ -47,10 +47,12 @@ public class WolfAgentMovement : MonoBehaviour
         {
             isOnCheckpointRoute = false;
             flag = true;
-            // control the wolf movement at checkpoint
-            MovementController();
-        }
             
+        }
+
+        // control the wolf movement at checkpoint
+        MovementController();
+
         // check if player stops wolf movement
         toggleWolfMovement();
  
@@ -61,9 +63,11 @@ public class WolfAgentMovement : MonoBehaviour
         }
 
         // check if player has killed all enemies
-        if(freeToMove)
+        if(freeToMove && hasReachedLastCheckpoint == false)
         {
+            freeToMove = false;
             Debug.Log("player has killed all enemies");
+            SetWolfDestination();
         }
     }
 
@@ -78,6 +82,13 @@ public class WolfAgentMovement : MonoBehaviour
     {
         if (wolfAgent.hasPath == false && flag == true) // wolf has reached checkpoint
         {
+
+            if(hasReachedLastCheckpoint)
+            {
+                // final battle
+                Debug.Log("Final checkpoint of the game");
+            }
+
             flag = false;
             Debug.Log("wolf has no path");
 
@@ -85,16 +96,19 @@ public class WolfAgentMovement : MonoBehaviour
             wolfGraphic.isMoving = false;
 
             // instantiate enemies
-            gameManager.InstantiateEnemies(wolfAgent.transform.position);
-
+            gameManager.InstantiateEnemies(wolfAgent.transform.position, hasReachedLastCheckpoint);
         }
     }
 
     void SetWolfDestination()
     {
+        if (checkpointNo == levelCheckpoints.Count - 1) // check if player has reached last checkpoint
+        {
+            hasReachedLastCheckpoint = true;
+        }
         Debug.Log("Setting wolf dest");
         viewer.transform.position = levelCheckpoints[checkpointNo];
-        wolfAgent.SetDestination(levelCheckpoints[checkpointNo]);
+        wolfAgent.SetDestination(levelCheckpoints[checkpointNo]); 
         wolfAgent.isStopped = true;
         wolfGraphic.isMoving = false;
         isOnCheckpointRoute = true;

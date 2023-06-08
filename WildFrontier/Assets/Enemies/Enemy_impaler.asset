@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Impaler
   usedWeapon: {fileID: 11400000, guid: 11aa479990d333142b848d95e7159af3, type: 2}
-  health: 100
+  health: 20

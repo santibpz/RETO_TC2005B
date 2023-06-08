@@ -12,7 +12,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] PlayerController playerController;
     //[SerializeField] WolfDirection wolfController;
     [SerializeField] float minDistance;
-    [SerializeField] float InstantiateOffset; 
+    [SerializeField] float InstantiateOffset;
     private NavMeshPath path;
     private Bounds worldBounds;
     private GameObject viewer;
@@ -36,14 +36,20 @@ public class GameManager : MonoBehaviour
 
     // variable to check if enemies are instantiated
 
-    bool areEnemiesInstantiated;
+    bool areEnemiesInstantiated = false;
+
+    // check status of enemies
+    bool checkStatusOfEnemies = false;
+
+    // check if player has reached final level
+    bool playerHasReachedFinalLevel = false;
 
     // Start is called before the first frame update
     void Start()
     {
         path = new NavMeshPath();
         worldBounds = groundTilemap.localBounds;
-        viewer = GameObject.Find("viewer"); 
+        viewer = GameObject.Find("viewer");
         Debug.Log("up is: " + Vector2.up);
         //Debug.Log("world bounds are: " + worldBounds);
         //Debug.Log("min : " + worldBounds.min);
@@ -67,13 +73,20 @@ public class GameManager : MonoBehaviour
             agent.GetLevelCheckpoints(checkpoints);
         }
 
-        if(areEnemiesInstantiated == true) // enemies instantiated
+        if (areEnemiesInstantiated == true) // enemies instantiated
         {
             areEnemiesInstantiated = false;
             // store them in a gameobject array
             enemies = GameObject.FindGameObjectsWithTag("Enemy");
-            //checkEnemiesStatus = 
+            checkStatusOfEnemies = true;
         }
+
+        if (checkStatusOfEnemies == true)
+        {
+            CheckIfEnemiesDestroyed();
+        }
+
+
 
         // Game over 
         //GameOver();
@@ -81,11 +94,11 @@ public class GameManager : MonoBehaviour
 
     private void generateCheckpoints()
     {
-        while(checkpoints.Count <= 3)
+        while (checkpoints.Count <= 3)
         {
             // quadrants
             generateRandomDestination();
-            
+
         }
         flag = true;
 
@@ -103,7 +116,7 @@ public class GameManager : MonoBehaviour
         randomPosition = new Vector3(xPos, yPos, 0);
         viewer.transform.position = randomPosition;
         checkValidDestination(randomPosition);
-        
+
     }
 
     private void checkValidDestination(Vector3 randomDestination)
@@ -111,7 +124,7 @@ public class GameManager : MonoBehaviour
         if ((agent.wolfAgent.CalculatePath(randomDestination, path) && path.status == NavMeshPathStatus.PathComplete) && IsBetweenAcceptableDistance(randomDestination))
         {
             //if the destination position can be reached
-           // Debug.Log("Vector checkpoints count: " + checkpoints.Count);
+            // Debug.Log("Vector checkpoints count: " + checkpoints.Count);
 
             checkpoints.Add(randomDestination);
         } else
@@ -124,39 +137,91 @@ public class GameManager : MonoBehaviour
 
     private bool IsBetweenAcceptableDistance(Vector3 destination)
     {
-            for (int i = 0; i < checkpoints.Count; i++)
+        for (int i = 0; i < checkpoints.Count; i++)
+        {
+            //Debug.Log($"Distance between point {i} and new position {destination} is:  {Vector3.Distance(checkpoints[i], destination)}");
+            if (Vector3.Distance(checkpoints[i], destination) < minDistance)
             {
-                //Debug.Log($"Distance between point {i} and new position {destination} is:  {Vector3.Distance(checkpoints[i], destination)}");
-                if (Vector3.Distance(checkpoints[i], destination) < minDistance)
-                {
-                    return false;
-                }
+                return false;
             }
-            return true;
+        }
+        return true;
     }
 
-    public void InstantiateEnemies(Vector3 currentCheckpoint)
+    public void InstantiateEnemies(Vector3 currentCheckpoint, bool isFinalCheckPoint)
     {
         // Create a copy of the enemies
 
-        for (int i = 0; i < numberOfEnemies; i++)
+        if (isFinalCheckPoint == true)
         {
-            Vector3 newPos = new Vector3(Random.Range(currentCheckpoint.x - InstantiateOffset, currentCheckpoint.x + InstantiateOffset), Random.Range(currentCheckpoint.y - InstantiateOffset, currentCheckpoint.y + InstantiateOffset), 0);
+            playerHasReachedFinalLevel = true;
+            for (int i = 0; i < numberOfEnemies * 2; i++)
+            {
+                Vector3 newPos = new Vector3(Random.Range(currentCheckpoint.x - InstantiateOffset, currentCheckpoint.x + InstantiateOffset), Random.Range(currentCheckpoint.y - InstantiateOffset, currentCheckpoint.y + InstantiateOffset), 0);
+                if(i == 0)
+                {
+                    // Final Boss is instantiated
+                    Debug.Log("Final boss is instantiated");
+                    // Instantiate(FinalBossEnemy, newPos, Quaternion.identity);
+                }
+                else
+                {
+                    if (i % 2 == 0)
+                    {
 
-            if (i%2==0)
-            {
-                Instantiate(ImpalerEnemy, newPos, Quaternion.identity); // quaternion for rotation
+                        Instantiate(ImpalerEnemy, newPos, Quaternion.identity); // quaternion for rotation
+                    }
+                    else
+                    {
+                        Instantiate(GrimEnemy, newPos, Quaternion.identity); // quaternion for rotation
+                    }
+                }
+                
             }
-            else
+        } else
+        {
+            for (int i = 0; i < numberOfEnemies; i++)
             {
-                Instantiate(GrimEnemy, newPos, Quaternion.identity); // quaternion for rotation
+                Vector3 newPos = new Vector3(Random.Range(currentCheckpoint.x - InstantiateOffset, currentCheckpoint.x + InstantiateOffset), Random.Range(currentCheckpoint.y - InstantiateOffset, currentCheckpoint.y + InstantiateOffset), 0);
+
+                if (i % 2 == 0)
+                {
+
+                    Instantiate(ImpalerEnemy, newPos, Quaternion.identity); // quaternion for rotation
+                }
+                else
+                {
+                    Instantiate(GrimEnemy, newPos, Quaternion.identity); // quaternion for rotation
+                }
             }
         }
 
         areEnemiesInstantiated = true;
 
+    }
 
+    private void CheckIfEnemiesDestroyed()
+    {
+        Debug.Log("checking");
+        for (int i = 0; i < enemies.Length; i++)
+        {
+            if (enemies[i] != null) return;
+        }
+        // if the for is completed, then all enemies have been killed
+        checkStatusOfEnemies = false;
+        if (playerHasReachedFinalLevel == true)
+        {
 
+            // Display winning screen
+            // LevelCompleted()
+
+        } else
+        {
+            agent.freeToMove = true;
+        }
+        
+       
+        
     }
 
 

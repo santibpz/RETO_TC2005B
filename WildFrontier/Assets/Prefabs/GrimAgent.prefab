@@ -340,7 +340,7 @@ NavMeshAgent:
   m_Acceleration: 1
   avoidancePriority: 50
   m_AngularSpeed: 120
-  m_StoppingDistance: 0.2
+  m_StoppingDistance: 1.2
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
@@ -361,8 +361,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 11400000, guid: d5ebcee1dd4fc284e95fc71333353d41, type: 2}
-  player: {fileID: 277015715511151457, guid: 9bb42d2688d4f9f43b9b3d5c2923a8bc, type: 3}
-  wolf: {fileID: 5979840476349003723, guid: 5d5416358ea7dfc458798fe497a4a7dc, type: 3}
   enemyAgent: {fileID: 1561488423840800513}
   attackRadius: 2.5
   enemyGraphic: {fileID: 1561488422647510960}

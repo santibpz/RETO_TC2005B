@@ -361,8 +361,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 11400000, guid: 0db2701f7b5e1c145adb2f6fbc7ee639, type: 2}
-  player: {fileID: 277015715511151457, guid: 9bb42d2688d4f9f43b9b3d5c2923a8bc, type: 3}
-  wolf: {fileID: 5979840476349003723, guid: 5d5416358ea7dfc458798fe497a4a7dc, type: 3}
   enemyAgent: {fileID: 8826240376580009396}
   attackRadius: 2
   enemyGraphic: {fileID: 8826240375836967779}
