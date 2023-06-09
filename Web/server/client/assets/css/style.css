@@ -588,7 +588,7 @@ section {
 /* Section with background
 --------------------------------*/
 .section-bg {
-  background: #f7f7f7;
+  background: rgba(42, 108, 118, 0.453);
 }
 
 /*--------------------------------------------------------------
@@ -596,7 +596,7 @@ section {
 --------------------------------------------------------------*/
 .breadcrumbs {
   padding: 20px 0;
-  background-color: #f7f7f7;
+  background-color: #c8db53be;
   min-height: 40px;
   margin-top: 80px;
 }
@@ -686,7 +686,7 @@ section {
 /* About Us Section
 --------------------------------*/
 #about {
-  background: url("../img/about-bg.jpg") center top no-repeat fixed;
+  background: url("../img/forest3.jpg") center top no-repeat fixed;
   background-size: cover;
   padding: 60px 0 40px 0;
   position: relative;
@@ -699,7 +699,7 @@ section {
   right: 0;
   top: 0;
   bottom: 0;
-  background: rgba(255, 255, 255, 0.92);
+  background: rgba(102, 91, 74, 0.92);
   z-index: 9;
 }
 
@@ -709,7 +709,7 @@ section {
 }
 
 #about .about-col {
-  background: #fff;
+  background: rgb(165, 118, 74);
   border-radius: 0 0 4px 4px;
   box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
   margin-bottom: 20px;
@@ -774,7 +774,7 @@ section {
 #about .about-col p {
   font-size: 14px;
   line-height: 24px;
-  color: #333;
+  color: #000000;
   margin-bottom: 0;
   padding: 0 20px 20px 20px;
 }
@@ -782,7 +782,7 @@ section {
 /* Services Section
 --------------------------------*/
 #services {
-  background: #fff;
+  background: burlywood;
   background-size: cover;
   padding: 60px 0 40px 0;
 }
@@ -822,6 +822,7 @@ section {
   margin-left: 60px;
   line-height: 24px;
   margin-bottom: 0;
+  color: #000;
 }
 
 /* Call To Action Section
@@ -901,6 +902,7 @@ section {
   background-size: cover;
   padding: 60px 0 0 0;
   position: relative;
+
 }
 
 #facts::before {
@@ -910,7 +912,7 @@ section {
   right: 0;
   top: 0;
   bottom: 0;
-  background: rgba(255, 255, 255, 0.88);
+  background: rgba(248, 199, 169, 0.88);
   z-index: 9;
 }
 
@@ -963,7 +965,7 @@ section {
   color: #666666;
   border-radius: 4px;
   text-transform: uppercase;
-  background: #fff;
+  background: #ffffff;
   margin-bottom: 5px;
   transition: all 0.3s ease-in-out;
 }
@@ -1098,6 +1100,8 @@ section {
 --------------------------------------------------------------*/
 .portfolio-details {
   padding-top: 40px;
+  background-color: #c6ab5f8d;
+  color: #000;
 }
 
 .portfolio-details .portfolio-details-slider img {
@@ -1376,7 +1380,7 @@ section {
   margin-bottom: 15px;
   font-weight: bold;
   text-transform: uppercase;
-  color: #999;
+  color: #000000;
 }
 
 #contact .contact-info a {
@@ -2031,7 +2035,7 @@ section {
 }
 
 #footer .footer-top {
-  background: #111;
+  background: #221717;
   padding: 60px 0 30px 0;
 }
 
