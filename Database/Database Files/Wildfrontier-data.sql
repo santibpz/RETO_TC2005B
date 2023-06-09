@@ -3,8 +3,8 @@ use wildfrontier;
 
 SET AUTOCOMMIT=0;
 INSERT INTO Player (username, password, email) VALUES
-('player1', 'password1', 'player1@example.com'),
-('player2', 'password2', 'player2@example.com'),
+('nuevo', 'contraseña', 'sbp@gmail.com'),
+('player2', 'password2', 'jugador@gmail.com'),
 ('player3', 'password3', 'player3@example.com'),
 ('player4', 'password4', 'player4@example.com'),
 ('player5', 'password5', 'player5@example.com'),
@@ -17,24 +17,22 @@ INSERT INTO Player (username, password, email) VALUES
 SET AUTOCOMMIT=0;
 INSERT INTO Weapon (weapon_name, weapon_type, upgrade_count) VALUES
 ('Sword', 'Short range', 3),
-('Bow', 'Long range', 2),
-('Spear', 'Short range', 4),
-('Boomerang', 'Short range', 7);
-
+('Stone Knife', 'Long range', 6),
+('Spear', 'Short range', 2);
 
 SET AUTOCOMMIT=0;
-INSERT INTO Player_Weapon (player_id, weapon_id, weapon_damage, weapon_speed, weapon_reload) VALUES
-(1, 1, 50, 80, 2),
-(2, 2, 40, 90, 3),
-(3, 3, 60, 70, 2),
-(4, 4, 70, 60, 3),
-(5, 2, 45, 85, 2),
-(6, 1, 55, 75, 3),
-(7, 1, 50, 80, 2),
-(1, 4, 50, 180, 20),
-(8, 2, 40, 90, 3),
-(9, 2, 60, 70, 2),
-(10, 3, 70, 60, 3);
+INSERT INTO Player_Weapon (player_id, weapon_id, weapon_damage) VALUES
+(1, 1, 50),
+(2, 2, 40),
+(3, 3, 60),
+(4, 2, 70),
+(5, 2, 45),
+(6, 1, 55),
+(7, 1, 50),
+(1, 2, 50),
+(8, 2, 40),
+(9, 2, 60),
+(10, 3, 70);
 
 SET AUTOCOMMIT=0;
 INSERT INTO Item_inventory (item_name, item_type) VALUES
@@ -60,36 +58,32 @@ INSERT INTO Player_Item (player_id, item_id, quantity) VALUES
 (10, 6, 4);
 
 SET AUTOCOMMIT=0;
-INSERT INTO Player_Status (player_id, completed_levels, current_level, last_checkpoint) VALUES
-(1, 5, 6, 3),
-(2, 3, 4, 2),
-(3, 6, 7, 5),
-(4, 4, 5, 3),
-(5, 7, 8, 4),
-(6, 2, 3, 1),
-(7, 8, 9, 6),
-(8, 4, 5, 2),
-(9, 6, 7, 4),
-(10, 3, 4, 2);
+INSERT INTO Player_Status (player_id, current_level, last_checkpoint) VALUES
+(1, 1, 3),
+(2, 1, 2),
+(3, 1, 1),
+(4, 1, 2),
+(5, 1, 3),
+(6, 1, 2),
+(7, 1, 1),
+(8, 1, 4),
+(9, 1, 3),
+(10, 1, 1);
 
 SET AUTOCOMMIT=0;
-INSERT INTO Game_Level (lvl_name, difficulty, level_lose_count) VALUES
-('Level 1', 'Easy', 15),
-('Level 2', 'Medium', 21);
-
-
-SET AUTOCOMMIT=0;
-INSERT INTO Player_level (player_id, level_id, player_lose_count) VALUES
-(1, 1, 4),
+INSERT INTO Checkpoint_Death (checkpoint, player_id, player_lose_count) VALUES
+(1, 2, 5),
+(2, 1, 3),
+(3, 3, 6),
 (2, 2, 1),
-(3, 2, 2),
-(4, 1, 1),
-(5, 2, 3),
-(6, 1, 7),
-(7, 2, 2),
-(8, 1, 1),
-(9, 1, 2),
-(10, 2, 3);
+(4, 4, 10),
+(1, 5, 5),
+(3, 6, 6),
+(1, 7, 4),
+(1, 8, 3),
+(2, 9, 8),
+(4, 3, 1),
+(3, 10, 5);
 
 SET AUTOCOMMIT=0;
 INSERT INTO Death_Type (death_type) VALUES
