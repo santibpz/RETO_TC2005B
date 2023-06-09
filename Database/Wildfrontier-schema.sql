@@ -1,4 +1,4 @@
--- Wild Frontier Database
+-- Wild Frontier Database 
 
 drop schema if exists WildFrontier;
 create schema WildFrontier;
