@@ -10,7 +10,8 @@ public class WolfDirection : MonoBehaviour
     [SerializeField] Animator animator;
     private Vector3 direction;
     public bool isMoving = false;
-    public int health = 100;
+
+    public bool isWolfDead = false;
 
     // Start is called before the first frame update
     void Start()
@@ -22,7 +23,7 @@ public class WolfDirection : MonoBehaviour
     {
         SetAnimation();
 
-        if(health == 0)
+        if(isWolfDead)
         {
             animator.Play(deathAnim.name);
         }

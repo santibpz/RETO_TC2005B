@@ -8,5 +8,5 @@ public class Enemy : ScriptableObject
 {
     [SerializeField] public string name;
     [SerializeField] public Weapon usedWeapon;
-    [SerializeField] public int health;
+    [SerializeField] public int health = 100;
 }
