@@ -9,6 +9,8 @@ using UnityEngine.AI;
 public class WolfAgentMovement : MonoBehaviour
 {
     [SerializeField] GameManager gameManager;
+    [SerializeField] PlayerController player;
+    [SerializeField] CameraController controller;
     public NavMeshAgent wolfAgent;
     private GameObject viewer;
     public WolfDirection wolfGraphic;
@@ -24,6 +26,8 @@ public class WolfAgentMovement : MonoBehaviour
     bool flag; // helper flag to control Wolf controller function
 
     bool isOnCheckpointRoute; // check if wolf is en route
+
+    bool startWolfMovementAtCheckPoint = false; // variable to start wolf movement at checkpoint
 
     public bool freeToMove = false; // check if wolf can continue to the next checkpoint
 
@@ -41,7 +45,6 @@ public class WolfAgentMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
         // flags to allow wolf control 
         if (wolfAgent.hasPath && isOnCheckpointRoute)
         {
@@ -55,9 +58,9 @@ public class WolfAgentMovement : MonoBehaviour
 
         // check if player stops wolf movement
         toggleWolfMovement();
- 
+
         // check if wolf health is 0
-        if(health == 0)
+        if (health == 0)
         {
             wolfGraphic.isWolfDead = true;
         }
@@ -66,9 +69,13 @@ public class WolfAgentMovement : MonoBehaviour
         if(freeToMove && hasReachedLastCheckpoint == false)
         {
             freeToMove = false;
+            startWolfMovementAtCheckPoint = false;
             Debug.Log("player has killed all enemies");
             SetWolfDestination();
         }
+
+        // Set the wolf movement on checkpoint
+        SetWolfMovementOnCheckpoint();
     }
 
     public void GetLevelCheckpoints(List<Vector3>checkpoints)
@@ -83,6 +90,8 @@ public class WolfAgentMovement : MonoBehaviour
         if (wolfAgent.hasPath == false && flag == true) // wolf has reached checkpoint
         {
 
+            controller.cam.m_Follow = null;
+
             if(hasReachedLastCheckpoint)
             {
                 // final battle
@@ -93,14 +102,15 @@ public class WolfAgentMovement : MonoBehaviour
             Debug.Log("wolf has no path");
 
             // set the wolf movement at checkpoint
-            wolfGraphic.isMoving = false;
+            //wolfGraphic.isMoving = false;
+            startWolfMovementAtCheckPoint = true;
 
             // instantiate enemies
             gameManager.InstantiateEnemies(wolfAgent.transform.position, hasReachedLastCheckpoint);
         }
     }
 
-    void SetWolfDestination()
+    private void SetWolfDestination()
     {
         if (checkpointNo == levelCheckpoints.Count - 1) // check if player has reached last checkpoint
         {
@@ -113,6 +123,28 @@ public class WolfAgentMovement : MonoBehaviour
         wolfGraphic.isMoving = false;
         isOnCheckpointRoute = true;
         checkpointNo++; 
+    }
+
+    private void SetWolfMovementOnCheckpoint()
+    {
+        
+        if(startWolfMovementAtCheckPoint == true)
+        {
+            Debug.Log("entered fn");
+            wolfAgent.SetDestination(player.gameObject.transform.position);
+
+            if (player.rb.velocity.magnitude > 0.05f)
+            {
+                wolfGraphic.isMoving = true;
+
+                wolfAgent.isStopped = false;
+            } else
+            {
+                wolfGraphic.isMoving = false;
+
+                wolfAgent.isStopped = true;
+            }
+        }
     }
 
 

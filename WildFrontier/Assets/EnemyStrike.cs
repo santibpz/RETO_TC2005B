@@ -27,6 +27,7 @@ public class EnemyStrike : MonoBehaviour
         {
             PlayerController player = collision.gameObject.GetComponent<PlayerController>();
             player.health -= strikingWeapon.damage;
+            player.healthBar.UpdateHealthBar(player.health, 100);
             Debug.Log($"Player health is {player.health}");
         } else if(collision.gameObject.CompareTag("Wolf"))
         {
