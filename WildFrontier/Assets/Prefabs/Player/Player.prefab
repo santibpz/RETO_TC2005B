@@ -187,6 +187,7 @@ MonoBehaviour:
   health: 100
   isDead: 0
   attack: {fileID: 2385620506719385167}
+  healthBar: {fileID: 0}
   rb: {fileID: 0}
   moveSpeed: 300
   Idle: {fileID: 11400000, guid: b51935bcaa0ea4c4fb1aa77f303b5b5f, type: 2}
@@ -266,7 +267,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 277015715511151457}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
