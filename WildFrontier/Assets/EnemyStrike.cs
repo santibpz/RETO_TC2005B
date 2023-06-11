@@ -33,6 +33,7 @@ public class EnemyStrike : MonoBehaviour
         {
             WolfAgentMovement wolf = collision.gameObject.GetComponent<WolfAgentMovement>();
             wolf.health -= strikingWeapon.damage;
+            wolf.healthBar.UpdateHealthBar(wolf.health, 100);
             Debug.Log($"wolfie health is {wolf.health}");
         }
     }

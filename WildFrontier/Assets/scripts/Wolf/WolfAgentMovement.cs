@@ -10,7 +10,7 @@ public class WolfAgentMovement : MonoBehaviour
 {
     [SerializeField] GameManager gameManager;
     [SerializeField] PlayerController player;
-    [SerializeField] CameraController controller;
+    [SerializeField] public FloatingHealthBar healthBar;
     public NavMeshAgent wolfAgent;
     private GameObject viewer;
     public WolfDirection wolfGraphic;
@@ -72,6 +72,7 @@ public class WolfAgentMovement : MonoBehaviour
             startWolfMovementAtCheckPoint = false;
             Debug.Log("player has killed all enemies");
             SetWolfDestination();
+            gameManager.ControlCameraFollow(true);
         }
 
         // Set the wolf movement on checkpoint
@@ -90,8 +91,6 @@ public class WolfAgentMovement : MonoBehaviour
         if (wolfAgent.hasPath == false && flag == true) // wolf has reached checkpoint
         {
 
-            controller.cam.m_Follow = null;
-
             if(hasReachedLastCheckpoint)
             {
                 // final battle
@@ -107,6 +106,10 @@ public class WolfAgentMovement : MonoBehaviour
 
             // instantiate enemies
             gameManager.InstantiateEnemies(wolfAgent.transform.position, hasReachedLastCheckpoint);
+
+            // camera follow player
+            gameManager.ControlCameraFollow(false);
+
         }
     }
 

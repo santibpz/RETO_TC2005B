@@ -75,7 +75,6 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        Debug.Log($"player movement: {(rb.velocity.magnitude > 0.05f) == true}");
         timeToEndAnimation = Mathf.Max(timeToEndAnimation - Time.deltaTime, 0);
         if (currentState.CanExitWhilePlaying || timeToEndAnimation <= 0)
         {
