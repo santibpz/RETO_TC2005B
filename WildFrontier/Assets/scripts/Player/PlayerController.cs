@@ -30,6 +30,9 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] StateAnimationsSetDictionary StateAnimations;
 
+    private bool canAttack = true; // Variable to control if an attack can be performed
+    public float attackCooldown = 1f; // Cooldown time between attacks
+
     public CharacterState CurrentState {
         get
         {
@@ -54,6 +57,7 @@ public class PlayerController : MonoBehaviour
     private AnimationClip currentClip;
 
     private float timeToEndAnimation = 0f;
+    private float attackCooldownTimer = 0f; // Timer for attack cooldown
 
     // Start is called before the first frame update
     void Start()
@@ -93,6 +97,12 @@ public class PlayerController : MonoBehaviour
             animator.Play(deathAnim.name);
         }
 
+        // Update attack cooldown timer
+        attackCooldownTimer -= Time.deltaTime;
+        if (attackCooldownTimer <= 0)
+        {
+            canAttack = true; // Allow attack if cooldown has finished
+        }
     }
 
     private void ChangeClip()
@@ -135,9 +145,14 @@ public class PlayerController : MonoBehaviour
 
     private void OnAttack()
     {
-        Debug.Log("attack action trigggered");
-        GetAttackState();
+        if (canAttack)
+        {
+            Debug.Log("Attack action triggered");
+            GetAttackState();
+
+            // Start attack cooldown
+            canAttack = false;
+            attackCooldownTimer = attackCooldown;
+        }
     }
-
-
 }
