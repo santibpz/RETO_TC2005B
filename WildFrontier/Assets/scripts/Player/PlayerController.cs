@@ -11,8 +11,9 @@ public class PlayerController : MonoBehaviour
     public bool isDead = false;
 
     [SerializeField] Attack attack;
+    [SerializeField] public FloatingHealthBar healthBar;
 
-    private Rigidbody2D rb;
+    public Rigidbody2D rb;
     [SerializeField] float moveSpeed;
 
     [SerializeField] CharacterState Idle;
