@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour
     //[SerializeField] WolfDirection wolfController;
     [SerializeField] float minDistance;
     [SerializeField] float InstantiateOffset;
+    [SerializeField] CameraController cameraController;
     private NavMeshPath path;
     private Bounds worldBounds;
     private GameObject viewer;
@@ -85,8 +86,6 @@ public class GameManager : MonoBehaviour
         {
             CheckIfEnemiesDestroyed();
         }
-
-
 
         // Game over 
         //GameOver();
@@ -219,9 +218,18 @@ public class GameManager : MonoBehaviour
         {
             agent.freeToMove = true;
         }
-        
        
-        
+    }
+
+    public void ControlCameraFollow(bool followPlayer)
+    {
+        if(followPlayer == true)
+        {
+            cameraController.cam.m_Follow = GameObject.FindGameObjectWithTag("Player").transform;
+        } else
+        {
+            cameraController.cam.m_Follow = null;
+        }
     }
 
 

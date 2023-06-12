@@ -13,6 +13,7 @@ public class EnemyController : MonoBehaviour
     GameObject wolf;
     [SerializeField] public NavMeshAgent enemyAgent;
     [SerializeField] float attackRadius;
+    [SerializeField] public FloatingHealthBar healthBar;
 
     Vector3 direction;
 
@@ -52,6 +53,8 @@ public class EnemyController : MonoBehaviour
         {
             StartCoroutine(DestroyEnemy());
         }
+
+        healthBar.UpdateHealthBar(health, enemy.health);
     }
 
     private void TriggerAttack()
