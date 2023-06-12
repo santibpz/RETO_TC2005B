@@ -39,6 +39,7 @@ DELIMITER
 
 DELIMITER //
 CREATE PROCEDURE update_resources(IN in_player_id INT, IN in_item_id INT, IN in_quantity INT)
+
 BEGIN
     DECLARE row_count INT; 
     
@@ -67,6 +68,7 @@ DELIMITER
 -- procedure to add a resource
 DELIMITER //
 CREATE PROCEDURE add_resource(IN in_player_id INT, IN in_item_id INT, IN in_quantity INT)
+
 BEGIN
     DECLARE row_count INT; 
     
@@ -90,9 +92,4 @@ BEGIN
     
 END //
 DELIMITER 
-
-
-
-
-
 
