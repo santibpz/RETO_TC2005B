@@ -1,10 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Cinemachine;
 
 public class CameraController : MonoBehaviour
 {
-    [SerializeField] Transform wolfAgent;
+    [SerializeField] public CinemachineVirtualCamera cam;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,6 +15,6 @@ public class CameraController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = new Vector3(wolfAgent.transform.position.x, wolfAgent.transform.position.y, transform.position.z);
+        
     }
 }

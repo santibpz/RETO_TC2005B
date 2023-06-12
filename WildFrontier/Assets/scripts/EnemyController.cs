@@ -9,18 +9,24 @@ using UnityEngine.AI;
 public class EnemyController : MonoBehaviour
 {
     [SerializeField] public Enemy enemy;
-    [SerializeField] GameObject player;
-    [SerializeField] GameObject wolf;
+    GameObject player;
+    GameObject wolf;
     [SerializeField] public NavMeshAgent enemyAgent;
     [SerializeField] float attackRadius;
+    [SerializeField] public FloatingHealthBar healthBar;
 
     Vector3 direction;
+
+    public int health;
 
     [SerializeField] EnemyMovement enemyGraphic;
    // [SerializeField] EnemyMovement impaler;
     // Start is called before the first frame update
     void Start()
     {
+        player = GameObject.FindGameObjectWithTag("Player");
+        wolf = GameObject.FindGameObjectWithTag("Wolf");
+        health = enemy.health;
         enemyAgent.updateRotation = false;
         enemyAgent.updateUpAxis = false;
     }
@@ -43,17 +49,20 @@ public class EnemyController : MonoBehaviour
 
         EndAttack();
 
-        if(enemy.health == 0)
+        if(health == 0)
         {
             StartCoroutine(DestroyEnemy());
         }
+
+        healthBar.UpdateHealthBar(health, enemy.health);
     }
 
     private void TriggerAttack()
     {
         //if(enemy.name == "Impaler")
         //{
-            if (Vector3.Distance(enemyAgent.transform.position, player.transform.position) <= attackRadius || Vector3.Distance(enemyAgent.transform.position, wolf.transform.position) <= attackRadius)
+            if (Vector3.Distance(enemyAgent.transform.position, player.transform.position) <= attackRadius 
+            || Vector3.Distance(enemyAgent.transform.position, wolf.transform.position) <= attackRadius)
             {
                 enemyAgent.isStopped = true;
                 if (direction.x > 0.6)
@@ -63,7 +72,6 @@ public class EnemyController : MonoBehaviour
                 else if (direction.x < -0.6)
                 {
                    enemyGraphic.animator.SetBool("CanAttackLeft", true);
-
                 }
                 else if (direction.y > 0.6)
                 {
@@ -93,7 +101,7 @@ public class EnemyController : MonoBehaviour
 
     private void EndAttack()
     {
-        if (player.GetComponent<PlayerController>().health == 0 || wolf.GetComponent<WolfDirection>().health == 0)
+        if (player.GetComponent<PlayerController>().health == 0 || wolf.GetComponent<WolfAgentMovement>().health == 0)
         {
             enemyAgent.isStopped = true;
             //player.GetComponent<PlayerController>().isDead = true;
