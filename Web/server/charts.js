@@ -1,4 +1,4 @@
-//  Game statistics charts
+// Game statistics charts
 
 const ctx1 = document.getElementById("chart1").getContext("2d")
 const ctx2 = document.getElementById("chart2").getContext("2d")

@@ -229,28 +229,6 @@ app.get('/api/createdWeaponsChart', async (req, res) => {
 
 })
 
-
-app.get('/api/createdWeaponsChart', async (req, res) => {
-  let connection = null
-
-  try {
-    connection = await connectToDB()
-    const [results, fields] = await connection.execute('select * from weapons_created_by_players')
-
-    results ? 
-    res.status(200).json(results) : 
-    res.sendStatus(404)
-
-  } catch (err) {
-    res.status(500).send("internal server error");
-  } finally {
-    if (connection !== null) {
-      connection.end();
-      console.log("Connection closed succesfully!");
-    }
-  }
-})
-
 app.get('/api/playerDeathTypes', async (req, res) => {
   let connection = null
 
