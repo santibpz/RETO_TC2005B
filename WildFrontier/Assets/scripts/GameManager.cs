@@ -14,6 +14,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] float minDistance;
     [SerializeField] float InstantiateOffset;
     [SerializeField] CameraController cameraController;
+    [SerializeField] GameObject GameOverCanvas;
+    [SerializeField] GameObject UIcanvas;
     private NavMeshPath path;
     private Bounds worldBounds;
     private GameObject viewer;
@@ -88,7 +90,7 @@ public class GameManager : MonoBehaviour
         }
 
         // Game over 
-        //GameOver();
+        GameOver();
     }
 
     private void generateCheckpoints()
@@ -245,8 +247,15 @@ public class GameManager : MonoBehaviour
             yield return new WaitForSeconds(2);
             // pause the game
             Time.timeScale = 0;
+
+            // Hide game UI
+            UIcanvas.SetActive(false);
+
             // load game over screen
             Debug.Log("You have lost!!");
+            GameOverCanvas.SetActive(true);
+
+            
         }
     }
 }

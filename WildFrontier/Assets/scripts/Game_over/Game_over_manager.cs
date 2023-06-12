@@ -19,6 +19,7 @@ public class Game_over_manager : MonoBehaviour
 
     public void gamescene(string scene)
     {
+        Time.timeScale = 1;
         SceneManager.LoadScene(scene);
     }
 
