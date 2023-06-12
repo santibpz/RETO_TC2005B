@@ -2,6 +2,8 @@
 
 const ctx1 = document.getElementById("chart1").getContext("2d")
 const ctx2 = document.getElementById("chart2").getContext("2d")
+const ctx3 = document.getElementById("chart3").getContext("2d")
+const ctx4 = document.getElementById("chart4").getContext("2d")
 
 const fetchInformation = async (url, endpoint) => {
     try {
@@ -46,6 +48,7 @@ const createdWeaponsChart = new Chart(ctx1,
         }
     })
 
+// NUmber of deaths registered under each type
 
 const playerDeathTypesData = await fetchInformation('http://localhost:3000', '/api/playerDeathTypes')
 
@@ -67,5 +70,55 @@ const playerDeathTypesChart = new Chart(ctx2,
                     data: playerCountChart2
                 }
             ]
+        }
+    })
+
+// The number of upgrades registered for every weapon
+
+const weaponUpgradesData = await fetchInformation('http://localhost:3000', '/api/weaponUpgrades')
+
+const upgradedWeapons = weaponUpgradesData.map(({weapon_name}) => weapon_name)
+const upgradeCount = weaponUpgradesData.map(({upgrade_count}) => upgrade_count)
+const colorsChart3 = weaponUpgradesData.map(e => randomColor())
+const bordersChart3 = weaponUpgradesData.map(e => 'rgba(0, 0, 0, 1.0)')
+
+const weaponUpgradesChart = new Chart(ctx3, 
+    {
+        type: 'polarArea',
+        data: {
+            labels: upgradedWeapons,
+            datasets: [
+                {
+                    label: 'Number of upgrades registered for every weapon',
+                    backgroundColor: colorsChart3,
+                    borderColor: bordersChart3,
+                    data: upgradeCount
+                }
+            ] 
+        }
+    })
+
+// The number of deaths registered in every checkpoint
+
+const checkpointDeaths = await fetchInformation('http://localhost:3000', '/api/checkpointDeaths')
+
+const checkpointId = checkpointDeaths.map(({checkpoint}) => `Checkpoint ${checkpoint}`)
+const loseCount = checkpointDeaths.map(({total_lose_count}) => total_lose_count)
+const colorsChart4 = checkpointDeaths.map(e => randomColor())
+const bordersChart4 = checkpointDeaths.map(e => 'rgba(0, 0, 0, 1.0)')
+
+const checkpointDeathsChart = new Chart(ctx4, 
+    {
+        type: 'bar',
+        data: {
+            labels: checkpointId,
+            datasets: [
+                {
+                    label: 'Number of deaths registered in every checkpoint',
+                    backgroundColor: colorsChart4,
+                    borderColor: bordersChart4,
+                    data: loseCount
+                }
+            ] 
         }
     })
