@@ -70,7 +70,6 @@ public class DirectionalAnimationSet : ScriptableObject
                     }
                 }
             }
-            Debug.Log("COLEST DIR" + closestDirection);
             return closestDirection;
         }
     }

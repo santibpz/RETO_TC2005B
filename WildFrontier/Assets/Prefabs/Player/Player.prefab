@@ -19,7 +19,7 @@ GameObject:
   - component: {fileID: 6208736854238070477}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -157,7 +157,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.006505333, y: 0.0842419}
+  m_Offset: {x: -0.0021600686, y: 0.14606117}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.4923044, y: 0.04110336}
@@ -168,7 +168,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.11582257, y: 0.089690685}
+  m_Size: {x: 0.1245131, y: 0.17856714}
   m_EdgeRadius: 0
 --- !u!114 &3759630126739307203
 MonoBehaviour:
@@ -182,6 +182,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1077054b005d4014e9bf60dd45850ac5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: 100
+  isDead: 0
   attack: {fileID: 2385620506719385167}
   moveSpeed: 300
   Idle: {fileID: 11400000, guid: b51935bcaa0ea4c4fb1aa77f303b5b5f, type: 2}
@@ -189,6 +191,7 @@ MonoBehaviour:
   UseTool: {fileID: 11400000, guid: 63caef3cb38017a49b7092734a8b22d1, type: 2}
   UseSword: {fileID: 11400000, guid: bc1b25fe7efacf141b63abb756c36e8f, type: 2}
   UseSpear: {fileID: 11400000, guid: 926b4ddacf433944faffda4c4ae2ce84, type: 2}
+  deathAnim: {fileID: 7400000, guid: 5952ac4c79e79b84cbdccc336fd963b9, type: 2}
   StateAnimations:
     m_keys:
     - {fileID: 11400000, guid: b51935bcaa0ea4c4fb1aa77f303b5b5f, type: 2}
@@ -202,6 +205,7 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 4b8aeb87052af9c4a8f9ca68062c9fd5, type: 2}
     - {fileID: 11400000, guid: 955a10405417fea42b936539b5583e9b, type: 2}
     - {fileID: 11400000, guid: ef0e00d84339cf74ea3b36a2d4074ef0, type: 2}
+  animator: {fileID: 0}
 --- !u!95 &1297159195911220014
 Animator:
   serializedVersion: 5
@@ -236,6 +240,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inventory: {fileID: 6208736854238070477}
+  updateResources: {fileID: 0}
 --- !u!114 &6208736854238070477
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -377,6 +382,7 @@ GameObject:
   - component: {fileID: 1184163648573083909}
   - component: {fileID: 2300967437445450644}
   - component: {fileID: 2385620506719385167}
+  - component: {fileID: 3814141446606914517}
   m_Layer: 0
   m_Name: Weapon
   m_TagString: Untagged
@@ -464,3 +470,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _weapon: {fileID: 0}
+--- !u!58 &3814141446606914517
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8803900373231230391}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.095981546, y: 0.095676035}
+  serializedVersion: 2
+  m_Radius: 0.0399723
