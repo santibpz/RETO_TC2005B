@@ -27,11 +27,13 @@ public class EnemyStrike : MonoBehaviour
         {
             PlayerController player = collision.gameObject.GetComponent<PlayerController>();
             player.health -= strikingWeapon.damage;
+            player.healthBar.UpdateHealthBar(player.health, 100);
             Debug.Log($"Player health is {player.health}");
         } else if(collision.gameObject.CompareTag("Wolf"))
         {
             WolfAgentMovement wolf = collision.gameObject.GetComponent<WolfAgentMovement>();
             wolf.health -= strikingWeapon.damage;
+            wolf.healthBar.UpdateHealthBar(wolf.health, 100);
             Debug.Log($"wolfie health is {wolf.health}");
         }
     }
