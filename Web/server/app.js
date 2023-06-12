@@ -229,12 +229,61 @@ app.get('/api/createdWeaponsChart', async (req, res) => {
 
 })
 
+// endpoint to fetch information on the number of deaths registered on each type
+
 app.get('/api/playerDeathTypes', async (req, res) => {
   let connection = null
 
   try {
     connection = await connectToDB()
     const [results, fields] = await connection.execute('select * from number_of_player_death_types')
+
+    results ? 
+    res.status(200).json(results) : 
+    res.sendStatus(404)
+
+  } catch (err) {
+    res.status(500).send("internal server error");
+  } finally {
+    if (connection !== null) {
+      connection.end();
+      console.log("Connection closed succesfully!");
+    }
+  }
+})
+
+// endpoint to fetch information on the upgrades or the weapons of all player
+
+app.get('/api/weaponUpgrades', async (req, res) => {
+  let connection = null
+
+  try {
+    connection = await connectToDB()
+    const [results, fields] = await connection.execute('select * from number_of_weapon_upgrades')
+
+    results ? 
+    res.status(200).json(results) : 
+    res.sendStatus(404)
+
+  } catch (err) {
+    res.status(500).send("internal server error");
+  } finally {
+    if (connection !== null) {
+      connection.end();
+      console.log("Connection closed succesfully!");
+    }
+  }
+})
+
+
+// endpoint to fetch information on the deaths in every checkpoint
+
+app.get('/api/checkpointDeaths', async (req, res) => {
+  let connection = null
+
+  try {
+    connection = await connectToDB()
+    const [results, fields] = await connection.execute('select * from checkpoint_deaths')
 
     results ? 
     res.status(200).json(results) : 
