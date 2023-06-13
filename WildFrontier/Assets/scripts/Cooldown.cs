@@ -7,6 +7,7 @@ public class Cooldown : MonoBehaviour
 {
     public float transitionTime = 1f; // Transition time in seconds
     public float targetAlpha = 0f; // Target alpha value you want to achieve
+    public AudioSource audioSource; // Reference to the AudioSource component
 
     private Image spriteRenderer;
     private Color initialColor;
@@ -42,6 +43,12 @@ public class Cooldown : MonoBehaviour
             // Set the initial color with alpha value of 1 (fully opaque)
             initialColor = new Color(initialColor.r, initialColor.g, initialColor.b, 1f);
             StartFadeOut();
+
+            // Play the sound using the AudioSource component
+            if (audioSource != null)
+            {
+                audioSource.Play();
+            }
         }
 
         // Update the color of the Sprite Renderer
