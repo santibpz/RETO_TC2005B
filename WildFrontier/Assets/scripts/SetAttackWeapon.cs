@@ -6,9 +6,15 @@ public class SetAttackWeapon : MonoBehaviour
 {
     [SerializeField] public Weapon weapon;
     [SerializeField] EquipWeapon equip;
+    [SerializeField] Message message;
 
     public void SetWeapon()
     {
-        equip.weapon = weapon;
+        if(weapon !=null)
+        {
+            equip.weapon = weapon;
+            message.Send($"{weapon.name} selected");
+        }
+       
     }
 }

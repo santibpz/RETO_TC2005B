@@ -5,7 +5,9 @@ using UnityEngine;
 
 public class EquipWeapon : MonoBehaviour
 {
+    [SerializeField] Message message;
     public Weapon weapon
+
     {
         get
         {
@@ -38,6 +40,11 @@ public class EquipWeapon : MonoBehaviour
 
     public void EquipWeaponToUse()
     {
-        attack.weaponToUse = _weapon;
+        if(_weapon != null)
+        {
+            attack.weaponToUse = _weapon;
+            message.Send($"{_weapon.name} Equipped!");
+        }
+        
     }
 }
