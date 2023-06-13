@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ca045714b6aea0438316cb7c7cedfb9, type: 3}
   m_Name: Weapon_knife
   m_EditorClassIdentifier: 
+  weapon_id: 2
   name: knife
   type: long range
   woodRequirement: 4
