@@ -93,7 +93,7 @@ public class PlayerController : MonoBehaviour
             ChangeClip();
         }
 
-        if(health == 0)
+        if(health <= 0)
         {
             animator.Play(deathAnim.name);
         }
