@@ -12,7 +12,7 @@ const port = 3000;
 
 // middlewares
 
-app.use(cors({ origin: 'http://127.0.0.1:3000'}))
+app.use(cors({ origin: 'http://127.0.0.1:5500'}))
 
 app.use(express.json());
 
