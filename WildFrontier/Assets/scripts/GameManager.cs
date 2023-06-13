@@ -242,7 +242,7 @@ public class GameManager : MonoBehaviour
 
     IEnumerator EndGame()
     {
-        if (playerController.health == 0 || agent.health == 0)
+        if (playerController.health <= 0 || agent.health <= 0)
         {
             yield return new WaitForSeconds(2);
             // pause the game
