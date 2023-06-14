@@ -38,8 +38,12 @@ public class BuildWeapon : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        woodRequirement = _weapon.woodRequirement;
-        rockRequirement = _weapon.rockRequirement;
+        if(_weapon != null)
+        {
+            woodRequirement = _weapon.woodRequirement;
+            rockRequirement = _weapon.rockRequirement;
+        }
+       
     }
 
     // Update is called once per frame
@@ -55,8 +59,6 @@ public class BuildWeapon : MonoBehaviour
 
     public void Build() 
     {
-
-        Debug.Log($"{_weapon.name} requires {woodRequirement} woods and {rockRequirement}");
 
         if(_weapon == null)
         {
