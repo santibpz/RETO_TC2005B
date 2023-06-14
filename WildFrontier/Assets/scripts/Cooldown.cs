@@ -7,6 +7,7 @@ public class Cooldown : MonoBehaviour
 {
     public float transitionTime = 1f; // Transition time in seconds
     public float targetAlpha = 0f; // Target alpha value you want to achieve
+    public AudioSource audioSource; // Reference to the AudioSource component
 
     private Image spriteRenderer;
     private Color initialColor;
@@ -36,12 +37,19 @@ public class Cooldown : MonoBehaviour
         // Interpolate between the initial color and the target color using the time fraction
         Color newColor = Color.Lerp(initialColor, target, timeFraction);
 
-        // Check if the "K" key is pressed to start the fade-out process
+        // Check if the space bar is pressed to start the fade-out process
+        
         if (Input.GetKeyDown(KeyCode.Space) && spriteRenderer.color.a == 0f)
         {
             // Set the initial color with alpha value of 1 (fully opaque)
             initialColor = new Color(initialColor.r, initialColor.g, initialColor.b, 1f);
             StartFadeOut();
+
+            // Play the sound using the AudioSource component
+            if (audioSource != null)
+            {
+                audioSource.Play();
+            }
         }
 
         // Update the color of the Sprite Renderer

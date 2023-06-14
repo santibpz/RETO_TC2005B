@@ -71,7 +71,8 @@ public class MusicManager : MonoBehaviour
         {
             EndBossBattle(); // Start transition to credits music
         }
-        else if (!isInBattle && DetectEnemies() && (!IsWolfLowHealth() && !IsLowHealth()) && !isBossBattle)
+
+        if (!isInBattle && DetectEnemies() && (!IsWolfLowHealth() && !IsLowHealth()) && !isBossBattle)
         {
             isInBattle = true;
             StartCoroutine(TransitionToBattleMusic()); // Start transition to battle music if enemies are detected and there is no low health
@@ -87,7 +88,7 @@ public class MusicManager : MonoBehaviour
             StartCoroutine(TransitionToOriginalMusic()); // Switch back to the original music
         }
 
-        if (!isLowHealth && IsLowHealth() && DetectEnemies() && !isBossBattle)
+        if (!isLowHealth && (IsWolfLowHealth() || IsLowHealth()) && DetectEnemies() && !isBossBattle)
         {
             isLowHealth = true;
             StartCoroutine(TransitionToLowHealthMusic()); // Start transition to low health music if there is low health and enemies
@@ -95,14 +96,7 @@ public class MusicManager : MonoBehaviour
         else if (isLowHealth && !IsLowHealth() && !IsWolfLowHealth() && !isBossBattle)
         {
             isLowHealth = false;
-            if (DetectEnemies())
-            {
-                isInBattle = true;
-            }
-            else
-            {
-                isInBattle = false;
-            }
+            isInBattle = DetectEnemies();
             if (!isInBattle)
             {
                 StartCoroutine(TransitionToOriginalMusic()); // Switch back to the original music if there is no low health and no battle
@@ -285,6 +279,7 @@ public class MusicManager : MonoBehaviour
     private bool DetectEnemies()
     {
         GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
+        Debug.Log("Enemy found" + enemies.Length);
         return enemies.Length > 0; // Returns true if at least one enemy is found
     }
     private bool DetectBoss()
@@ -300,7 +295,14 @@ public class MusicManager : MonoBehaviour
 
     private bool IsWolfLowHealth()
     {
-        return wolfDirection.health < lowHealthMusicThreshold; // Returns true if wolf health is lower than the low health threshold
+    WolfAgentMovement wolfAgent = FindObjectOfType<WolfAgentMovement>(); // Obtener referencia al objeto WolfAgent que contiene el script WolfAgentMovement
+    
+    if (wolfAgent != null)
+    {
+        return wolfAgent.health < lowHealthMusicThreshold; // Acceder a la variable health del script WolfAgentMovement
+    }
+    
+    return false; // Manejar el caso en el que no se encuentra el objeto WolfAgent
     }
 
     private void PlayMusic(AudioClip musicClip)
