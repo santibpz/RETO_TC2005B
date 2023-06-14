@@ -254,7 +254,7 @@ GameObject:
   - component: {fileID: 963127834910796550}
   - component: {fileID: 5570995208983303050}
   m_Layer: 0
-  m_Name: GrimAgent
+  m_Name: GrimmAgent
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
