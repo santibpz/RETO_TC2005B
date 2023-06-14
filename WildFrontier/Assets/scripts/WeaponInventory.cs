@@ -5,24 +5,20 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
+[System.Serializable]
+public class PlayerWeapon
+{
+    public int player_id;
+    public int weapon_id;
+    public int weapon_damage;
+}
+
 public class WeaponInventory : MonoBehaviour
 {
     [SerializeField] public SerializableDictionary<Weapon, bool> weapons;
     [SerializeField] GameObject[] weaponSlots;
+    [SerializeField] InsertWeapon insertWeapon;
     int avaliableWeaponSlot = 0;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     public void AddWeaponToInventory(Weapon weapon)
     {
@@ -32,6 +28,13 @@ public class WeaponInventory : MonoBehaviour
         {
             //weaponSlots[0].SetActive(true);
             SetWeaponToInventorySlot(weapon);
+            PlayerWeapon playerWeapon = new PlayerWeapon();
+            playerWeapon.player_id = PlayerPrefs.GetInt("player_id");
+            playerWeapon.weapon_id = weapon.weapon_id;
+            playerWeapon.weapon_damage = weapon.damage;
+            string playerWeaponData = JsonUtility.ToJson(playerWeapon);
+
+            insertWeapon.QueryAddWeapon(playerWeaponData);
         }
         else
         {

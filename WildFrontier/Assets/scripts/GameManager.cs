@@ -16,6 +16,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] CameraController cameraController;
     [SerializeField] GameObject GameOverCanvas;
     [SerializeField] GameObject UIcanvas;
+    [SerializeField] CheckReceivedData checker;
     private NavMeshPath path;
     private Bounds worldBounds;
     private GameObject viewer;
@@ -54,6 +55,10 @@ public class GameManager : MonoBehaviour
         worldBounds = groundTilemap.localBounds;
         viewer = GameObject.Find("viewer");
         Debug.Log("up is: " + Vector2.up);
+
+        // check if player has items
+        StartCoroutine(FetchPlayerData());
+
         //Debug.Log("world bounds are: " + worldBounds);
         //Debug.Log("min : " + worldBounds.min);
         //Debug.Log("max : " + worldBounds.max);
@@ -232,6 +237,12 @@ public class GameManager : MonoBehaviour
         {
             cameraController.cam.m_Follow = null;
         }
+    }
+
+    IEnumerator FetchPlayerData()
+    {
+        yield return new WaitForSeconds(1);
+        checker.FetchItems();
     }
 
 

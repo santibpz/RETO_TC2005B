@@ -7,6 +7,7 @@ public class SetTracker : MonoBehaviour
 {
      GameObject player;
      GameObject wolf;
+     [SerializeField] GameObject pointer;
      Image arrow;
 
     public void Start()
@@ -29,8 +30,8 @@ public class SetTracker : MonoBehaviour
         var b = A.y + (-m * A.x);
 
         // x and y formulas reference
-        // y = (m * x) + b;
-        // x = (y - b) / m;
+        y = (m * x) + b;
+        x = (y - b) / m;
 
         Vector2 offset = arrow.rectTransform.sizeDelta;
         Rect scrRect = new Rect(offset, new Vector2(Screen.width - offset.x, Screen.height - offset.y));
@@ -54,12 +55,14 @@ public class SetTracker : MonoBehaviour
         {
             // target is far from arrow, so it is off screen
             // show arrow and position it
+           
             arrow.enabled = true;
+            pointer.SetActive(true);
             arrow.transform.position = C;
 
             // rotate arrow to point from player to target
             float angle = Mathf.Atan2(B.y - A.y, B.x - A.x) * Mathf.Rad2Deg;
-            arrow.transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+            arrow.transform.rotation = Quaternion.AngleAxis(angle + 1f, Vector3.forward);
 
         }
         else
@@ -67,6 +70,7 @@ public class SetTracker : MonoBehaviour
             // target is close to arrow, so it is on screen
             // hide arrow
             arrow.enabled = false;
+            pointer.SetActive(false);
         }
     }
 
