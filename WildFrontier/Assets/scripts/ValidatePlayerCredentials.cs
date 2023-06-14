@@ -6,6 +6,7 @@ using UnityEngine.Networking;
 using UnityEngine.SceneManagement;
 using System;
 
+[System.Serializable]
 public class PlayerToken // info returned by the request
 {
     public int player_id;
@@ -19,16 +20,18 @@ public class PlayerCredentials
     public string password;
 }
 
+
 public class ValidatePlayerCredentials : MonoBehaviour
 {
     [SerializeField] TMP_InputField username;
     [SerializeField] TMP_InputField password;
     [SerializeField] string url;
-    [SerializeField] string endpoint;
+    [SerializeField] string loginEndpoint;
+    [SerializeField] string playerItemsEP;
     [SerializeField] Message notification;
 
     public PlayerToken player; // player_id and username will be extracted to an instance of class PlayerToken
-
+    public PlayerItems items; // player items will be extracted to an instance of PlayerItems.
     public void QueryPlayer()
     {
         StartCoroutine(ValidateCredentials());
@@ -56,7 +59,7 @@ public class ValidatePlayerCredentials : MonoBehaviour
         // Send using the Put method:
         // https://stackoverflow.com/questions/68156230/unitywebrequest-post-not-sending-body
 
-        using (UnityWebRequest www = UnityWebRequest.Put(url + endpoint, playerCredentials))
+        using (UnityWebRequest www = UnityWebRequest.Put(url + loginEndpoint, playerCredentials))
         {
 
             www.method = "POST";
@@ -76,10 +79,15 @@ public class ValidatePlayerCredentials : MonoBehaviour
 
                 PlayerPrefs.SetInt("player_id", player.player_id);
 
-
                 // Fetch player information
 
-               // QueryPlayerStatus(playerCredentials);
+                // QueryPlayerStatus(playerCredentials);
+
+                // Fetch player items
+
+                QueryPlayerItems(player.player_id);
+
+                // load game scene
 
                 yield return new WaitForSeconds(4);
 
@@ -104,4 +112,38 @@ public class ValidatePlayerCredentials : MonoBehaviour
     //{
 
     //}
+
+    public void QueryPlayerItems(int player_id)
+    {
+        StartCoroutine(FetchPlayerItems(player_id));
+    }
+
+    IEnumerator FetchPlayerItems(int id)
+    {
+
+        using (UnityWebRequest www = UnityWebRequest.Get($"{url}{playerItemsEP}/{id}"))
+        {
+
+            www.method = "GET";
+            www.SetRequestHeader("Content-Type", "application/json");
+            yield return www.SendWebRequest();
+
+            if (www.result == UnityWebRequest.Result.Success)
+            {
+                Debug.Log(UnityWebRequest.Result.Success);
+                string jsonItems = "{\"playerItems\":" + www.downloadHandler.text + "}";
+
+                Debug.Log(jsonItems);
+
+                PlayerPrefs.SetString("items", jsonItems);
+                
+            }
+            else
+            {
+                Debug.Log("Error: " + www.error);
+                string errorMessage = www.downloadHandler.text;
+                //notification.Send(errorMessage);
+            }
+        }
+    }
 }

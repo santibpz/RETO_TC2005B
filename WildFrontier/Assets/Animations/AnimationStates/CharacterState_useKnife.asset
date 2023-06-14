@@ -9,14 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ca045714b6aea0438316cb7c7cedfb9, type: 3}
-  m_Name: Weapon_bow
+  m_Script: {fileID: 11500000, guid: 8a59476a762c74e4f92c9863431f3785, type: 3}
+  m_Name: CharacterState_useKnife
   m_EditorClassIdentifier: 
-  name: bow
-  type: long range
-  woodRequirement: 4
-  rockRequirement: 4
-  damage: 15
-  speed: 0
-  reload: 0
-  icon: {fileID: 21300000, guid: 9226305ec8501eb4795802452c99a364, type: 3}
+  CanMove: 0
+  CanExitWhilePlaying: 0
