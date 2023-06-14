@@ -196,6 +196,7 @@ MonoBehaviour:
   UseTool: {fileID: 11400000, guid: 63caef3cb38017a49b7092734a8b22d1, type: 2}
   UseSword: {fileID: 11400000, guid: bc1b25fe7efacf141b63abb756c36e8f, type: 2}
   UseSpear: {fileID: 11400000, guid: 926b4ddacf433944faffda4c4ae2ce84, type: 2}
+  UseKnife: {fileID: 0}
   deathAnim: {fileID: 7400000, guid: 5952ac4c79e79b84cbdccc336fd963b9, type: 2}
   StateAnimations:
     m_keys:
@@ -749,7 +750,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69e1351bb1ba9f4418985fa01b8e132b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _weapon: {fileID: 11400000, guid: 13bfa74fff886044dbacdde2f9d0a6ec, type: 2}
+  _weapon: {fileID: 0}
 --- !u!58 &3814141446606914517
 CircleCollider2D:
   m_ObjectHideFlags: 0

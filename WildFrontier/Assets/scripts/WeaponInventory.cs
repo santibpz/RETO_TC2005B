@@ -36,10 +36,16 @@ public class WeaponInventory : MonoBehaviour
 
             insertWeapon.QueryAddWeapon(playerWeaponData);
         }
-        else
-        {
-            Debug.Log("if not entered");
-        }
+
+    }
+
+    public void SetWeaponToInventory(Weapon weapon)
+    {
+        // add weapon to inventory
+         weapons[weapon] = true;
+
+        // update inventory slots
+        SetWeaponToInventorySlot(weapon);
     }
 
     private void SetWeaponToInventorySlot(Weapon weapon)
