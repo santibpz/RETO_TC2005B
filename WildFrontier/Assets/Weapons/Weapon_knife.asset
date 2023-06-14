@@ -16,7 +16,7 @@ MonoBehaviour:
   type: long range
   woodRequirement: 4
   rockRequirement: 4
-  damage: 15
+  damage: 12
   speed: 0
   reload: 0
   icon: {fileID: 21300000, guid: 3ebaec23a6a885c49ae9c79e4fc05629, type: 3}

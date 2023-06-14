@@ -24,11 +24,6 @@ public class WeaponInventory : MonoBehaviour
         
     }
 
-    public void Open()
-    {
-
-    }
-
     public void AddWeaponToInventory(Weapon weapon)
     {
         weapons[weapon] = true;
