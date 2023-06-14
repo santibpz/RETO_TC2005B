@@ -9,5 +9,6 @@ public class OpenBuildScreen : MonoBehaviour
     public void Display()
     {
         BuildScreen.SetActive(true);
+        Time.timeScale = 0;
     }
 }

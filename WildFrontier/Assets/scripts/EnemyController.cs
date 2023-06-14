@@ -49,7 +49,7 @@ public class EnemyController : MonoBehaviour
 
         EndAttack();
 
-        if(health == 0)
+        if(health <= 0)
         {
             StartCoroutine(DestroyEnemy());
         }

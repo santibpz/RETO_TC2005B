@@ -19,7 +19,7 @@ public class EnemyMovement : MonoBehaviour
     {
         SetAnimation();
 
-        if(enemyController.health==0)
+        if(enemyController.health<=0)
         {
             animator.Play(deathAnim.name);
         }

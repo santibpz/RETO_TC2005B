@@ -24,6 +24,8 @@ public class Attack : MonoBehaviour
 
     [SerializeField] public Weapon _weapon;
     private SpriteRenderer spriteRenderer;
+
+    private int weaponDamage;
     
 
     // Start is called before the first frame update
@@ -36,7 +38,7 @@ public class Attack : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(_weapon != null) weaponDamage = _weapon.damage;
     }
 
     private void UpdateSprite()
@@ -62,7 +64,8 @@ public class Attack : MonoBehaviour
             KnockBack knockBack = collision.gameObject.GetComponent<KnockBack>();
             knockBack.AddKnockBack(GameObject.FindGameObjectWithTag("Player"));
             EnemyController enemyController = collision.gameObject.GetComponent<EnemyController>();
-            enemyController.health -= _weapon.damage;
+            enemyController.health -= weaponDamage;
+            Debug.Log($" {_weapon.name} damage is: {weaponDamage}");
             Debug.Log($"{enemyController.enemy.name} enemey new health is: {enemyController.health}");
         }
     }
