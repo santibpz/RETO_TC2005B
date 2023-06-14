@@ -115,7 +115,36 @@ BEGIN
 END //
 DELIMITER 
 
+-- Procedure to store player deaths on every checkpoint
+
+DELIMITER //
+CREATE PROCEDURE player_death_on_checkpoint(IN in_checkpoint INT, IN in_player_id INT, IN in_player_lose_count INT)
+
+BEGIN
+    DECLARE row_count INT; 
+    
+    -- Check if the row exists
+    SELECT COUNT(*) INTO row_count
+    FROM checkpoint_death
+    WHERE checkpoint = in_checkpoint AND player_id = in_player_id; -- Use the parameters in the condition
+
+    -- If the row doesn't exist, insert a new row
+    IF row_count = 0 THEN
+        -- Insert the new row using the parameter values
+        INSERT INTO checkpoint_death (checkpoint, player_id, player_lose_count)
+        VALUES (in_checkpoint, in_player_id, in_player_lose_count);
+	ELSE
+        UPDATE checkpoint_death
+        SET player_lose_count = player_lose_count + in_player_lose_count
+		WHERE checkpoint = in_checkpoint
+        AND player_id = in_player_id;
+    END IF;
+END //
+DELIMITER 
+
 CALL player_items(11);
 
 select * from player;
+
+SELECT * FROM CHECKPOINT_DEATH
 

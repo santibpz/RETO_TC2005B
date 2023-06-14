@@ -16,12 +16,30 @@ public class PlayerItem
     public int quantity;
 }
 
+[System.Serializable]
+public class PlayerWeapons
+{
+    public PlayerWpn[] playerWeapons;
+}
+
+[System.Serializable]
+public class PlayerWpn
+{
+    public string weapon_name;
+    public int weapon_damage;
+}
+
 public class CheckReceivedData : MonoBehaviour
 {
     [SerializeField] ResourceInventory resourceInventory;
+    [SerializeField] WeaponInventory weaponInventory;
     [SerializeField] Resource rockResource;
     [SerializeField] Resource woodResource;
+    [SerializeField] Weapon sword;
+    [SerializeField] Weapon spear;
+    [SerializeField] Weapon knife;
     PlayerItems items;
+    PlayerWeapons weapons;
     // Start is called before the first frame update
 
     public void AddResourceType(string name, int quantity)
@@ -41,6 +59,25 @@ public class CheckReceivedData : MonoBehaviour
         }
     }
 
+
+    public void AddWeapon(string name)
+    {
+        switch(name)
+        {
+            case "Sword":
+                weaponInventory.SetWeaponToInventory(sword);
+                break;
+            case "Spear":
+                weaponInventory.SetWeaponToInventory(spear);
+                break;
+            case "Knife":
+                weaponInventory.SetWeaponToInventory(knife);
+                break;
+            default:
+                break;
+        }
+    }
+
     public void FetchItems()
     {
         string jsonItems = PlayerPrefs.GetString("items");
@@ -49,6 +86,16 @@ public class CheckReceivedData : MonoBehaviour
         for (int i = 0; i < items.playerItems.Length; i++)
         {
             AddResourceType(items.playerItems[i].item_name, items.playerItems[i].quantity);
+        }
+    }
+
+    public void FetchWeapons()
+    {
+        string jsonWeapons = PlayerPrefs.GetString("weapons");
+        weapons = JsonUtility.FromJson<PlayerWeapons>(jsonWeapons);
+        for (int i = 0; i < weapons.playerWeapons.Length; i++)
+        {
+            AddWeapon(weapons.playerWeapons[i].weapon_name);
         }
     }
 

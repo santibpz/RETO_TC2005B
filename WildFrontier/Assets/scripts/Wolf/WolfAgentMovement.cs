@@ -14,7 +14,7 @@ public class WolfAgentMovement : MonoBehaviour
     public NavMeshAgent wolfAgent;
     private GameObject viewer;
     public WolfDirection wolfGraphic;
-    private int checkpointNo = 0;
+    public int checkpointNo = 0;
     private bool hasReachedLastCheckpoint = false;
 
     bool isWolfStopped = true; // check if the player stops the wolf

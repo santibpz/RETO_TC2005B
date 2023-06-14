@@ -153,10 +153,10 @@ app.get("/api/playerWeapons/:id", async (req, res) => {
   try {
     connection = await connectToDB();
     const [results, fields] = await connection.query(
-      "CALL player_weapons(?)",
+      "CALL player_weapons(?)",  
       Number(req.params.id)
     );
-    const playerWeapons = results ? results[0][0] : null;
+    const playerWeapons = results ? results[0] : null;  
     console.log(playerWeapons);
     !playerWeapons ? res.sendStatus(404) : res.status(200).json(playerWeapons);
   } catch (err) {
@@ -258,6 +258,35 @@ app.put("/api/updateResources", async (req, res) => {
     }
   }
 });
+
+
+// Endpoint to register checkpoint deaths
+
+app.post('/api/checkpointDeath', async (req, res) => {
+  let connection = null;
+  const data = req.body
+
+  const {checkpoint, player_id, player_lose_count} = data
+
+  try {
+    connection = await connectToDB();
+    const [results, fields] = await connection.query("call player_death_on_checkpoint(?, ?, ?)", [checkpoint, player_id, player_lose_count]);
+
+    console.log("ress are", results)
+    results ? res.status(200).json(results) : res.sendStatus(404);
+  } catch (err) {
+    res.status(500).send("internal server error");
+  } finally {
+    if (connection !== null) {
+      connection.end();
+      console.log("Connection closed succesfully!");
+    }
+  }
+})
+
+
+
+
 
 //  Game statistics endpoint
 

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Weapon_knife
   m_EditorClassIdentifier: 
   weapon_id: 2
-  name: knife
+  name: Knife
   type: long range
   woodRequirement: 4
   rockRequirement: 4

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Weapon_sword
   m_EditorClassIdentifier: 
   weapon_id: 1
-  name: sword
+  name: Sword
   type: short range
   woodRequirement: 3
   rockRequirement: 3

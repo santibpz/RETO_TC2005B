@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Weapon_spear
   m_EditorClassIdentifier: 
   weapon_id: 3
-  name: spear
+  name: Spear
   type: short range
   woodRequirement: 5
   rockRequirement: 5

@@ -28,6 +28,7 @@ public class ValidatePlayerCredentials : MonoBehaviour
     [SerializeField] string url;
     [SerializeField] string loginEndpoint;
     [SerializeField] string playerItemsEP;
+    [SerializeField] string playerWeaponsEP;
     [SerializeField] Message notification;
 
     public PlayerToken player; // player_id and username will be extracted to an instance of class PlayerToken
@@ -87,6 +88,10 @@ public class ValidatePlayerCredentials : MonoBehaviour
 
                 QueryPlayerItems(player.player_id);
 
+                // Fetch player weapons 
+
+                QueryPlayerWeapons(player.player_id);
+
                 // load game scene
 
                 yield return new WaitForSeconds(4);
@@ -137,6 +142,39 @@ public class ValidatePlayerCredentials : MonoBehaviour
 
                 PlayerPrefs.SetString("items", jsonItems);
                 
+            }
+            else
+            {
+                Debug.Log("Error: " + www.error);
+                string errorMessage = www.downloadHandler.text;
+                //notification.Send(errorMessage);
+            }
+        }
+    }
+
+    public void QueryPlayerWeapons(int player_id)
+    {
+        StartCoroutine(FetchPlayerWeapons(player_id));
+    }
+
+    IEnumerator FetchPlayerWeapons(int id)
+    {
+        using (UnityWebRequest www = UnityWebRequest.Get($"{url}{playerWeaponsEP}/{id}"))
+        {
+
+            www.method = "GET";
+            www.SetRequestHeader("Content-Type", "application/json");
+            yield return www.SendWebRequest();
+
+            if (www.result == UnityWebRequest.Result.Success)
+            {
+                Debug.Log(UnityWebRequest.Result.Success);
+                string jsonWeapons = "{\"playerWeapons\":" + www.downloadHandler.text + "}";
+
+                Debug.Log("weapons here: " + jsonWeapons);
+
+                PlayerPrefs.SetString("weapons", jsonWeapons);
+
             }
             else
             {

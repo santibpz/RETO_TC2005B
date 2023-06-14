@@ -1188,10 +1188,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   username: {fileID: 22729220}
   password: {fileID: 763351889}
-  checker: {fileID: 0}
   url: http://localhost:3000
   loginEndpoint: /api/login
   playerItemsEP: /api/playerItems
+  playerWeaponsEP: /api/playerWeapons
   notification: {fileID: 1972545462}
   player:
     player_id: 0
