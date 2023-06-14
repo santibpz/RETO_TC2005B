@@ -11,6 +11,7 @@ public class DisplayInventory : MonoBehaviour
     public void DisplayInventoryScreen()
     {
         inventoryPanel.SetActive(true);
+        Time.timeScale = 0;
     }
 
 }

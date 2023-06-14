@@ -20,5 +20,6 @@ public class CloseBuildScreen : MonoBehaviour
     public void Close()
     {
         BuildScreen.SetActive(false);
+        Time.timeScale = 1;
     }
 }

@@ -18,7 +18,7 @@ DELIMITER
 DELIMITER //
        CREATE PROCEDURE player_weapons (IN in_player_id INT)
        BEGIN 
-         SELECT weapon_name, weapon_damage, weapon_speed, weapon_reload
+         SELECT weapon_name, weapon_damage
          FROM weapon INNER JOIN player_weapon 
          USING(weapon_id) WHERE player_id = in_player_id;
        END//
@@ -92,4 +92,30 @@ BEGIN
     
 END //
 DELIMITER 
+
+-- procedure to add a weapon
+DELIMITER //
+CREATE PROCEDURE add_weapon(IN in_player_id INT, IN in_weapon_id INT, IN in_weapon_damage INT)
+
+BEGIN
+    DECLARE row_count INT; 
+    
+    -- Check if the row exists
+    SELECT COUNT(*) INTO row_count
+    FROM player_weapon
+    WHERE player_id = in_player_id AND weapon_id = in_weapon_id; -- Use the parameters in the condition
+
+    -- If the row doesn't exist, insert a new row
+    IF row_count = 0 THEN
+        -- Insert the new row using the parameter values
+        INSERT INTO player_weapon (player_id, weapon_id, weapon_damage)
+        VALUES (in_player_id, in_weapon_id, in_weapon_damage);
+    END IF;
+    
+END //
+DELIMITER 
+
+CALL player_items(11);
+
+select * from player;
 

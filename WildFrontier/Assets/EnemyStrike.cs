@@ -7,6 +7,7 @@ public class EnemyStrike : MonoBehaviour
 {
     [SerializeField] Weapon strikingWeapon;
     private SpriteRenderer spriteRenderer;
+    [SerializeField] GameObject attacker;
     
     // Start is called before the first frame update
     void Start()
@@ -23,8 +24,10 @@ public class EnemyStrike : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("Player"))
         {
+            KnockBack knockBack = collision.gameObject.GetComponent<KnockBack>();
+            knockBack.AddKnockBack(gameObject);
             PlayerController player = collision.gameObject.GetComponent<PlayerController>();
             player.health -= strikingWeapon.damage;
             player.healthBar.UpdateHealthBar(player.health, 100);
