@@ -35,10 +35,10 @@ public class EnemyController : MonoBehaviour
     void Update()
     {
         
-        if(enemy.name == "Impaler" || enemy.name == "Marauder")
+        if(enemy.name == "Grim" || enemy.name == "Marauder")
         {
             enemyAgent.SetDestination(player.transform.position);
-        } else if(enemy.name == "Grim")
+        } else if(enemy.name == "Impaler")
         {
             enemyAgent.SetDestination(wolf.transform.position);
         }

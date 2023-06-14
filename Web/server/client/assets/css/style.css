@@ -912,13 +912,20 @@ section {
   right: 0;
   top: 0;
   bottom: 0;
-  background: rgba(248, 199, 169, 0.88);
+  background: rgba(247, 224, 224, 0.88);
   z-index: 9;
 }
 
 #facts .container {
   position: relative;
   z-index: 10;
+}
+
+#facts .skills-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 60px;
 }
 
 #facts .counters span {

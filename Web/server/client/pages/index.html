@@ -9,6 +9,12 @@
   <meta content="" name="description">
   <meta content="" name="keywords">
 
+  <!-- Chart.js  -->
+  <script type="module" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.2.1/chart.umd.js" integrity="sha512-vCUbejtS+HcWYtDHRF2T5B0BKwVG/CLeuew5uT2AiX4SJ2Wff52+kfgONvtdATqkqQMC9Ye5K+Td0OTaz+P7cw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- Charts script -->
+  <script type="module" defer src="../assets/js/charts.js"></script> 
+
   <!-- Favicons -->
   <link href="/client/assets/img/Logo.png" rel="icon">
   <link href="/client/assets/img/Logo.png" rel="apple-touch-icon">
@@ -220,33 +226,26 @@
     <!-- ======= Facts Section ======= -->
     <section id="facts">
       <section id="skills">
+
+        
         <div class="container" data-aos="fade-up">
   
           <header class="section-header">
             <h3>Statistics</h3>
             <p>Graphical representation of the statistics of all the players</p>
           </header>
-  
           <div class="skills-content">
-  
-            <div class="progress">
-              <div class="progress-bar bg-success" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
-                <span class="skill">Sword <i class="val">100%</i></span>
-              </div>
-            </div>
-  
-            <div class="progress">
-              <div class="progress-bar bg-info" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-                <span class="skill">Bow <i class="val">90%</i></span>
-              </div>
-            </div>
-  
-            <div class="progress">
-              <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                <span class="skill">Lance <i class="val">75%</i></span>
-              </div>
-            </div>
-  
+            <!-- Number of players that build a type of weapon -->
+            <canvas id="chart1" width="400" height="400" style="max-width: 500px; max-height: 500px;"></canvas>
+
+            <!-- Number of deaths registered on each death type -->
+            <canvas id="chart2" width="400" height="400" style="max-width: 500px; max-height: 500px;"></canvas>
+
+            <!-- Number of upgrades registered for every weapon -->
+            <canvas id="chart3" width="400" height="400" style="max-width: 500px; max-height: 500px;"></canvas>
+
+            <!-- number of deaths registered in every checkpoint -->
+            <canvas id="chart4" width="400" height="400" style="max-width: 500px; max-height: 500px;"></canvas>
           </div>
   
         </div>
