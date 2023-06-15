@@ -19,6 +19,8 @@ public class EnemyController : MonoBehaviour
 
     public int health;
 
+    Vector3 target;
+
     [SerializeField] EnemyMovement enemyGraphic;
    // [SerializeField] EnemyMovement impaler;
     // Start is called before the first frame update
@@ -34,18 +36,68 @@ public class EnemyController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-        if(enemy.name == "Grim" || enemy.name == "Marauder")
+        direction = enemyAgent.desiredVelocity;
+
+        float distanceFromPlayer = Vector3.Distance(enemyAgent.transform.position, player.transform.position);
+        float distanceFromWolf = Vector3.Distance(enemyAgent.transform.position, wolf.transform.position);
+
+        float closestDistance = Mathf.Min(distanceFromPlayer, distanceFromWolf);
+
+        if (closestDistance == distanceFromPlayer)
         {
             enemyAgent.SetDestination(player.transform.position);
-        } else if(enemy.name == "Impaler")
+            target = player.transform.position;
+        }
+        else if (closestDistance == distanceFromWolf)
         {
             enemyAgent.SetDestination(wolf.transform.position);
+            target = wolf.transform.position;
+
         }
 
-        TriggerAttack();
+        if (Vector3.Distance(enemyAgent.transform.position, target) < attackRadius)
+        {
+            enemyAgent.isStopped = true;
+            if (direction.x > 0.6)
+            {
+                enemyGraphic.animator.SetBool("CanAttackRight", true);
+            }
+            else if (direction.x < -0.6)
+            {
+                enemyGraphic.animator.SetBool("CanAttackLeft", true);
+            }
+            else if (direction.y > 0.6)
+            {
+                enemyGraphic.animator.SetBool("CanAttackUp", true);
 
-        direction = enemyAgent.desiredVelocity;
+            }
+            else if (direction.y < -0.6)
+            {
+                enemyGraphic.animator.SetBool("CanAttackDown", true);
+
+            }
+        }
+        else
+        {
+            enemyAgent.isStopped = false;
+            enemyGraphic.animator.SetBool("CanAttackRight", false);
+            enemyGraphic.animator.SetBool("CanAttackLeft", false);
+            enemyGraphic.animator.SetBool("CanAttackUp", false);
+            enemyGraphic.animator.SetBool("CanAttackDown", false);
+        }
+
+
+        //if(enemy.name == "Grim" || enemy.name == "Marauder")
+        //{
+        //    enemyAgent.SetDestination(player.transform.position);
+        //} else if(enemy.name == "Impaler")
+        //{
+        //    enemyAgent.SetDestination(wolf.transform.position);
+        //}
+
+        //TriggerAttack();
+
+        
 
         EndAttack();
 
@@ -101,7 +153,7 @@ public class EnemyController : MonoBehaviour
 
     private void EndAttack()
     {
-        if (player.GetComponent<PlayerController>().health == 0 || wolf.GetComponent<WolfAgentMovement>().health == 0)
+        if (player.GetComponent<PlayerController>().health <= 0 || wolf.GetComponent<WolfAgentMovement>().health <= 0)
         {
             enemyAgent.isStopped = true;
             //player.GetComponent<PlayerController>().isDead = true;

@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Grim
   usedWeapon: {fileID: 11400000, guid: 13bfa74fff886044dbacdde2f9d0a6ec, type: 2}
-  health: 50
+  health: 10

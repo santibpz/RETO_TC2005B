@@ -196,7 +196,7 @@ MonoBehaviour:
   UseTool: {fileID: 11400000, guid: 63caef3cb38017a49b7092734a8b22d1, type: 2}
   UseSword: {fileID: 11400000, guid: bc1b25fe7efacf141b63abb756c36e8f, type: 2}
   UseSpear: {fileID: 11400000, guid: 926b4ddacf433944faffda4c4ae2ce84, type: 2}
-  UseKnife: {fileID: 0}
+  UseKnife: {fileID: 11400000, guid: 70968b8d68d002347a62451f539cfe18, type: 2}
   deathAnim: {fileID: 7400000, guid: 5952ac4c79e79b84cbdccc336fd963b9, type: 2}
   StateAnimations:
     m_keys:
@@ -205,13 +205,15 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 3957bff9630cc04469eca7266fdeed78, type: 2}
     - {fileID: 11400000, guid: bc1b25fe7efacf141b63abb756c36e8f, type: 2}
     - {fileID: 11400000, guid: 926b4ddacf433944faffda4c4ae2ce84, type: 2}
+    - {fileID: 11400000, guid: 70968b8d68d002347a62451f539cfe18, type: 2}
     m_values:
     - {fileID: 11400000, guid: cb70485f4e632b64aaf69c685256e69b, type: 2}
     - {fileID: 11400000, guid: 38f68bb3e8066d444b68f7eeec3b4338, type: 2}
     - {fileID: 11400000, guid: 4b8aeb87052af9c4a8f9ca68062c9fd5, type: 2}
     - {fileID: 11400000, guid: 955a10405417fea42b936539b5583e9b, type: 2}
     - {fileID: 11400000, guid: ef0e00d84339cf74ea3b36a2d4074ef0, type: 2}
-  attackCooldown: 1
+    - {fileID: 11400000, guid: 0a0b5c05621ca324c83e6505f03935d4, type: 2}
+  attackCooldown: 0.4
   animator: {fileID: 0}
 --- !u!95 &1297159195911220014
 Animator:
@@ -428,7 +430,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 110.6, y: -9.9}
+  m_AnchoredPosition: {x: 110.599976, y: -9.900024}
   m_SizeDelta: {x: 30, y: 30}
   m_Pivot: {x: 0, y: 1}
 --- !u!222 &7643234981551786760
@@ -764,9 +766,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.095981546, y: 0.095676035}
+  m_Offset: {x: 0.08991581, y: 0.08785982}
   serializedVersion: 2
-  m_Radius: 0.0399723
+  m_Radius: 0.060603634
 --- !u!1001 &1475184990937970493
 PrefabInstance:
   m_ObjectHideFlags: 0

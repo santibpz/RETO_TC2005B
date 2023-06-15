@@ -26,7 +26,7 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] CharacterState UseSpear;
 
-    //[SerializeField] CharacterState UseKnife;
+    [SerializeField] CharacterState UseKnife;
 
     public AnimationClip deathAnim;
 
@@ -139,10 +139,10 @@ public class PlayerController : MonoBehaviour
             {
                 CurrentState = UseSpear;
             }
-            //else if(attack.weaponToUse.name == "knife")
-            //{
-            //    CurrentState = UseKnife;
-            //}
+            else if (attack.weaponToUse.name == "Knife")
+            {
+                CurrentState = UseKnife;
+            }
             else
             {
                 return;

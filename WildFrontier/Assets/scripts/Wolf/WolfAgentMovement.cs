@@ -23,6 +23,8 @@ public class WolfAgentMovement : MonoBehaviour
 
     public int health = 100; // wolf health
 
+    private int maxHealth;  //Curar
+
     bool flag; // helper flag to control Wolf controller function
 
     bool isOnCheckpointRoute; // check if wolf is en route
@@ -35,6 +37,7 @@ public class WolfAgentMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        maxHealth=health; //Curar
         wolfAgent = GetComponent<NavMeshAgent>();
         wolfAgent.updateRotation = false;
         wolfAgent.updateUpAxis = false;
@@ -60,10 +63,23 @@ public class WolfAgentMovement : MonoBehaviour
         toggleWolfMovement();
 
         // check if wolf health is 0
-        if (health == 0)
+        if (health <= 0)
         {
             wolfGraphic.isWolfDead = true;
         }
+
+        if (Input.GetKeyDown(KeyCode.K)) //curar
+        {
+            health += 30; // Aumentar en 30 la salud
+
+            // Asegurarse de que la salud no supere el valor máximo
+            if (health > maxHealth)
+                health = maxHealth;
+
+            // Actualizar la barra de salud con los nuevos valores
+            healthBar.UpdateHealthBar(health, maxHealth);
+        }
+
 
         // check if player has killed all enemies
         if(freeToMove && hasReachedLastCheckpoint == false)
@@ -121,7 +137,8 @@ public class WolfAgentMovement : MonoBehaviour
         }
         Debug.Log("Setting wolf dest");
         viewer.transform.position = levelCheckpoints[checkpointNo];
-        wolfAgent.SetDestination(levelCheckpoints[checkpointNo]); 
+        wolfAgent.SetDestination(levelCheckpoints[checkpointNo]);
+        wolfAgent.speed = 5;
         wolfAgent.isStopped = true;
         wolfGraphic.isMoving = false;
         isOnCheckpointRoute = true;
@@ -133,9 +150,9 @@ public class WolfAgentMovement : MonoBehaviour
         
         if(startWolfMovementAtCheckPoint == true)
         {
-            Debug.Log("entered fn");
             wolfAgent.SetDestination(player.gameObject.transform.position);
-
+            wolfAgent.speed = 3;
+            //wolfAgent.stoppingDistance = 3;
             if (player.rb.velocity.magnitude > 0.05f)
             {
                 wolfGraphic.isMoving = true;
