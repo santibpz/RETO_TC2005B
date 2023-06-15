@@ -582,7 +582,7 @@ section {
 .section-header p {
   text-align: center;
   padding-bottom: 30px;
-  color: #333;
+  color: #000000;
 }
 
 /* Section with background
@@ -912,13 +912,22 @@ section {
   right: 0;
   top: 0;
   bottom: 0;
-  background: rgba(248, 199, 169, 0.88);
+  background: rgba(247, 224, 224, 0.796);
   z-index: 9;
 }
 
 #facts .container {
   position: relative;
   z-index: 10;
+}
+
+#facts .skills-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 60px;
+  font-weight: bold;
+  color:rgb(0, 0, 0);
 }
 
 #facts .counters span {
@@ -1229,7 +1238,7 @@ section {
 
 #testimonials .testimonial-item h4 {
   font-size: 14px;
-  color: #999;
+  color: #000000;
   margin: 0 0 15px 0;
 }
 
@@ -2189,4 +2198,19 @@ section {
   text-align: center;
   font-size: 13px;
   color: #ddd;
+}
+#image{
+  width: 100%;
+  height: auto;
+}
+div.centertext {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 50px;
+}
+div.centertext li {
+  font-size: 18px; /* Tamaño de fuente ajustado */
 }

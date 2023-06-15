@@ -4,8 +4,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 using UnityEngine.Networking;
 using TMPro;
+
 
 
 // Create classes that correspond to the data that will be sent/received
@@ -78,6 +80,7 @@ public class CreatePlayer : MonoBehaviour
                 Debug.Log("Response: " + www.downloadHandler.text);
                 string succesMessage = www.downloadHandler.text;
                 notification.Send(succesMessage);
+                SceneManager.LoadScene("Log_in");
             }
             else
             {

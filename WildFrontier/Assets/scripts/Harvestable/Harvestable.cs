@@ -12,6 +12,8 @@ public class Harvestable : MonoBehaviour
     private int amountHarvested = 0;
 
     [SerializeField]  ParticleSystem particleSystem;
+
+    [SerializeField] GameObject Remains;
     // Start is called before the first frame update
     void Start()
     {
@@ -35,7 +37,12 @@ public class Harvestable : MonoBehaviour
         if(amountHarvested >= harvestLimit)
         {
             // Node is depleted
+            Vector3 pos = new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, 0);
+            
             Destroy(gameObject);
+
+            Instantiate(Remains, pos, Quaternion.identity);
+
         }
         
     }

@@ -11,8 +11,9 @@ public class PlayerController : MonoBehaviour
     public bool isDead = false;
 
     [SerializeField] Attack attack;
+    [SerializeField] public FloatingHealthBar healthBar;
 
-    private Rigidbody2D rb;
+    public Rigidbody2D rb;
     [SerializeField] float moveSpeed;
 
     [SerializeField] CharacterState Idle;
@@ -25,10 +26,15 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] CharacterState UseSpear;
 
+    [SerializeField] CharacterState UseKnife;
+
     public AnimationClip deathAnim;
 
 
     [SerializeField] StateAnimationsSetDictionary StateAnimations;
+
+    private bool canAttack = true; // Variable to control if an attack can be performed
+    public float attackCooldown = 1f; // Cooldown time between attacks
 
     public CharacterState CurrentState {
         get
@@ -54,6 +60,7 @@ public class PlayerController : MonoBehaviour
     private AnimationClip currentClip;
 
     private float timeToEndAnimation = 0f;
+    private float attackCooldownTimer = 0f; // Timer for attack cooldown
 
     // Start is called before the first frame update
     void Start()
@@ -88,11 +95,17 @@ public class PlayerController : MonoBehaviour
             ChangeClip();
         }
 
-        if(health == 0)
+        if(health <= 0)
         {
             animator.Play(deathAnim.name);
         }
 
+        // Update attack cooldown timer
+        attackCooldownTimer -= Time.deltaTime;
+        if (attackCooldownTimer <= 0)
+        {
+            canAttack = true; // Allow attack if cooldown has finished
+        }
     }
 
     private void ChangeClip()
@@ -116,16 +129,26 @@ public class PlayerController : MonoBehaviour
 
     private void GetAttackState()
     {
-        if(attack.weaponToUse.name == "sword")
+        if (attack.weaponToUse != null)
         {
-            CurrentState = UseSword;
-        } else if(attack.weaponToUse.name == "spear")
-        {
-            CurrentState = UseSpear;
-        } else
-        {
-            return;
+            if (attack.weaponToUse.name == "Sword")
+            {
+                CurrentState = UseSword;
+            }
+            else if (attack.weaponToUse.name == "Spear")
+            {
+                CurrentState = UseSpear;
+            }
+            else if (attack.weaponToUse.name == "Knife")
+            {
+                CurrentState = UseKnife;
+            }
+            else
+            {
+                return;
+            }
         }
+
     }
 
     private void OnUse()
@@ -135,9 +158,14 @@ public class PlayerController : MonoBehaviour
 
     private void OnAttack()
     {
-        Debug.Log("attack action trigggered");
-        GetAttackState();
+        if (canAttack)
+        {
+            Debug.Log("Attack action triggered");
+            GetAttackState();
+
+            // Start attack cooldown
+            canAttack = false;
+            attackCooldownTimer = attackCooldown;
+        }
     }
-
-
 }

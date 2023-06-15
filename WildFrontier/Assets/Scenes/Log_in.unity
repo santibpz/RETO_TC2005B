@@ -1189,8 +1189,15 @@ MonoBehaviour:
   username: {fileID: 22729220}
   password: {fileID: 763351889}
   url: http://localhost:3000
-  endpoint: /api/login
+  loginEndpoint: /api/login
+  playerItemsEP: /api/playerItems
+  playerWeaponsEP: /api/playerWeapons
   notification: {fileID: 1972545462}
+  player:
+    player_id: 0
+    username: 
+  items:
+    playerItems: []
 --- !u!1 &879616697
 GameObject:
   m_ObjectHideFlags: 0

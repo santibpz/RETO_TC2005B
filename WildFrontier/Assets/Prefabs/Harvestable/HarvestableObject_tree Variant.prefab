@@ -12,9 +12,17 @@ PrefabInstance:
       value: HarvestableObject_tree Variant
       objectReference: {fileID: 0}
     - target: {fileID: 4993397323018600409, guid: caaa5346cc8271a46a5c8c59ffcea728, type: 3}
+      propertyPath: Remains
+      value: 
+      objectReference: {fileID: 8133493317995318668, guid: 4358655a5ecedd64e8fe81974c73034c, type: 3}
+    - target: {fileID: 4993397323018600409, guid: caaa5346cc8271a46a5c8c59ffcea728, type: 3}
       propertyPath: toolType
       value: 
       objectReference: {fileID: 11400000, guid: 672a19e7befac2344a411190fb22728e, type: 2}
+    - target: {fileID: 4993397323018600409, guid: caaa5346cc8271a46a5c8c59ffcea728, type: 3}
+      propertyPath: treeRemains
+      value: 
+      objectReference: {fileID: 8133493317995318668, guid: 4358655a5ecedd64e8fe81974c73034c, type: 3}
     - target: {fileID: 7280726734851320930, guid: caaa5346cc8271a46a5c8c59ffcea728, type: 3}
       propertyPath: m_RootOrder
       value: 0

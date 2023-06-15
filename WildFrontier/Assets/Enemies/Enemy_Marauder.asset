@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Marauder
   usedWeapon: {fileID: 11400000, guid: d7214e7837b8e9d488f8f646e867737b, type: 2}
-  health: 20
+  health: 50

@@ -11,7 +11,7 @@ public class Message : MonoBehaviour
     {
         gameObject.SetActive(true);
         notificationText.text = message;
-        Invoke("DisableNotification", 4);
+        Invoke("DisableNotification", 2);
     }
 
     private void DisableNotification()

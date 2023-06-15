@@ -7,6 +7,7 @@ using UnityEngine;
 
 public class Weapon : ScriptableObject
 {
+    [SerializeField] public int weapon_id;
     [SerializeField] public string name;
     [SerializeField] string type;
     [SerializeField] public int woodRequirement;

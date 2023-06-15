@@ -33,11 +33,17 @@ public class BuildWeapon : MonoBehaviour
 
     [SerializeField] Resource wood;
     [SerializeField] Resource rock;
+
+    [SerializeField] Message message;
     // Start is called before the first frame update
     void Start()
     {
-        woodRequirement = _weapon.woodRequirement;
-        rockRequirement = _weapon.rockRequirement;
+        if(_weapon != null)
+        {
+            woodRequirement = _weapon.woodRequirement;
+            rockRequirement = _weapon.rockRequirement;
+        }
+       
     }
 
     // Update is called once per frame
@@ -54,11 +60,10 @@ public class BuildWeapon : MonoBehaviour
     public void Build() 
     {
 
-        Debug.Log($"{_weapon.name} requires {woodRequirement} woods and {rockRequirement}");
-
         if(_weapon == null)
         {
             Debug.Log("No weapon selected");
+            message.Send("No weapon selected");
         }
         else
         {
@@ -81,12 +86,14 @@ public class BuildWeapon : MonoBehaviour
             if(weaponInventory.weapons.ContainsKey(_weapon))
             {
                 Debug.Log("weapon already exists in inventory");
+                message.Send("Weapon already exists in inventory");
                 return;
             } else
             {
                 // allow player to build weapon
                 weaponInventory.AddWeaponToInventory(_weapon);
                 Debug.Log("Weapon successfully created");
+                message.Send("Weapon successfully created");
 
                 // update resource inventory
                 resourceInventory.UpdateInventory(wood, currentWoodAmount - woodRequirement);
@@ -98,7 +105,9 @@ public class BuildWeapon : MonoBehaviour
         } else
         {
             // player does not have enough resources to build a weapon
-            Debug.Log("Player does not have enough resources to build weapon");
+            Debug.Log("Player does not have enough resources to build weapon"); 
+            message.Send("You do not have enough resources to build weapon");
+
         }
     }
 

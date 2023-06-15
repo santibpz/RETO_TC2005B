@@ -2,10 +2,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class EquipWeapon : MonoBehaviour
 {
+    [SerializeField] Message message;
+    [SerializeField] GameObject currentWeaponUI;
+    [SerializeField] Image weaponImg;
     public Weapon weapon
+
     {
         get
         {
@@ -38,6 +43,14 @@ public class EquipWeapon : MonoBehaviour
 
     public void EquipWeaponToUse()
     {
-        attack.weaponToUse = _weapon;
+        if(_weapon != null)
+        {
+            attack.weaponToUse = _weapon;
+            message.Send($"{_weapon.name} Equipped!");
+            currentWeaponUI.SetActive(true);
+            weaponImg.sprite = _weapon.icon;
+        }
+
+        
     }
 }
