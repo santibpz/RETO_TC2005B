@@ -5,6 +5,14 @@ using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.Tilemaps;
 
+[System.Serializable]
+public class CheckpointDeath
+{
+    public int checkpoint;
+    public int player_id;
+    public int player_lose_count = 1;
+}
+
 public class GameManager : MonoBehaviour
 {
     [SerializeField] Tilemap groundTilemap;
@@ -16,6 +24,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] CameraController cameraController;
     [SerializeField] GameObject GameOverCanvas;
     [SerializeField] GameObject UIcanvas;
+    [SerializeField] CheckReceivedData checker;
+    [SerializeField] InsertCheckpointDeath insertCheckpointDeath;
     private NavMeshPath path;
     private Bounds worldBounds;
     private GameObject viewer;
@@ -54,6 +64,10 @@ public class GameManager : MonoBehaviour
         worldBounds = groundTilemap.localBounds;
         viewer = GameObject.Find("viewer");
         Debug.Log("up is: " + Vector2.up);
+
+        // check if player has items
+        StartCoroutine(FetchPlayerData());
+
         //Debug.Log("world bounds are: " + worldBounds);
         //Debug.Log("min : " + worldBounds.min);
         //Debug.Log("max : " + worldBounds.max);
@@ -234,6 +248,13 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    IEnumerator FetchPlayerData()
+    {
+        yield return new WaitForSeconds(1);
+        checker.FetchItems();
+        checker.FetchWeapons();
+    }
+
 
     private void GameOver()
     {
@@ -244,6 +265,7 @@ public class GameManager : MonoBehaviour
     {
         if (playerController.health <= 0 || agent.health <= 0)
         {
+
             yield return new WaitForSeconds(2);
             // pause the game
             Time.timeScale = 0;
@@ -255,7 +277,13 @@ public class GameManager : MonoBehaviour
             Debug.Log("You have lost!!");
             GameOverCanvas.SetActive(true);
 
-            
+            // register the checkpoint where the player lost
+            CheckpointDeath checkpointDeath = new CheckpointDeath();
+            checkpointDeath.checkpoint = agent.checkpointNo;
+            checkpointDeath.player_id = PlayerPrefs.GetInt("player_id");
+
+            string jsonData = JsonUtility.ToJson(checkpointDeath);
+            insertCheckpointDeath.QueryInsertCheckpointDeath(jsonData);
         }
     }
 }

@@ -14,5 +14,6 @@ public class CloseInventoryScreen : MonoBehaviour
     public void CloseScreen()
     {
         inventoryPanel.SetActive(false);
+        Time.timeScale = 1;
     }
 }

@@ -38,6 +38,7 @@ public class Cooldown : MonoBehaviour
         Color newColor = Color.Lerp(initialColor, target, timeFraction);
 
         // Check if the space bar is pressed to start the fade-out process
+        
         if (Input.GetKeyDown(KeyCode.Space) && spriteRenderer.color.a == 0f)
         {
             // Set the initial color with alpha value of 1 (fully opaque)

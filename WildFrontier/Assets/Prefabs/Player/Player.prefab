@@ -196,6 +196,7 @@ MonoBehaviour:
   UseTool: {fileID: 11400000, guid: 63caef3cb38017a49b7092734a8b22d1, type: 2}
   UseSword: {fileID: 11400000, guid: bc1b25fe7efacf141b63abb756c36e8f, type: 2}
   UseSpear: {fileID: 11400000, guid: 926b4ddacf433944faffda4c4ae2ce84, type: 2}
+  UseKnife: {fileID: 0}
   deathAnim: {fileID: 7400000, guid: 5952ac4c79e79b84cbdccc336fd963b9, type: 2}
   StateAnimations:
     m_keys:
@@ -246,7 +247,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inventory: {fileID: 6208736854238070477}
-  updateResources: {fileID: 0}
 --- !u!114 &6208736854238070477
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -262,6 +262,7 @@ MonoBehaviour:
   resources:
     m_keys: []
     m_values: 
+  updateResources: {fileID: 0}
 --- !u!114 &4522568579427048808
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -726,7 +727,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -1
-  m_Sprite: {fileID: 21300000, guid: e6abe839f591ab247b1a44e8a8f48f52, type: 3}
+  m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -734,7 +735,7 @@ SpriteRenderer:
   m_Size: {x: 0.32, y: 0.32}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &2385620506719385167
@@ -749,7 +750,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69e1351bb1ba9f4418985fa01b8e132b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _weapon: {fileID: 11400000, guid: 13bfa74fff886044dbacdde2f9d0a6ec, type: 2}
+  _weapon: {fileID: 0}
 --- !u!58 &3814141446606914517
 CircleCollider2D:
   m_ObjectHideFlags: 0

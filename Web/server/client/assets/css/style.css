@@ -2199,3 +2199,18 @@ section {
   font-size: 13px;
   color: #ddd;
 }
+#image{
+  width: 100%;
+  height: auto;
+}
+div.centertext {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 50px;
+}
+div.centertext li {
+  font-size: 18px; /* Tamaño de fuente ajustado */
+}

@@ -12,11 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ca045714b6aea0438316cb7c7cedfb9, type: 3}
   m_Name: Weapon_knife
   m_EditorClassIdentifier: 
-  name: knife
+  weapon_id: 2
+  name: Knife
   type: long range
   woodRequirement: 4
   rockRequirement: 4
-  damage: 15
+  damage: 12
   speed: 0
   reload: 0
   icon: {fileID: 21300000, guid: 3ebaec23a6a885c49ae9c79e4fc05629, type: 3}
