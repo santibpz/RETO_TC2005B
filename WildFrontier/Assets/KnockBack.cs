@@ -11,7 +11,6 @@ public class KnockBack : MonoBehaviour
     {
         StopAllCoroutines();
         Vector2 direction = (transform.position - attacker.transform.position).normalized;
-        Debug.Log("heree");
         rb.AddForce(direction * strength, ForceMode2D.Impulse);
         StartCoroutine(Reset());
     }

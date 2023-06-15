@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1561488422647510962}
   - component: {fileID: 1561488422647510963}
   - component: {fileID: 1561488422647510960}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: GrimGraphic
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 1561488423742507608}
   - component: {fileID: 1561488423742507609}
   - component: {fileID: 1561488423742507622}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Weapon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -253,7 +253,7 @@ GameObject:
   - component: {fileID: 1561488423840800527}
   - component: {fileID: 963127834910796550}
   - component: {fileID: 5570995208983303050}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: GrimmAgent
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -390,9 +390,17 @@ PrefabInstance:
       propertyPath: m_TargetGraphic
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 589360399750786963, guid: d335ea57405b29a4aa7065417ced5d2f, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 1405369574520377832, guid: d335ea57405b29a4aa7065417ced5d2f, type: 3}
       propertyPath: m_Name
       value: Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 1405369574520377832, guid: d335ea57405b29a4aa7065417ced5d2f, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 1525570030600108834, guid: d335ea57405b29a4aa7065417ced5d2f, type: 3}
       propertyPath: m_Pivot.x
@@ -485,6 +493,18 @@ PrefabInstance:
     - target: {fileID: 4544265623069068989, guid: d335ea57405b29a4aa7065417ced5d2f, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4656695299215480643, guid: d335ea57405b29a4aa7065417ced5d2f, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 5738895374236300397, guid: d335ea57405b29a4aa7065417ced5d2f, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 5804456376221319717, guid: d335ea57405b29a4aa7065417ced5d2f, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d335ea57405b29a4aa7065417ced5d2f, type: 3}
