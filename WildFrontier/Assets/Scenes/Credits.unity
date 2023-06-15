@@ -398,7 +398,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.19215688, g: 0.4745098, b: 0.33722728, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -481,7 +481,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -63.999817, y: 10.686523}
+  m_AnchoredPosition: {x: -47, y: 10.686523}
   m_SizeDelta: {x: 407.34244, y: -34.23883}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1792181350
@@ -504,10 +504,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Congratulations! \n\n\nyou have reunited with your son, defeating the
-    enemy clan, since that day it is said that they lived happily ever after, or
-    not???\r\nHe will continue.....\n\n\n\n\n\n\n\n\n\n\n\n\nIan Vazquez\r\n\nSantiago
-    Benitez\r\n\nCarlos Soto\n\r\n\n\n\n\n\n\n\nJesus Soria\r\n\n\n\n\n\n\n\nGeorge
+  m_text: "Congratulations! \n\n\nYou have completed the First Level of this Journey
+    in the rescue of Kael's Son.....\n\n\n\nTo Be Continued....\n\n\n\n\n\n\n\n\n\n\n\n\n\nIan
+    Vazquez\r\n\nSantiago Benitez\r\n\nCarlos Soto\n\r\n\n\n\n\n\n\n\nJesus Soria\r\n\n\n\n\n\n\n\nGeorge
     Bailey\r\n\nSzadiart\r\n\nJohnMartPixel25\r\n\nSeliel the Shaper\r\n\nELV Games"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
@@ -620,7 +619,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -63.999817, y: 10.686523}
+  m_AnchoredPosition: {x: -51, y: -5}
   m_SizeDelta: {x: 407.34244, y: -34.23883}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1923911286
@@ -702,8 +701,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
