@@ -23,6 +23,8 @@ public class WolfAgentMovement : MonoBehaviour
 
     public int health = 100; // wolf health
 
+    private int maxHealth;  //Curar
+
     bool flag; // helper flag to control Wolf controller function
 
     bool isOnCheckpointRoute; // check if wolf is en route
@@ -35,6 +37,7 @@ public class WolfAgentMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        maxHealth=health; //Curar
         wolfAgent = GetComponent<NavMeshAgent>();
         wolfAgent.updateRotation = false;
         wolfAgent.updateUpAxis = false;
@@ -64,6 +67,19 @@ public class WolfAgentMovement : MonoBehaviour
         {
             wolfGraphic.isWolfDead = true;
         }
+
+        if (Input.GetKeyDown(KeyCode.K)) //curar
+        {
+            health += 30; // Aumentar en 30 la salud
+
+            // Asegurarse de que la salud no supere el valor máximo
+            if (health > maxHealth)
+                health = maxHealth;
+
+            // Actualizar la barra de salud con los nuevos valores
+            healthBar.UpdateHealthBar(health, maxHealth);
+        }
+
 
         // check if player has killed all enemies
         if(freeToMove && hasReachedLastCheckpoint == false)
