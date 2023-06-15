@@ -39,6 +39,7 @@ public class MusicManager : MonoBehaviour
     private bool isLowHealth = false; // Indicates if the player has low health
     private bool isDead = false; // Indicates if the player is dead
     private bool isBossBattle = false; // Indicates if it's a boss battle
+    private bool isMenu = false;
     private float targetVolume = 1f; // Target volume for transitioning music
     private float initialVolume; // Initial volume before the transition
 
@@ -196,31 +197,33 @@ public class MusicManager : MonoBehaviour
     }
 
     private IEnumerator TransitionToDeathMusic()
+{
+    if (isTransitioning) yield break;
+
+    isTransitioning = true;
+    initialVolume = audioSource.volume;
+
+    while (audioSource.volume > 0f)
     {
-        if (isTransitioning) yield break;
-
-        isTransitioning = true;
-        initialVolume = audioSource.volume;
-
-        while (audioSource.volume > 0f)
-        {
-            audioSource.volume -= fadeSpeed * Time.deltaTime;
-            yield return null;
-        }
-
-        audioSource.Stop();
-        audioSource.clip = deathMusic;
-        audioSource.volume = targetVolume;
-        audioSource.Play();
-
-        while (audioSource.volume < targetVolume)
-        {
-            audioSource.volume += fadeSpeed * Time.deltaTime;
-            yield return null;
-        }
-
-        isTransitioning = false;
+        audioSource.volume -= fadeSpeed * Time.deltaTime;
+        yield return null;
     }
+
+    audioSource.Stop();
+    audioSource.clip = deathMusic;
+    audioSource.volume = targetVolume;
+    audioSource.Play();
+
+    while (audioSource.volume < targetVolume)
+    {
+        audioSource.volume += fadeSpeed * Time.deltaTime;
+        yield return null;
+    }
+
+    isTransitioning = false;
+
+}
+
 
     private IEnumerator TransitionToBossMusic()
     {
@@ -302,7 +305,7 @@ public class MusicManager : MonoBehaviour
         return wolfAgent.health < lowHealthMusicThreshold; // Acceder a la variable health del script WolfAgentMovement
     }
     
-    return false; // Manejar el caso en el que no se encuentra el objeto WolfAgent
+    return false; // WolfAgent it´s not found
     }
 
     private void PlayMusic(AudioClip musicClip)
@@ -315,7 +318,7 @@ public class MusicManager : MonoBehaviour
 
     private bool IsMenuScene(Scene scene)
     {
-        return scene.name == "Initial" || scene.name == "Log_in" || scene.name == "Sign_up"; // Returns true if the scene is a menu scene
+        return scene.name == "Initial" || scene.name == "Log_in" || scene.name == "Sign_up" || scene.name == "Main_menu"; // Returns true if the scene is a menu scene
     }
 
     private bool IsGameScene(Scene scene)
@@ -334,4 +337,30 @@ public class MusicManager : MonoBehaviour
         isBossBattle = false;
         StartCoroutine(TransitionToCreditsMusic()); // Start transition to credits music
     }
+
+    public void CheckTransitionToGameMusic()
+    {
+            isDead = false;
+            StartCoroutine(TransitionToOriginalMusic()); // Start transition to Game music
+    }
+
+    private void OnEnable()
+    {
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    private void OnDisable()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        if (IsMenuScene(scene) && !isMenu)
+        {
+            isMenu= true;
+            PlayMusic(menuMusic); // Change music to music of menu
+        }
+    }
+
 }
