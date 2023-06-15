@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8826240375085322263}
   - component: {fileID: 8826240375085322260}
   - component: {fileID: 8826240375085322261}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: weapon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -128,7 +128,7 @@ GameObject:
   - component: {fileID: 8826240375836967781}
   - component: {fileID: 8826240375836967778}
   - component: {fileID: 8826240375836967779}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: ImpalerGraphic
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -253,7 +253,7 @@ GameObject:
   - component: {fileID: 8826240376580009394}
   - component: {fileID: 9202978747396754845}
   - component: {fileID: 5104901364872101784}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: ImpalerAgent
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -291,7 +291,7 @@ NavMeshAgent:
   m_Acceleration: 1
   avoidancePriority: 50
   m_AngularSpeed: 120
-  m_StoppingDistance: 1.5
+  m_StoppingDistance: 0
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
@@ -390,9 +390,17 @@ PrefabInstance:
       propertyPath: m_Interactable
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 589360399750786963, guid: d335ea57405b29a4aa7065417ced5d2f, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 1405369574520377832, guid: d335ea57405b29a4aa7065417ced5d2f, type: 3}
       propertyPath: m_Name
       value: Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 1405369574520377832, guid: d335ea57405b29a4aa7065417ced5d2f, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 1525570030600108834, guid: d335ea57405b29a4aa7065417ced5d2f, type: 3}
       propertyPath: m_Pivot.x
@@ -485,6 +493,18 @@ PrefabInstance:
     - target: {fileID: 4544265623069068989, guid: d335ea57405b29a4aa7065417ced5d2f, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4656695299215480643, guid: d335ea57405b29a4aa7065417ced5d2f, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 5738895374236300397, guid: d335ea57405b29a4aa7065417ced5d2f, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 5804456376221319717, guid: d335ea57405b29a4aa7065417ced5d2f, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d335ea57405b29a4aa7065417ced5d2f, type: 3}

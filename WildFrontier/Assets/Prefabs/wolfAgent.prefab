@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7461885523649031163}
   - component: {fileID: 7941917130638502851}
   - component: {fileID: 6323931606405272186}
-  m_Layer: 7
+  m_Layer: 10
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -151,7 +151,7 @@ GameObject:
   - component: {fileID: 5979840476349003727}
   - component: {fileID: 5979840476349003724}
   - component: {fileID: 7905970171081319886}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: wolfAgent
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -283,7 +283,7 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 150
   m_LinearDrag: 100
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
@@ -328,7 +328,7 @@ GameObject:
   - component: {fileID: 5979840476551170806}
   - component: {fileID: 5979840476551170805}
   - component: {fileID: 5979840476551170804}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: wolf
   m_TagString: Wolf
   m_Icon: {fileID: 0}
@@ -451,7 +451,7 @@ GameObject:
   - component: {fileID: 4969134145802742705}
   - component: {fileID: 7863488003843073963}
   - component: {fileID: 2867547853887156095}
-  m_Layer: 7
+  m_Layer: 10
   m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -529,7 +529,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 589360399750786963, guid: d335ea57405b29a4aa7065417ced5d2f, type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1405369574520377832, guid: d335ea57405b29a4aa7065417ced5d2f, type: 3}
       propertyPath: m_Name
@@ -537,7 +537,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1405369574520377832, guid: d335ea57405b29a4aa7065417ced5d2f, type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1525570030600108834, guid: d335ea57405b29a4aa7065417ced5d2f, type: 3}
       propertyPath: m_Pivot.x
@@ -653,7 +653,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4656695299215480643, guid: d335ea57405b29a4aa7065417ced5d2f, type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5604868865795828334, guid: d335ea57405b29a4aa7065417ced5d2f, type: 3}
       propertyPath: m_UiScaleMode
@@ -665,11 +665,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5738895374236300397, guid: d335ea57405b29a4aa7065417ced5d2f, type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5804456376221319717, guid: d335ea57405b29a4aa7065417ced5d2f, type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6479619879262712618, guid: d335ea57405b29a4aa7065417ced5d2f, type: 3}
       propertyPath: m_AnchoredPosition.x
