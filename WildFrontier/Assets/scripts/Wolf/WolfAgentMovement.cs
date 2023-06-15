@@ -107,12 +107,6 @@ public class WolfAgentMovement : MonoBehaviour
         if (wolfAgent.hasPath == false && flag == true) // wolf has reached checkpoint
         {
 
-            if(hasReachedLastCheckpoint)
-            {
-                // final battle
-                Debug.Log("Final checkpoint of the game");
-            }
-
             flag = false;
             Debug.Log("wolf has no path");
 
@@ -151,7 +145,7 @@ public class WolfAgentMovement : MonoBehaviour
         if(startWolfMovementAtCheckPoint == true)
         {
             wolfAgent.SetDestination(player.gameObject.transform.position);
-            wolfAgent.speed = 3;
+            wolfAgent.speed = 2;
             //wolfAgent.stoppingDistance = 3;
             if (player.rb.velocity.magnitude > 0.05f)
             {

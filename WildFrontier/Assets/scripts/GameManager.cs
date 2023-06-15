@@ -47,6 +47,7 @@ public class GameManager : MonoBehaviour
     // enemies to instantiate
     [SerializeField] EnemyController ImpalerEnemy;
     [SerializeField] EnemyController GrimEnemy;
+    [SerializeField] EnemyController MarauderEnemy;
 
     // variable to check if enemies are instantiated
 
@@ -174,23 +175,19 @@ public class GameManager : MonoBehaviour
             for (int i = 0; i < numberOfEnemies * 3; i++)
             {
                 //Vector3 newPos = new Vector3(Random.Range(currentCheckpoint.x - InstantiateOffset, currentCheckpoint.x + InstantiateOffset), Random.Range(currentCheckpoint.y - InstantiateOffset, currentCheckpoint.y + InstantiateOffset), 0);
-                if (i == 0)
+                if (i >= 0 && i <=3)
                 {
                     // Final Boss is instantiated
                     Debug.Log("Final boss is instantiated");
+                    CheckValidEnemySpawnPosition(MarauderEnemy, currentCheckpoint);
                     // Instantiate(FinalBossEnemy, newPos, Quaternion.identity);
                 }
-                else
+                else if(i >= 4 && i <= 7)
                 {
-                    if (i % 2 == 0)
-                    {
-
-                        //Instantiate(ImpalerEnemy, newPos, Quaternion.identity); // quaternion for rotation
-                    }
-                    else
-                    {
-                       // Instantiate(GrimEnemy, newPos, Quaternion.identity); // quaternion for rotation
-                    }
+                    CheckValidEnemySpawnPosition(GrimEnemy, currentCheckpoint);
+                } else
+                {
+                    CheckValidEnemySpawnPosition(ImpalerEnemy, currentCheckpoint);
                 }
 
             }
@@ -223,7 +220,7 @@ public class GameManager : MonoBehaviour
         Vector3 pos = new Vector3(Random.Range(currentCheckpoint.x - InstantiateOffset, currentCheckpoint.x + InstantiateOffset), Random.Range(currentCheckpoint.y - InstantiateOffset, currentCheckpoint.y + InstantiateOffset), 0);
         if(agent.wolfAgent.CalculatePath(pos, path) && path.status == NavMeshPathStatus.PathComplete)
         {
-            //Instantiate(enemy, pos, Quaternion.identity); // quaternion for rotation
+            Instantiate(enemy, pos, Quaternion.identity); // quaternion for rotation
             Debug.Log("enemy is instantiated");
             return;
         } else
