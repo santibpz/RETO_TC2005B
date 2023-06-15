@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.AI;
 using UnityEngine.Tilemaps;
 
@@ -44,8 +45,8 @@ public class GameManager : MonoBehaviour
     private GameObject[] enemies;
 
     // enemies to instantiate
-    [SerializeField] GameObject ImpalerEnemy;
-    [SerializeField] GameObject GrimEnemy;
+    [SerializeField] EnemyController ImpalerEnemy;
+    [SerializeField] EnemyController GrimEnemy;
 
     // variable to check if enemies are instantiated
 
@@ -101,7 +102,7 @@ public class GameManager : MonoBehaviour
         if (checkStatusOfEnemies == true)
         {
             CheckIfEnemiesDestroyed();
-        } 
+        }
 
         // Game over 
         GameOver();
@@ -170,10 +171,10 @@ public class GameManager : MonoBehaviour
         if (isFinalCheckPoint == true)
         {
             playerHasReachedFinalLevel = true;
-            for (int i = 0; i < numberOfEnemies * 2; i++)
+            for (int i = 0; i < numberOfEnemies * 3; i++)
             {
-                Vector3 newPos = new Vector3(Random.Range(currentCheckpoint.x - InstantiateOffset, currentCheckpoint.x + InstantiateOffset), Random.Range(currentCheckpoint.y - InstantiateOffset, currentCheckpoint.y + InstantiateOffset), 0);
-                if(i == 0)
+                //Vector3 newPos = new Vector3(Random.Range(currentCheckpoint.x - InstantiateOffset, currentCheckpoint.x + InstantiateOffset), Random.Range(currentCheckpoint.y - InstantiateOffset, currentCheckpoint.y + InstantiateOffset), 0);
+                if (i == 0)
                 {
                     // Final Boss is instantiated
                     Debug.Log("Final boss is instantiated");
@@ -184,29 +185,31 @@ public class GameManager : MonoBehaviour
                     if (i % 2 == 0)
                     {
 
-                        Instantiate(ImpalerEnemy, newPos, Quaternion.identity); // quaternion for rotation
+                        //Instantiate(ImpalerEnemy, newPos, Quaternion.identity); // quaternion for rotation
                     }
                     else
                     {
-                        Instantiate(GrimEnemy, newPos, Quaternion.identity); // quaternion for rotation
+                       // Instantiate(GrimEnemy, newPos, Quaternion.identity); // quaternion for rotation
                     }
                 }
-                
+
             }
         } else
         {
             for (int i = 0; i < numberOfEnemies; i++)
             {
-                Vector3 newPos = new Vector3(Random.Range(currentCheckpoint.x - InstantiateOffset, currentCheckpoint.x + InstantiateOffset), Random.Range(currentCheckpoint.y - InstantiateOffset, currentCheckpoint.y + InstantiateOffset), 0);
+                //Vector3 newPos = new Vector3(Random.Range(currentCheckpoint.x - InstantiateOffset, currentCheckpoint.x + InstantiateOffset), Random.Range(currentCheckpoint.y - InstantiateOffset, currentCheckpoint.y + InstantiateOffset), 0);
 
                 if (i % 2 == 0)
                 {
-
-                    Instantiate(ImpalerEnemy, newPos, Quaternion.identity); // quaternion for rotation
+                    //Instantiate(ImpalerEnemy, newPos, Quaternion.identity); // quaternion for rotation
+                    CheckValidEnemySpawnPosition(ImpalerEnemy, currentCheckpoint);
                 }
                 else
                 {
-                    Instantiate(GrimEnemy, newPos, Quaternion.identity); // quaternion for rotation
+                    //Instantiate(GrimEnemy, newPos, Quaternion.identity); // quaternion for rotation
+                    CheckValidEnemySpawnPosition(GrimEnemy, currentCheckpoint);
+
                 }
             }
         }
@@ -214,6 +217,23 @@ public class GameManager : MonoBehaviour
         areEnemiesInstantiated = true;
 
     }
+
+    private void CheckValidEnemySpawnPosition(EnemyController enemy, Vector3 currentCheckpoint)
+    {
+        Vector3 pos = new Vector3(Random.Range(currentCheckpoint.x - InstantiateOffset, currentCheckpoint.x + InstantiateOffset), Random.Range(currentCheckpoint.y - InstantiateOffset, currentCheckpoint.y + InstantiateOffset), 0);
+        if(agent.wolfAgent.CalculatePath(pos, path) && path.status == NavMeshPathStatus.PathComplete)
+        {
+            //Instantiate(enemy, pos, Quaternion.identity); // quaternion for rotation
+            Debug.Log("enemy is instantiated");
+            return;
+        } else
+        {
+            Debug.Log("enemy not instantiated");
+            CheckValidEnemySpawnPosition(enemy, currentCheckpoint);
+        }
+        
+    }
+
 
     private void CheckIfEnemiesDestroyed()
     {
@@ -227,20 +247,20 @@ public class GameManager : MonoBehaviour
         if (playerHasReachedFinalLevel == true)
         {
 
-            // Display winning screen
-            // LevelCompleted()
+            // Display credits screen
+            LevelCompleted();
             Debug.Log("CONGRATULATIONS YOU HAVE WON!");
         } else
         {
             // wolf is able to move
             agent.freeToMove = true;
         }
-       
+
     }
 
     public void ControlCameraFollow(bool followPlayer)
     {
-        if(followPlayer == true)
+        if (followPlayer == true)
         {
             cameraController.cam.m_Follow = GameObject.FindGameObjectWithTag("Player").transform;
         } else
@@ -286,5 +306,16 @@ public class GameManager : MonoBehaviour
             string jsonData = JsonUtility.ToJson(checkpointDeath);
             insertCheckpointDeath.QueryInsertCheckpointDeath(jsonData);
         }
+    }
+
+    private void LevelCompleted()
+    {
+        StartCoroutine(DisplayCredits());
+    }
+
+    IEnumerator DisplayCredits()
+    {
+        yield return new WaitForSeconds(2);
+        SceneManager.LoadScene("Credits");
     }
 }

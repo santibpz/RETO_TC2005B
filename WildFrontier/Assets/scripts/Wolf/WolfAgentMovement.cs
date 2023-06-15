@@ -121,7 +121,8 @@ public class WolfAgentMovement : MonoBehaviour
         }
         Debug.Log("Setting wolf dest");
         viewer.transform.position = levelCheckpoints[checkpointNo];
-        wolfAgent.SetDestination(levelCheckpoints[checkpointNo]); 
+        wolfAgent.SetDestination(levelCheckpoints[checkpointNo]);
+        wolfAgent.speed = 5;
         wolfAgent.isStopped = true;
         wolfGraphic.isMoving = false;
         isOnCheckpointRoute = true;
@@ -133,9 +134,9 @@ public class WolfAgentMovement : MonoBehaviour
         
         if(startWolfMovementAtCheckPoint == true)
         {
-            Debug.Log("entered fn");
             wolfAgent.SetDestination(player.gameObject.transform.position);
-
+            wolfAgent.speed = 3;
+            //wolfAgent.stoppingDistance = 3;
             if (player.rb.velocity.magnitude > 0.05f)
             {
                 wolfGraphic.isMoving = true;
