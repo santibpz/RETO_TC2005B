@@ -23,7 +23,7 @@ SELECT weapon_name, player_count FROM weapon INNER JOIN
 FROM Player_Weapon
 GROUP BY weapon_id)
 AS weapons_by_players
-USING (weapon_id);
+USING (weapon_id); 
 
 
 -- The number of deaths registered under a type of death

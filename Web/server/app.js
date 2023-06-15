@@ -14,7 +14,7 @@ app.use(cors({ origin: "http://127.0.0.1:3000" }));
 
 app.use(express.json());
 
-// app.use(express.static('./public'))
+app.use(express.static('./client'))
 
 const connectToDB = async () => {
   return await mysql.createConnection({
@@ -24,6 +24,14 @@ const connectToDB = async () => {
     database: "WildFrontier",
   });
 };
+
+app.get("/", (request, response) => {
+  fs.readFile("./client/pages/index.html", "utf8", (err, html) => {
+    if (err) response.status(500).send("There was an error: " + err);
+    console.log("Loading page...");
+    response.send(html);
+  });
+});
 
 // endpoint to fetch all players
 app.get("/api/players", async (req, res) => {
@@ -130,19 +138,17 @@ app.get("/api/playerItems/:id", async (req, res) => {
       "CALL player_items(?)",
       Number(req.params.id)
     );
-    console.log(results)
+    console.log(results);
     const playerItems = results ? results[0] : null;
     console.log(playerItems);
-    !playerItems ? 
-    res.sendStatus(404) : 
-    res.status(200).json(playerItems);
-  } catch (err) {     
+    !playerItems ? res.sendStatus(404) : res.status(200).json(playerItems);
+  } catch (err) {
     res.status(500).send("internal server error");
-  } finally {   
+  } finally {
     if (connection !== null) {
       connection.end();
       console.log("Connection closed succesfully!");
-    }  
+    }
   }
 });
 
@@ -153,10 +159,10 @@ app.get("/api/playerWeapons/:id", async (req, res) => {
   try {
     connection = await connectToDB();
     const [results, fields] = await connection.query(
-      "CALL player_weapons(?)",  
+      "CALL player_weapons(?)",
       Number(req.params.id)
     );
-    const playerWeapons = results ? results[0] : null;  
+    const playerWeapons = results ? results[0] : null;
     console.log(playerWeapons);
     !playerWeapons ? res.sendStatus(404) : res.status(200).json(playerWeapons);
   } catch (err) {
@@ -259,20 +265,22 @@ app.put("/api/updateResources", async (req, res) => {
   }
 });
 
-
 // Endpoint to register checkpoint deaths
 
-app.post('/api/checkpointDeath', async (req, res) => {
+app.post("/api/checkpointDeath", async (req, res) => {
   let connection = null;
-  const data = req.body
+  const data = req.body;
 
-  const {checkpoint, player_id, player_lose_count} = data
+  const { checkpoint, player_id, player_lose_count } = data;
 
   try {
     connection = await connectToDB();
-    const [results, fields] = await connection.query("call player_death_on_checkpoint(?, ?, ?)", [checkpoint, player_id, player_lose_count]);
+    const [results, fields] = await connection.query(
+      "call player_death_on_checkpoint(?, ?, ?)",
+      [checkpoint, player_id, player_lose_count]
+    );
 
-    console.log("ress are", results)
+    console.log("ress are", results);
     results ? res.status(200).json(results) : res.sendStatus(404);
   } catch (err) {
     res.status(500).send("internal server error");
@@ -282,11 +290,7 @@ app.post('/api/checkpointDeath', async (req, res) => {
       console.log("Connection closed succesfully!");
     }
   }
-})
-
-
-
-
+});
 
 //  Game statistics endpoint
 
@@ -378,13 +382,6 @@ app.get("/api/checkpointDeaths", async (req, res) => {
   }
 });
 
-// app.get("/", (request, response) => {
-//   fs.readFile("./public/html/mysqlUseCases.html", "utf8", (err, html) => {
-//     if (err) response.status(500).send("There was an error: " + err);
-//     console.log("Loading page...");
-//     response.send(html);
-//   });
-// });
 
 // app.get("/api/users", async (request, response) => {
 //   let connection = null;
