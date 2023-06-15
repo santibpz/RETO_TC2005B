@@ -16,13 +16,13 @@ public class Color_GameOver : MonoBehaviour
     {
         spriteRenderer = GetComponent<Image>();
         initialColor = spriteRenderer.color;
-        startTime = Time.time;
+        startTime = Time.unscaledTime; // Use Time.unscaledTime to get the unscaled time
     }
 
     private void Update()
     {
-        // Calculate the elapsed time since the start of the transition
-        float elapsedTime = Time.time - startTime;
+        // Calculate the unscaled elapsed time since the start of the transition
+        float elapsedTime = Time.unscaledTime - startTime;
 
         // Calculate the fraction of elapsed time relative to the total duration
         float timeFraction = Mathf.Clamp01(elapsedTime / duration);
@@ -34,4 +34,3 @@ public class Color_GameOver : MonoBehaviour
         spriteRenderer.color = newColor;
     }
 }
-

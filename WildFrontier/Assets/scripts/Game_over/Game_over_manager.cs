@@ -5,10 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class Game_over_manager : MonoBehaviour
 {
+    MusicManager music;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        music = GameObject.Find("MusicManager").GetComponent<MusicManager>();    
     }
 
     // Update is called once per frame
@@ -21,6 +23,7 @@ public class Game_over_manager : MonoBehaviour
     {
         Time.timeScale = 1;
         SceneManager.LoadScene(scene);
+        music.CheckTransitionToGameMusic();
     }
 
 }
