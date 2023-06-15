@@ -236,7 +236,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemy: {fileID: 11400000, guid: c224f8fc7859cb740b7fdb79911d797d, type: 2}
   enemyAgent: {fileID: 580864062904064484}
-  attackRadius: 2
+  attackRadius: 1.5
   healthBar: {fileID: 8467309551380784987}
   health: 100
   enemyGraphic: {fileID: 337220380623646309}

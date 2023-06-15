@@ -239,7 +239,7 @@ NavMeshAgent:
   m_Radius: 0.2
   m_Speed: 3
   m_Acceleration: 8
-  avoidancePriority: 50
+  avoidancePriority: 55
   m_AngularSpeed: 20
   m_StoppingDistance: 0
   m_AutoTraverseOffMeshLink: 1
@@ -266,6 +266,7 @@ MonoBehaviour:
   healthBar: {fileID: 1813501944092247539}
   wolfAgent: {fileID: 0}
   wolfGraphic: {fileID: 5979840476551170805}
+  checkpointNo: 0
   health: 100
   freeToMove: 0
 --- !u!50 &5979840476349003724

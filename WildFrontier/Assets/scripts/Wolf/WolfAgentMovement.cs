@@ -60,7 +60,7 @@ public class WolfAgentMovement : MonoBehaviour
         toggleWolfMovement();
 
         // check if wolf health is 0
-        if (health == 0)
+        if (health <= 0)
         {
             wolfGraphic.isWolfDead = true;
         }
