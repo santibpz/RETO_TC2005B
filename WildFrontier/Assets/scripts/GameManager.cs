@@ -101,7 +101,7 @@ public class GameManager : MonoBehaviour
         if (checkStatusOfEnemies == true)
         {
             CheckIfEnemiesDestroyed();
-        }
+        } 
 
         // Game over 
         GameOver();
@@ -111,7 +111,7 @@ public class GameManager : MonoBehaviour
     {
         while (checkpoints.Count <= 3)
         {
-            // quadrants
+            // generate reachable destinations for the wolf
             generateRandomDestination();
 
         }
@@ -150,11 +150,11 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    // check if there is a min distance between checkpoints
     private bool IsBetweenAcceptableDistance(Vector3 destination)
     {
         for (int i = 0; i < checkpoints.Count; i++)
         {
-            //Debug.Log($"Distance between point {i} and new position {destination} is:  {Vector3.Distance(checkpoints[i], destination)}");
             if (Vector3.Distance(checkpoints[i], destination) < minDistance)
             {
                 return false;
@@ -229,9 +229,10 @@ public class GameManager : MonoBehaviour
 
             // Display winning screen
             // LevelCompleted()
-
+            Debug.Log("CONGRATULATIONS YOU HAVE WON!");
         } else
         {
+            // wolf is able to move
             agent.freeToMove = true;
         }
        
