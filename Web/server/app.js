@@ -4,6 +4,7 @@ import cors from "cors";
 import express from "express";
 import mysql from "mysql2/promise";
 import fs from "fs";
+import { Console } from "console";
 
 const app = express();
 const port = 3000;
@@ -439,4 +440,9 @@ app.get("/api/checkpointDeaths", async (req, res) => {
       console.log("Connection closed succesfully!");
     }
   }
+})
+
+let PORT = 3000
+app.listen(PORT, () => {
+  console.log(`listening on port ${PORT}`)
 })
