@@ -7,11 +7,10 @@ import fs from "fs";
 import { Console } from "console";
 
 const app = express();
-const port = 3000;
 
 // middlewares
 
-app.use(cors({ origin: "http://127.0.0.1:3000" }));
+// app.use(cors({ origin: "http://127.0.0.1:5500" }));
 
 app.use(express.json());
 
@@ -19,10 +18,10 @@ app.use(express.static("./client"));
 
 const connectToDB = async () => {
   return await mysql.createConnection({
-    host: "localhost",
-    user: "videogame_user",
-    password: "wildfrontier.tec",
-    database: "WildFrontier",
+    host: process.env.HOST,
+    user: process.env.USER,
+    password: process.env.PASSWORD,
+    database: process.env.DATABASE,
   });
 };
 
@@ -442,7 +441,7 @@ app.get("/api/checkpointDeaths", async (req, res) => {
   }
 })
 
-let PORT = 3000
+let PORT = process.env.PORT || 3000
 app.listen(PORT, () => {
   console.log(`listening on port ${PORT}`)
 })
