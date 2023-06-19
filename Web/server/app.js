@@ -7,11 +7,10 @@ import fs from "fs";
 import { Console } from "console";
 
 const app = express();
-const port = 3000;
 
 // middlewares
 
-app.use(cors({ origin: "http://127.0.0.1:5500" }));
+// app.use(cors({ origin: "http://127.0.0.1:5500" }));
 
 app.use(express.json());
 
@@ -442,7 +441,7 @@ app.get("/api/checkpointDeaths", async (req, res) => {
   }
 })
 
-let PORT = 3000
+let PORT = process.env.PORT || 3000
 app.listen(PORT, () => {
   console.log(`listening on port ${PORT}`)
 })
