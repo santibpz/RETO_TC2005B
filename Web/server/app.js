@@ -14,7 +14,7 @@ app.use(cors({ origin: "http://127.0.0.1:3000" }));
 
 app.use(express.json());
 
-app.use(express.static('./client'))
+app.use(express.static("./client"));
 
 const connectToDB = async () => {
   return await mysql.createConnection({
@@ -25,6 +25,8 @@ const connectToDB = async () => {
   });
 };
 
+
+// website
 app.get("/", (request, response) => {
   fs.readFile("./client/pages/index.html", "utf8", (err, html) => {
     if (err) response.status(500).send("There was an error: " + err);
@@ -33,16 +35,6 @@ app.get("/", (request, response) => {
   });
 });
 
-// endpoint to fetch all players
-app.get("/api/players", async (req, res) => {
-  try {
-    let connection = await connectToDB();
-    const [results, fields] = await connection.execute("select * from Player");
-    res.json(results);
-  } catch (err) {
-    console.log(err);
-  }
-});
 
 // endpoint to create a new player account
 
@@ -98,35 +90,12 @@ app.post("/api/login", async (req, res) => {
     res.status(500).send("internal server error");
   } finally {
     if (connection !== null) {
-      connection.end();
+      connection.end(); 
       console.log("Connection closed succesfully!");
     }
   }
 });
 
-// Endpoint to fetch the player status
-
-app.get("/api/playerStatus/:id", async (req, res) => {
-  let connection = null;
-  console.log(req.params.id);
-  try {
-    connection = await connectToDB();
-    const [results, fields] = await connection.query(
-      "CALL player_status(?)",
-      Number(req.params.id)
-    );
-    const playerStatus = results ? results[0][0] : null;
-    console.log(playerStatus);
-    !playerStatus ? res.sendStatus(404) : res.status(200).json(playerStatus);
-  } catch (err) {
-    res.status(500).send("internal server error");
-  } finally {
-    if (connection !== null) {
-      connection.end();
-      console.log("Connection closed succesfully!");
-    }
-  }
-});
 
 // Endpoint to fetch the player items/resources
 
@@ -174,6 +143,8 @@ app.get("/api/playerWeapons/:id", async (req, res) => {
     }
   }
 });
+
+
 
 // endpoint to add one resource to the database
 
@@ -292,6 +263,94 @@ app.post("/api/checkpointDeath", async (req, res) => {
   }
 });
 
+// Endpoint to register a type of death
+
+app.post("/api/addDeathType", async (req, res) => {
+  let connection = null;
+  const data = req.body;
+
+  const { player_id, death_type_id } = data;
+
+  console.log("daskam", data);
+
+  try {
+    connection = await connectToDB();
+    const [results, fields] = await connection.query(
+      "call add_death_type(?, ?)",
+      [player_id, death_type_id]
+    );
+
+    console.log("ress are", results);
+    results ? res.status(200).json(results) : res.sendStatus(404);
+  } catch (err) {
+    console.log(err);
+    res.status(500).send("internal server error");
+  } finally {
+    if (connection !== null) {
+      connection.end();
+      console.log("Connection closed succesfully!");
+    }
+  }
+});
+
+// Endpoint to register a type of death
+
+app.post("/api/addWeaponUpgrade", async (req, res) => {
+  let connection = null;
+  const data = req.body;
+
+  const { weapon_id } = data;
+
+  try {
+    connection = await connectToDB();
+    const [results, fields] = await connection.query(   
+      "call add_weapon_upgrade(?)",
+      [weapon_id]
+    );
+
+    console.log("ress are", results);
+    results ? res.status(200).json(results) : res.sendStatus(404);
+  } catch (err) {
+    console.log(err);
+    res.status(500).send("internal server error");
+  } finally {
+    if (connection !== null) {
+      connection.end();
+      console.log("Connection closed succesfully!");
+    }
+  }
+});
+
+
+// Endpoint to add a weapon upgrade of a player
+
+app.post("/api/addPlayerWeaponUpgrade", async (req, res) => {
+  let connection = null;
+  const data = req.body;
+
+  const { player_id, weapon_id, weapon_damage } = data;
+
+  try {
+    connection = await connectToDB();
+    const [results, fields] = await connection.query(   
+      "call add_player_weapon_upgrade(?, ?, ?)",
+      [player_id, weapon_id, weapon_damage]
+    );
+
+    console.log("results are: ", results);
+    results ? res.status(200).json(results) : res.sendStatus(404);
+  } catch (err) {
+    console.log(err);
+    res.status(500).send("internal server error");
+  } finally {
+    if (connection !== null) {
+      connection.end();
+      console.log("Connection closed succesfully!");
+    }
+  }
+});
+
+
 //  Game statistics endpoint
 
 // Most created weapons by players
@@ -374,143 +433,10 @@ app.get("/api/checkpointDeaths", async (req, res) => {
     results ? res.status(200).json(results) : res.sendStatus(404);
   } catch (err) {
     res.status(500).send("internal server error");
-  } finally {
+  } finally { 
     if (connection !== null) {
       connection.end();
       console.log("Connection closed succesfully!");
     }
   }
-});
-
-
-// app.get("/api/users", async (request, response) => {
-//   let connection = null;
-
-//   try {
-//     connection = await connectToDB();
-//     const [results, fields] = await connection.execute("select * from users");
-
-//     console.log(`${results.length} rows returned`);
-//     response.json(results);
-//   } catch (error) {
-//     response.status(500);
-//     response.json(error);
-//     console.log(error);
-//   } finally {
-//     if (connection !== null) {
-//       connection.end();
-//       console.log("Connection closed succesfully!");
-//     }
-//   }
-// });
-
-// app.get("/api/users/:id", async (request, response) => {
-//   let connection = null;
-
-//   try {
-//     connection = await connectToDB();
-
-//     const [results_user, _] = await connection.query(
-//       "select * from users where id_users= ?",
-//       [request.params.id]
-//     );
-
-//     console.log(`${results.length} rows returned`);
-//     response.json(results);
-//   } catch (error) {
-//     response.status(500);
-//     response.json(error);
-//     console.log(error);
-//   } finally {
-//     if (connection !== null) {
-//       connection.end();
-//       console.log("Connection closed succesfully!");
-//     }
-//   }
-// });
-
-// app.post("/api/users", async (request, response) => {
-//   let connection = null;
-
-//   try {
-//     connection = await connectToDB();
-
-//     const [results, fields] = await connection.query(
-//       "insert into users set ?",
-//       request.body
-//     );
-
-//     console.log(`${results.affectedRows} row inserted`);
-//     response.json({
-//       message: "Data inserted correctly.",
-//       id: results.insertId,
-//     });
-//   } catch (error) {
-//     response.status(500);
-//     response.json(error);
-//     console.log(error);
-//   } finally {
-//     if (connection !== null) {
-//       connection.end();
-//       console.log("Connection closed succesfully!");
-//     }
-//   }
-// });
-
-// app.put("/api/users", async (request, response) => {
-//   let connection = null;
-
-//   try {
-//     connection = await connectToDB();
-
-//     const [results, fields] = await connection.query(
-//       "update users set name = ?, surname = ? where id_users= ?",
-//       [request.body["name"], request.body["surname"], request.body["userID"]]
-//     );
-
-//     console.log(`${results.affectedRows} rows updated`);
-//     response.json({
-//       message: `Data updated correctly: ${results.affectedRows} rows updated.`,
-//     });
-//   } catch (error) {
-//     response.status(500);
-//     response.json(error);
-//     console.log(error);
-//   } finally {
-//     if (connection !== null) {
-//       connection.end();
-//       console.log("Connection closed succesfully!");
-//     }
-//   }
-// });
-
-// app.delete("/api/users/:id", async (request, response) => {
-//   let connection = null;
-
-//   try {
-//     connection = await connectToDB();
-
-//     const [results, fields] = await connection.query(
-//       "delete from users where id_users= ?",
-//       [request.params.id]
-//     );
-
-//     console.log(`${results.affectedRows} row deleted`);
-//     response.json({
-//       message: `Data deleted correctly: ${results.affectedRows} rows deleted.`,
-//     });
-//   } catch (error) {
-//     response.status(500);
-//     response.json(error);
-//     console.log(error);
-//   } finally {
-//     if (connection !== null) {
-//       connection.end();
-//       console.log("Connection closed succesfully!");
-//     }
-//   }
-// });
-
-app.listen(port, () => {
-  console.log(`App listening at http://localhost:${port}`);
-});
+})

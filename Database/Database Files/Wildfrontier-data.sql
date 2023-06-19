@@ -57,18 +57,7 @@ INSERT INTO Player_Item (player_id, item_id, quantity) VALUES
 (9, 3, 1),
 (10, 6, 4);
 
-SET AUTOCOMMIT=0;
-INSERT INTO Player_Status (player_id, current_level, last_checkpoint) VALUES
-(1, 1, 3),
-(2, 1, 2),
-(3, 1, 1),
-(4, 1, 2),
-(5, 1, 3),
-(6, 1, 2),
-(7, 1, 1),
-(8, 1, 4),
-(9, 1, 3),
-(10, 1, 1);
+
 
 SET AUTOCOMMIT=0;
 INSERT INTO Checkpoint_Death (checkpoint, player_id, player_lose_count) VALUES
@@ -91,7 +80,7 @@ INSERT INTO Death_Type (death_type) VALUES
 ('player_death');
 
 SET AUTOCOMMIT=0;
-INSERT INTO Player_Death (player_status_id, death_type_id, death_type_count) VALUES
+INSERT INTO Player_Death (player_id, death_type_id, death_type_count) VALUES
 (2, 2, 5), 
 (3, 1, 2), 
 (1, 2, 1), 

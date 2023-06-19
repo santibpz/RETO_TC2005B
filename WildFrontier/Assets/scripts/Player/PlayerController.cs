@@ -10,6 +10,8 @@ public class PlayerController : MonoBehaviour
     public int health = 100;
     public bool isDead = false;
 
+    [SerializeField] GameManager gameManager;
+
     [SerializeField] Attack attack;
     [SerializeField] public FloatingHealthBar healthBar;
 
@@ -97,6 +99,7 @@ public class PlayerController : MonoBehaviour
 
         if(health <= 0)
         {
+            gameManager.endgame = true;
             animator.Play(deathAnim.name);
         }
 

@@ -80,7 +80,8 @@ public class CreatePlayer : MonoBehaviour
                 Debug.Log("Response: " + www.downloadHandler.text);
                 string succesMessage = www.downloadHandler.text;
                 notification.Send(succesMessage);
-                SceneManager.LoadScene("Log_in");
+                StartCoroutine(LoadLoginScreen());
+                
             }
             else
             {
@@ -89,6 +90,13 @@ public class CreatePlayer : MonoBehaviour
                 notification.Send(errorMessage);
             }
         }
+    }
+
+
+    IEnumerator LoadLoginScreen()
+    {
+        yield return new WaitForSeconds(2);
+        SceneManager.LoadScene("Log_in");
     }
 
 }
