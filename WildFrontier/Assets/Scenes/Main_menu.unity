@@ -418,8 +418,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 728122438}
-        m_TargetAssemblyTypeName: DisplayGameScene, Assembly-CSharp
-        m_MethodName: OpenGame
+        m_TargetAssemblyTypeName: DisplayCutscene, Assembly-CSharp
+        m_MethodName: View
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -476,7 +476,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 728122433}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 497354a13fbf9bf47b41041974f588b6, type: 3}
+  m_Script: {fileID: 11500000, guid: c836e6d395d396342a03dfea3322353c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &851591962
