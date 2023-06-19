@@ -957,6 +957,11 @@ section {
   padding: 60px 0;
 }
 
+#portfolio .portfolio-container {
+ width: 700px;
+ margin: auto;
+}
+
 #portfolio #portfolio-flters {
   padding: 0;
   margin: 5px 0 35px 0;

@@ -23,10 +23,10 @@ SELECT weapon_name, player_count FROM weapon INNER JOIN
 FROM Player_Weapon
 GROUP BY weapon_id)
 AS weapons_by_players
-USING (weapon_id);
+USING (weapon_id); 
 
 
--- The number of deaths registered under a type of death
+-- The number of players that have died by wolf death or player death
 
 /*
 By categorizing and storing the type of death,
@@ -39,7 +39,7 @@ By categorizing and storing the type of death,
 
 CREATE VIEW number_of_player_death_types AS
 SELECT death_type, Player_Count FROM Death_Type INNER JOIN
-(SELECT death_type_id, COUNT(DISTINCT(player_status_id)) as Player_Count
+(SELECT death_type_id, COUNT(DISTINCT(player_id)) as Player_Count
 FROM Player_Death GROUP BY death_type_id) AS Player_Deaths
 USING (death_type_id);
 

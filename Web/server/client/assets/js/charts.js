@@ -60,7 +60,7 @@ const createdWeaponsChart = new Chart(ctx1, {
   },
 });
 
-// Number of deaths registered under each type
+// The number of players that have died by wolf death or player death
 const playerDeathTypesData = await fetchInformation(
   "http://localhost:3000",
   "/api/playerDeathTypes"
@@ -77,7 +77,7 @@ const playerDeathTypesChart = new Chart(ctx2, {
     labels: deathTypes,
     datasets: [
       {
-        label: "Number of Death Types",
+        label: "Number of Player Deaths",
         backgroundColor: colorsChart2,
         borderColor: bordersChart2,
         data: playerCountChart2,

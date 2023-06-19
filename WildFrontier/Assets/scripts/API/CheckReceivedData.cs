@@ -29,6 +29,7 @@ public class PlayerWpn
     public int weapon_damage;
 }
 
+
 public class CheckReceivedData : MonoBehaviour
 {
     [SerializeField] ResourceInventory resourceInventory;
@@ -70,7 +71,7 @@ public class CheckReceivedData : MonoBehaviour
             case "Spear":
                 weaponInventory.SetWeaponToInventory(spear);
                 break;
-            case "Knife":
+            case "Stone Knife":
                 weaponInventory.SetWeaponToInventory(knife);
                 break;
             default:

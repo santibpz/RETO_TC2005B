@@ -4,11 +4,29 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
+
+[System.Serializable]
+public class WeaponUpgrade
+{
+    public int weapon_id;
+}
+
+[System.Serializable]
+public class PlayerWeaponUpdgrade
+{
+    public int player_id;
+    public int weapon_id;
+    public int weapon_damage;
+}
+
+
 public class UpgradeWeapon : MonoBehaviour
 {
     [SerializeField] Weapon weapon;
     [SerializeField] WeaponInventory weaponInventory;
     [SerializeField] ResourceInventory resourceInventory;
+    [SerializeField] InsertWeaponUpgrade insertWeaponUpgrade;
+    [SerializeField] InsertPlayerWeaponUpgrade insertPlayerWeaponUpgrade;
     [SerializeField] Message message;
 
     [SerializeField] GameObject[] upgradeSlots;
@@ -23,18 +41,20 @@ public class UpgradeWeapon : MonoBehaviour
     private int woodReq = 10;
     private int rockReq = 5;
 
+
     // Start is called before the first frame update
     void Start()
     {
         woodReqText.text = $"{woodReq}";
         rockReqText.text = $"{rockReq}";
+        
       
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+      
     }
 
     public void CheckIfCanUpgrade()
@@ -66,6 +86,23 @@ public class UpgradeWeapon : MonoBehaviour
                 woodReqText.text = $"{woodReq *= 3}";
                 rockReqText.text = $"{rockReq *= 3}";
 
+                // query database for player weapon upgrade
+                PlayerWeaponUpdgrade playerWeaponUpdgrade = new PlayerWeaponUpdgrade();
+                playerWeaponUpdgrade.player_id = PlayerPrefs.GetInt("player_id");
+                playerWeaponUpdgrade.weapon_id = weapon.weapon_id;
+                playerWeaponUpdgrade.weapon_damage = weapon.damage;
+
+                string playerData = JsonUtility.ToJson(playerWeaponUpdgrade);
+
+                insertPlayerWeaponUpgrade.QueryUpgrade(playerData);
+
+                // query database for weapon upgrade
+                WeaponUpgrade weaponUpgrade = new WeaponUpgrade();
+                weaponUpgrade.weapon_id = weapon.weapon_id;
+
+                string data = JsonUtility.ToJson(weaponUpgrade);
+
+                insertWeaponUpgrade.QueryUpgrade(data);
             }
             else
             {

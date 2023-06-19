@@ -23,6 +23,7 @@ public class Attack : MonoBehaviour
     }
 
     [SerializeField] public Weapon _weapon;
+    [SerializeField] UpgradeWeapon upgradeWeapon;
     private SpriteRenderer spriteRenderer;
 
     private int weaponDamage;

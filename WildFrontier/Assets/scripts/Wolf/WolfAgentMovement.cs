@@ -65,6 +65,7 @@ public class WolfAgentMovement : MonoBehaviour
         // check if wolf health is 0
         if (health <= 0)
         {
+            gameManager.endgame = true;
             wolfGraphic.isWolfDead = true;
         }
 
@@ -164,7 +165,7 @@ public class WolfAgentMovement : MonoBehaviour
 
     private void toggleWolfMovement()
     {
-        if(Input.GetKeyDown("h")) // pressing 'h' to stop the wolf movement
+        if(Input.GetKeyDown("z")) // pressing 'z' to stop the wolf movement
         {
 
             isWolfStopped = !isWolfStopped;

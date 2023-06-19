@@ -142,9 +142,56 @@ BEGIN
 END //
 DELIMITER 
 
-CALL player_items(11);
 
-select * from player;
+-- procedure to add a death type 
+DELIMITER //
+CREATE PROCEDURE add_death_type(IN in_player_id INT, IN in_death_type_id INT)
 
-SELECT * FROM CHECKPOINT_DEATH
+BEGIN
+    DECLARE row_count INT; 
+    
+    -- Check if the row exists
+    SELECT COUNT(*) INTO row_count
+    FROM player_death
+    WHERE player_id = in_player_id AND death_type_id = in_death_type_id; -- Use the parameters in the condition
+
+    -- If the row doesn't exist, insert a new row
+    IF row_count = 0 THEN
+        -- Insert the new row using the parameter values
+        INSERT INTO player_death (player_id, death_type_id, death_type_count)
+        VALUES (in_player_id, in_death_type_id, 1);
+	ELSE
+        UPDATE player_death
+        SET death_type_count = death_type_count + 1
+		WHERE player_id = in_player_id
+        AND death_type_id = in_death_type_id;
+    END IF;
+END //
+DELIMITER 
+
+
+-- procedure to register a weapon upgrade
+DELIMITER //
+CREATE PROCEDURE add_weapon_upgrade(IN in_weapon_id INT)
+
+BEGIN
+        UPDATE weapon
+        SET upgrade_count = upgrade_count + 1
+		WHERE weapon_id = in_weapon_id;
+END //
+DELIMITER 
+
+
+-- procedure to register a weapon upgrade
+DELIMITER //
+CREATE PROCEDURE add_player_weapon_upgrade(IN in_player_id INT, IN in_weapon_id INT, IN in_weapon_damage INT)
+
+BEGIN
+        UPDATE player_weapon
+        SET weapon_damage = in_weapon_damage
+		WHERE player_id = in_player_id AND 
+        weapon_id = in_weapon_id;
+END //
+DELIMITER 
+
 

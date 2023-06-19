@@ -14,6 +14,12 @@ public class CheckpointDeath
     public int player_lose_count = 1;
 }
 
+public class PlayerDeathType
+{
+    public int player_id;
+    public int death_type_id;
+}
+
 public class GameManager : MonoBehaviour
 {
     [SerializeField] Tilemap groundTilemap;
@@ -27,11 +33,14 @@ public class GameManager : MonoBehaviour
     [SerializeField] GameObject UIcanvas;
     [SerializeField] CheckReceivedData checker;
     [SerializeField] InsertCheckpointDeath insertCheckpointDeath;
+    [SerializeField] InsertDeathType insertDeathType;
     private NavMeshPath path;
     private Bounds worldBounds;
     private GameObject viewer;
 
     bool flag = false;
+
+    public bool endgame = false;
 
     private int numberOfEnemies = 4; // number of enemies to be instantiated at checkpoint
 
@@ -281,10 +290,10 @@ public class GameManager : MonoBehaviour
 
     IEnumerator EndGame()
     {
-        if (playerController.health <= 0 || agent.health <= 0)
+        if(endgame == true)
         {
 
-            yield return new WaitForSeconds(2);
+            yield return new WaitForSeconds(1);
             // pause the game
             Time.timeScale = 0;
 
@@ -295,6 +304,32 @@ public class GameManager : MonoBehaviour
             Debug.Log("You have lost!!");
             GameOverCanvas.SetActive(true);
 
+            if (playerController.health <= 0) // player
+            {
+                // insert player death type
+                PlayerDeathType playerDeathType = new PlayerDeathType();
+                playerDeathType.player_id = PlayerPrefs.GetInt("player_id");
+                playerDeathType.death_type_id = 2;
+
+                string data = JsonUtility.ToJson(playerDeathType);
+
+                insertDeathType.QueryInsertDeathType(data);
+
+            }
+            else if (agent.health <= 0) // wolf
+            {
+                // insert wolf death type
+                PlayerDeathType playerDeathType = new PlayerDeathType();
+                playerDeathType.player_id = PlayerPrefs.GetInt("player_id");
+                playerDeathType.death_type_id = 1;
+
+                string data = JsonUtility.ToJson(playerDeathType);
+
+                insertDeathType.QueryInsertDeathType(data);
+
+
+            }
+
             // register the checkpoint where the player lost
             CheckpointDeath checkpointDeath = new CheckpointDeath();
             checkpointDeath.checkpoint = agent.checkpointNo;
@@ -303,6 +338,7 @@ public class GameManager : MonoBehaviour
             string jsonData = JsonUtility.ToJson(checkpointDeath);
             insertCheckpointDeath.QueryInsertCheckpointDeath(jsonData);
         }
+        
     }
 
     private void LevelCompleted()
