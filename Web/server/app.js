@@ -31,8 +31,29 @@ const connectToDB = async () => {
   });
 };
 
-app.get("/test", (req, res) => {
-  res.send("hello world")
+app.get("/test", async (req, res) => {
+  let connection = null;
+  try {
+    connection = await connectToDB();
+    const [results, fields] = await connection.execute("select * from Player");
+    res.json(results)
+    console.log(results);
+    if (results.serverStatus == 2) {
+      res.status(200).send("Account Successfully Created");
+    } else {
+      res.sendStatus(400)
+    }
+    console.log("results of post op: ", results);
+  } catch (err) {
+    res
+      .status(500)
+      .send("There was an error creating the account.\n Try again later.");
+  } finally {
+    if (connection !== null) {
+      connection.end();
+      console.log("Connection closed succesfully!");
+    }
+  }
 })
 
 
