@@ -1,14 +1,4 @@
-Mis disculpas por la confusión anterior. Aquí tienes una descripción revisada del proyecto "Wild Frontier: The Rescue" y los recursos utilizados:
-
 ## Wild Frontier: The Rescue
-
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
-
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
@@ -45,25 +35,15 @@ Mis disculpas por la confusión anterior. Aquí tienes una descripción revisada
     <li>
       <a href="#para-empezar">Para Empezar</a>
       <ul>
-        <li><a href="#prerrequisitos">Prerrequisitos</a></li>
-        <li><a href="#instalación">Instalación</a></li>
       </ul>
     </li>
-    <li><a href="#uso">Uso</a></li>
-    <li><a href="#hoja-de-ruta">Hoja de Ruta</a></li>
-    <li><a href="#contribuciones">Contribuciones</a></li>
-    <li><a href="#licencia">Licencia</a></li>
-    <li><a href="#contacto">Contacto</a></li>
-    <li><a href="#reconocimientos">Reconocimientos</a></li>
   </ol>
 </details>
 
 <!-- ACERCA DEL PROYECTO -->
 ## Acerca del Proyecto
 
-Este informe proporciona una descripción general del desarrollo del juego "Wild Frontier: The Rescue". Se abordan aspectos como el tema del juego, el proceso de desarrollo, la creación del sitio web y la implementación de la base de datos. El juego ofrece una experiencia emocionante de aventura y RPG con un enfoque en el rescate del hijo del protagonista en un entorno de fantasía. El juego brinda valor agregado a través de su narrativa cautivadora, calidad
-
- visual y jugabilidad envolvente.
+"Wild Frontier: The Rescue" es un juego de aventuras y RPG que se centra en el rescate del hijo del protagonista en un mundo de fantasía. Desarrollado en Unity. El proceso de desarrollo incluyó la conceptualización del juego, el diseño de nivel, la implementación de mecánicas de juego y la creación de elementos visuales. Además, se desarrolló un sitio web interactivo con información detallada sobre el juego y se implementó una base de datos para almacenar perfiles de jugadores y progreso.
 
 ### Construido con
 
