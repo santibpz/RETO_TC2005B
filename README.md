@@ -44,19 +44,17 @@ The "Wild Frontier: The Rescue" project was built using the following main techn
 - **Web Hosting**: ......
 <!-- USAGE -->
 ## How to Play
-Read the Manual section on the website at: .....
-
+- Read the Manual section on the website at: .....
 <!-- LICENSE -->
 ## License
-Distributed under the MIT License. See LICENSE for more information.
-
+- Distributed under the MIT License. See LICENSE for more information.
 <!-- CONTACT -->
 ## Contact
-Repository: https://github.com/santibpz/RETO_TC2005B
-Issue Tracker: [https://github.com/santibpz]
+- Repository: https://github.com/santibpz/RETO_TC2005B
+- Issue Tracker: [https://github.com/santibpz]
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
-JohnMartPixel25
-Seliel the Shaper
-ELV Games
-Szadi art.
+- JohnMartPixel25
+- Seliel the Shaper
+- ELV Games
+- Szadi art.
