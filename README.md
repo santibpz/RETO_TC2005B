@@ -28,7 +28,7 @@
   </ol>
 </details>
 <!-- ABOUT THE PROJECT -->
-## About the Project
+- ##About the Project
 "Wild Frontier: The Rescue" is an adventure and RPG game that focuses on rescuing the protagonist's child in a fantasy world. Developed in Unity, the development process included game conceptualization, level design, implementation of gameplay mechanics, and creation of visual elements. Additionally, an interactive website with detailed game information was developed, and a database was implemented to store player profiles and progress. This game was created by Santiago Benitez, Ian Vázquez and Carlos Soto
 
 ## Built With
