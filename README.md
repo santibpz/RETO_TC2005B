@@ -9,16 +9,12 @@
   <h3 align="center">Wild Frontier: The Rescue</h3>
 
   <p align="center">
-    Un cautivador juego de aventuras y RPG centrado en el rescate del hijo del protagonista en un entorno de fantasía.
+    Un cautivador juego de aventuras y RPG centrado en el rescate del hijo del protagonista en un entorno primitivo.
     <br />
     <a href="https://github.com/santibpz/RETO_TC2005B"><strong>Explora la documentación »</strong></a>
     <br />
     <br />
     <a href="https://github.com/santibpz/RETO_TC2005B">Ver Demo</a>
-    ·
-    <a href="https://github.com/santibpz/RETO_TC2005B/issues">Reportar Bug</a>
-    ·
-    <a href="https://github.com/santibpz/RETO_TC2005B/issues">Solicitar Funcionalidad</a>
   </p>
 </div>
 
@@ -30,11 +26,6 @@
       <a href="#acerca-del-proyecto">Acerca del Proyecto</a>
       <ul>
         <li><a href="#construido-con">Construido con</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#para-empezar">Para Empezar</a>
-      <ul>
       </ul>
     </li>
   </ol>
