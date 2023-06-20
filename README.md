@@ -1,76 +1,62 @@
-## Wild Frontier: The Rescue
+# Wild Frontier: The Rescue
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
   <a href="https://github.com/santibpz/RETO_TC2005B">
-    <img src="Web/server/client/logo.png" alt="Logo" width="80" height="80">
+    <img src="https://github.com/santibpz/RETO_TC2005B/Web/server/client/logo.png" alt="Logo" width="80" height="80">
   </a>
-
   <h3 align="center">Wild Frontier: The Rescue</h3>
-
   <p align="center">
-    Un cautivador juego de aventuras y RPG centrado en el rescate del hijo del protagonista en un entorno primitivo.
+    A captivating adventure and RPG game centered around rescuing the protagonist's child in a primitive environment.
     <br />
-    <a href="https://github.com/santibpz/RETO_TC2005B"><strong>Explora la documentación »</strong></a>
+    <a href="https://github.com/santibpz/RETO_TC2005B"><strong>Explore the documentation »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/santibpz/RETO_TC2005B">Ver Demo</a>
+    <a href="https://github.com/santibpz/RETO_TC2005B">View Demo</a>
   </p>
 </div>
-
 <!-- TABLE OF CONTENTS -->
 <details>
-  <summary>Tabla de Contenidos</summary>
+  <summary>Table of Contents</summary>
   <ol>
     <li>
-      <a href="#acerca-del-proyecto">Acerca del Proyecto</a>
+      <a href="#about-the-project">About the Project</a>
       <ul>
-        <li><a href="#construido-con">Construido con</a></li>
+        <li><a href="#built-with">Built With</a></li>
       </ul>
     </li>
   </ol>
 </details>
+<!-- ABOUT THE PROJECT -->
+## About the Project
+"Wild Frontier: The Rescue" is an adventure and RPG game that focuses on rescuing the protagonist's child in a fantasy world. Developed in Unity, the development process included game conceptualization, level design, implementation of gameplay mechanics, and creation of visual elements. Additionally, an interactive website with detailed game information was developed, and a database was implemented to store player profiles and progress. This game was created by Santiago Benitez, Ian Vázquez and Carlos Soto
 
-<!-- ACERCA DEL PROYECTO -->
-## Acerca del Proyecto
+## Built With
+The "Wild Frontier: The Rescue" project was built using the following main technologies and resources:
 
-"Wild Frontier: The Rescue" es un juego de aventuras y RPG que se centra en el rescate del hijo del protagonista en un mundo de fantasía. Desarrollado en Unity. El proceso de desarrollo incluyó la conceptualización del juego, el diseño de nivel, la implementación de mecánicas de juego y la creación de elementos visuales. Además, se desarrolló un sitio web interactivo con información detallada sobre el juego y se implementó una base de datos para almacenar perfiles de jugadores y progreso.
-
-### Construido con
-
-El proyecto "Wild Frontier: The Rescue" se construyó utilizando las siguientes tecnologías y recursos principales:
-
-- **Motor de Juego**: Unity 3D
-- **Lenguaje de Programación**: C#
-- **Herramientas de Desarrollo**: Visual Studio Code, Git
-- **Plataforma Web**: Next.js
-- **Lenguajes Web**: HTML, CSS, JavaScript
-- **Gestor de Paquetes**: npm
-- **Base de Datos**: Mysql
-- **Hospedaje Web**: ...... 
-
-<!-- USO -->
-## Como lo juego
-
-Leea la seccion de Manual de la pina web https: .....
+Game Engine: Unity 3D
+Programming Language: C#
+Development Tools: Visual Studio Code, Git
+Web Platform: Next.js
+Web Languages: HTML, CSS, JavaScript
+Package Manager: npm
+Database: MySQL
+Web Hosting: ......
+<!-- USAGE -->
+## How to Play
+Read the Manual section on the website at: .....
 
 <!-- LICENSE -->
-## Licencia
+## License
+Distributed under the MIT License. See LICENSE for more information.
 
-Distribuido bajo la Licencia MIT. para obtener más información.
-
-<!-- CONTACTO -->
-## Contacto
-
-- Repositorio: [https://github.com/santibpz/RETO_TC2005B](https://github.com/santibpz/RETO_TC2005B)
-- Issue Tracker: [https://github.com/santibpz]
-
-<!-- RECONOCIMIENTOS -->
-## Reconocimientos
-
-- [Img Shields](https://shields.io)
-- [GitHub Pages](https://pages.github.com)
-- [Animate.css](https://daneden.github.io/animate.css)
-- [Loaders.css](https://connoratherton.com/loaders)
-- [Font Awesome](https://fontawesome.com)
-- [favicon.io](https://favicon.io)
+<!-- CONTACT -->
+## Contact
+Repository: https://github.com/santibpz/RETO_TC2005B
+Issue Tracker: [https://github.com/santibpz]
+<!-- ACKNOWLEDGEMENTS -->
+## Acknowledgements
+JohnMartPixel25
+Seliel the Shaper
+ELV Games
+Szadi art.
