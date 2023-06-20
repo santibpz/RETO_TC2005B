@@ -31,6 +31,10 @@ const connectToDB = async () => {
   });
 };
 
+app.get("/test", (req, res) => {
+  res.send("hello world")
+})
+
 
 // website
 app.get("/", (request, response) => {
