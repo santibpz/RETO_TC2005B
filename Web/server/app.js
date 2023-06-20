@@ -9,7 +9,8 @@ import {
   HOST,
   USER, 
   PASSWORD,
-  DATABASE
+  DATABASE,
+  DB_PORT
 } from "./config.js"
 
 const app = express();
@@ -28,6 +29,7 @@ const connectToDB = async () => {
     user: USER,
     password: PASSWORD,
     database: DATABASE,
+    port: DB_PORT
   });
 };
 
