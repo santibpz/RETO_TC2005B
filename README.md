@@ -12,7 +12,7 @@
     <a href="https://github.com/santibpz/RETO_TC2005B"><strong>Explore the documentation »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/santibpz/RETO_TC2005B">View Demo</a>
+    <a href="https://retotc2005b-production.up.railway.app/">View Demo</a>
   </p>
 </div>
 <!-- TABLE OF CONTENTS -->
