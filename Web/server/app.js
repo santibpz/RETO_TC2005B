@@ -34,7 +34,7 @@ const connectToDB = async () => {
 
 // website
 app.get("/", (request, response) => {
-  fs.readFile("./client/pages/index.html", "utf8", (err, html) => {
+  fs.readFile("/index.html", "utf8", (err, html) => {
     if (err) response.status(500).send("There was an error: " + err);
     console.log("Loading page...");
     response.send(html);
