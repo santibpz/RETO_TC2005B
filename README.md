@@ -34,14 +34,14 @@
 ## Built With
 The "Wild Frontier: The Rescue" project was built using the following main technologies and resources:
 
-Game Engine: Unity 3D
-Programming Language: C#
-Development Tools: Visual Studio Code, Git
-Web Platform: Next.js
-Web Languages: HTML, CSS, JavaScript
-Package Manager: npm
-Database: MySQL
-Web Hosting: ......
+- **Game Engine**: Unity 3D
+- **Programming** Language: C#
+- **Development** Tools: Visual Studio Code, Git
+- **Web Platform**: .....
+- **Web Languages**: HTML, CSS, JavaScript
+- **Package Manager**: npm
+- **Database**: MySQL
+- **Web Hosting**: ......
 <!-- USAGE -->
 ## How to Play
 Read the Manual section on the website at: .....
