@@ -54,11 +54,6 @@ El proyecto "Wild Frontier: The Rescue" se construyó utilizando las siguientes 
 
 Leea la seccion de Manual de la pina web https: .....
 
-<!-- HOJA DE RUTA -->
-## Hoja de Ruta
-
-Consulta el archivo [RETO_TC2005B.md](RETO_TC2005B.md) para obtener una descripción detallada de la hoja de ruta y las próximas características planificadas.
-
 <!-- LICENSE -->
 ## Licencia
 
