@@ -4,7 +4,13 @@ import cors from "cors";
 import express from "express";
 import mysql from "mysql2/promise";
 import fs from "fs";
-import { Console } from "console";
+import {
+  PORT,
+  HOST,
+  USER, 
+  PASSWORD,
+  DATABASE
+} from "./config.js"
 
 const app = express();
 
@@ -18,10 +24,10 @@ app.use(express.static("./client"));
 
 const connectToDB = async () => {
   return await mysql.createConnection({
-    host: process.env.HOST,
-    user: process.env.USER,
-    password: process.env.PASSWORD,
-    database: process.env.DATABASE,
+    host: HOST,
+    user: USER,
+    password: PASSWORD,
+    database: DATABASE,
   });
 };
 
@@ -441,7 +447,7 @@ app.get("/api/checkpointDeaths", async (req, res) => {
   }
 })
 
-let PORT = process.env.PORT || 3000
+
 app.listen(PORT, () => {
   console.log(`listening on port ${PORT}`)
 })
