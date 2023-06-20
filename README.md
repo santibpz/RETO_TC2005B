@@ -39,14 +39,14 @@ The "Wild Frontier: The Rescue" project was built using the following main techn
 - **Game Engine**: Unity 3D
 - **Programming** Language: C#
 - **Development** Tools: Visual Studio Code, Git
-- **Web Platform**: .....
+- **Web Platform**: Railway
 - **Web Languages**: HTML, CSS, JavaScript
 - **Package Manager**: npm
 - **Database**: MySQL
-- **Web Hosting**: ......
+- **Web Hosting**: https://retotc2005b-production.up.railway.app/
 <!-- USAGE -->
 ## How to Play
-- Read the Manual section on the website at: .....
+- Read the Manual section on the website at: https://retotc2005b-production.up.railway.app/
 <!-- LICENSE -->
 ## License
 - Distributed under the MIT License. See LICENSE for more information.
