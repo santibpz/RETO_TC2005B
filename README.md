@@ -3,7 +3,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/santibpz/RETO_TC2005B">
-    <img src="https://github.com/santibpz/RETO_TC2005B/Web/server/client/logo.png" alt="Logo" width="80" height="80">
+    <img src="https://github.com/santibpz/RETO_TC2005B/blob/main/Web/server/client/assets/img/Logo.png" alt="Logo" width="80" height="80">
   </a>
   <h3 align="center">Wild Frontier: The Rescue</h3>
   <p align="center">
