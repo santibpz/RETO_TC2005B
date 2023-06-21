@@ -1188,7 +1188,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   username: {fileID: 22729220}
   password: {fileID: 763351889}
-  url: http://localhost:3000
+  url: https://retotc2005b-production.up.railway.app
   loginEndpoint: /api/login
   playerItemsEP: /api/playerItems
   playerWeaponsEP: /api/playerWeapons

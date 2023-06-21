@@ -490,7 +490,7 @@ MonoBehaviour:
   email: {fileID: 43640415}
   username: {fileID: 1110283569}
   password: {fileID: 834496680}
-  url: http://localhost:3000
+  url: https://retotc2005b-production.up.railway.app
   endpoint: /api/signup
   notification: {fileID: 2113766676}
 --- !u!114 &181196443

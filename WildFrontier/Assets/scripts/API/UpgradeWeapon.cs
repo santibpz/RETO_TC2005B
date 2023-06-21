@@ -70,7 +70,7 @@ public class UpgradeWeapon : MonoBehaviour
         {
             // current player resources
             int currentWood = resourceInventory.GetResourceCount(wood);
-            int currentRock = resourceInventory.GetResourceCount(wood);
+            int currentRock = resourceInventory.GetResourceCount(rock);
 
             // check if player has enough resources
             if (currentWood >= woodReq && currentRock >= rockReq)
@@ -82,9 +82,14 @@ public class UpgradeWeapon : MonoBehaviour
                 upgradeSlots[currentSlot].gameObject.SetActive(true);
                 currentSlot++;
 
+                // update resource inventory
+                resourceInventory.UpdateInventory(wood, currentWood - woodReq); 
+                resourceInventory.UpdateInventory(rock, currentRock - rockReq);
+
                 // update wood and rock requirements for next upgrade
                 woodReqText.text = $"{woodReq *= 3}";
                 rockReqText.text = $"{rockReq *= 3}";
+
 
                 // query database for player weapon upgrade
                 PlayerWeaponUpdgrade playerWeaponUpdgrade = new PlayerWeaponUpdgrade();

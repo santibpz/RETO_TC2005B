@@ -22,7 +22,7 @@ public class UpdateResources : MonoBehaviour
         using (UnityWebRequest www = UnityWebRequest.Put(url + addEndpoint, data))
         {
 
-            www.method = "PUT";
+            www.method = "POST";
             www.SetRequestHeader("Content-Type", "application/json");
             yield return www.SendWebRequest();
 

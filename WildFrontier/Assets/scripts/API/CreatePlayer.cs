@@ -9,7 +9,6 @@ using UnityEngine.Networking;
 using TMPro;
 
 
-
 // Create classes that correspond to the data that will be sent/received
 // via the API
 
