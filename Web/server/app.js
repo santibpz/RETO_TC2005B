@@ -181,7 +181,7 @@ app.get("/api/playerWeapons/:id", async (req, res) => {
 
 // endpoint to add one resource to the database
 
-app.put("/api/addResource", async (req, res) => {
+app.post("/api/addResource", async (req, res) => {
   const update = req.body;
   const { player_id, item_id, quantity } = update;
 
