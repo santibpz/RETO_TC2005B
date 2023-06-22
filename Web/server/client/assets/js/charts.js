@@ -22,7 +22,7 @@ const randomColor = (alpha = 1.0) => {
 
 // Most created weapons by players
 const createdWeaponsData = await fetchInformation(
-  "http://localhost:3000",
+  "https://retotc2005b-production.up.railway.app",
   "/api/createdWeaponsChart"
 );
 
@@ -62,7 +62,7 @@ const createdWeaponsChart = new Chart(ctx1, {
 
 // The number of players that have died by wolf death or player death
 const playerDeathTypesData = await fetchInformation(
-  "http://localhost:3000",
+  "https://retotc2005b-production.up.railway.app",
   "/api/playerDeathTypes"
 );
 
@@ -100,7 +100,7 @@ const playerDeathTypesChart = new Chart(ctx2, {
 
 // The number of upgrades registered for every weapon
 const weaponUpgradesData = await fetchInformation(
-  "http://localhost:3000",
+  "https://retotc2005b-production.up.railway.app",
   "/api/weaponUpgrades"
 );
 
@@ -138,7 +138,7 @@ const weaponUpgradesChart = new Chart(ctx3, {
 
 // The number of deaths registered in every checkpoint
 const checkpointDeaths = await fetchInformation(
-  "http://localhost:3000",
+  "https://retotc2005b-production.up.railway.app",
   "/api/checkpointDeaths"
 );
 
