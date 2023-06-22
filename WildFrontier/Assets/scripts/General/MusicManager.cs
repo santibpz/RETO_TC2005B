@@ -282,7 +282,7 @@ public class MusicManager : MonoBehaviour
     private bool DetectEnemies()
     {
         GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
-        Debug.Log("Enemy found" + enemies.Length);
+     
         return enemies.Length > 0; // Returns true if at least one enemy is found
     }
     private bool DetectBoss()
